@@ -1,125 +1,72 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-    
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Readme - Konstruct</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Konstruct by traaidmark</title>
 
-		<link rel='stylesheet' href='assets/css/Stylesheet.css'>
-        
-        <script src='assets/js/vendor/modernizr-2.6.2.min.js'></script>
-<script src='assets/js/vendor/html5shiv.js'></script>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Konstruct</h1>
+        <p class="header">A HTML &amp; CSS Framework</p>
 
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/traaidmark/Konstruct/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/traaidmark/Konstruct/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/traaidmark/Konstruct">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/traaidmark">traaidmark</a></p>
+
+
+      </header>
+      <section>
+        <h3>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3>
+<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+
+<h3>
+<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
 		
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link'); 
-                    for (var i = 0; i < links.length;i++) { 
-                    var link = links[i]; 
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
-
-    </head>
-    <body>
-        
-        <!--[if lt IE 7]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-<![endif]-->
-		
-		<!-- C. WORK AREA ++++++++++++++++++++++++++++++++++++++ -->
-		
-			<section class="container">
-	
-				<!-- C1. Header -->
-				<header id="masthead">
-				
-					<!-- C1.1 Logo -->
-					<a class='current' href="index.html"><img src="assets/images/konstruct/logo-light.png" alt="Konstruct HTML & CSS Framework" /></a>
-				
-					<!-- C1.2 Navigation -->
-					<nav class="main navigation">
-						<ul class="horizontal list">
-							<li class='current'><a class='current' href="index.html">Readme</a></li>
-							<li><a href="core/core.html">Core</a></li>
-							<li><a href="code/code.html">Brick Library</a></li>
-							<li><a href="contribute.html">Contribute</a></li>
-							<li><a href="changelog.html">Changelog</a></li>
-							<li><a href="license.html">License</a></li>
-							<li><a href="credits.html">Credits</a></li>
-						</ul>
-					</nav>	
-					
-				</header>
-
-				<!-- C2. Mast -->
-				<section id="mast">
-				
-					<h1>Readme</h1>
-					
-					<!-- C2.1: Section[INTRODUCTION] -->
-					<p class="lead">This is the documentation for Konstruct. I aim to keep this documentation as up to date as possible.</p>
-					
-					<!-- C2.2: Section[CURRENT RELEASE] -->
-					<h2>Current Release [V.0.1.0.Beta]</h2>
-					<p>This release branch is aimed at bringing together a core-complete production version of Konstruct. This version sees a complete departure from LESS in favour of SASS.</p>
-					
-					<h3>Changelog</h3>
-					
-					
-					<!-- C2.3: Section[USAGE] -->
-				
-					<h3>Usage</h3>
-					
-					<p>Please go to <a href="#">Usage</a><!-- @TODO Add todo page link --> for complete usage information.</p>
-				
-				</section>
-
-				<!-- C3. Footer -->
-				<footer id="footend">
-					<h6>&copy; 2013 - Adrian Kirsten</h6>
-				</footer>
-			
-			</section>
-		
-		<!-- C. END ++++++++++++++++++++++++++++++++++++++ -->
-		
-        <!-- D. JAVASCRIPT ++++++++++++++++++++++++++++++++++++++ -->
-
-	<!-- D.1 JQUERY -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-	
-	<!-- D.2 SITE -->
-    
-    <!-- D.3 GOOGLE ANALYTICS -->
-    <script>
-        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
-<!-- D. END ++++++++++++++++++++++++++++++++++++++ -->
-        
-    </body>
+  </body>
 </html>

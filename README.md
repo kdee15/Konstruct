@@ -35,7 +35,7 @@ Konstruct is versioned under the [Semantic Versioning](http://semver.org/) guide
 
 Releases are numbered as follows:
 
-<code><major>.<minor>.<patch></code>
+<code>major.minor.patch</code>
 
 * Bug fixes and the like goes to <code>patch</code>
 * Features and additions goes to <code>minor</code>

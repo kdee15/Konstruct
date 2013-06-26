@@ -1,4 +1,4 @@
 Konstruct
 =========
 
-A HTML &amp; CSS Framework
+A HTML &amp; CSS Framework for people.

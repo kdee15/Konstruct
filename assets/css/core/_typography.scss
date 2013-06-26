@@ -1,0 +1,122 @@
+// CORE LAYER [TYPOGRAPHY] ##############################################
+	
+	// A. HEADINGS ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+			}
+		
+		h1 {
+			font-size: $x-large;
+			line-height: $baseline * 2;
+			margin-top: 0;
+			margin-bottom: $baseline * 2;
+			
+			}
+		h2 {
+			font-size: $large;
+			line-height: $baseline * 2;
+			margin-top: $baseline;
+			margin-bottom: $baseline;
+			}
+		h3 {
+			font-size: $medium;
+			line-height: $baseline * 2;
+			margin-top: $baseline;
+			margin-bottom: 0;
+			}
+		h4 {
+			font-size:  $normal;
+			line-height: $baseline;
+		}
+		h5 {
+			font-size: $small;
+			line-height: $baseline;
+			}
+		h6 {
+			font-size: $x-small;
+			line-height: $baseline;
+			text-transform: uppercase;
+		}
+	
+	// B. BODY COPY ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+		// B.1 Paragraph	
+		body,
+		p {
+			font-family: $base-font; 
+			font-size: 100%;
+			line-height: $baseline;
+			margin: 0 0 $baseline 0;
+		}
+		
+		// B.2 Emphasis
+		strong,
+		b {
+			font-weight: bold;
+		}
+		em {
+		}
+		
+		// B.3 Code blocks
+		code,
+		pre {
+		
+		}
+		code {
+			line-height: $baseline;
+			margin: 0;
+		}
+		code:after {
+		}
+		pre {
+			margin: 0 0 $baseline 0;
+		}
+	
+		// B.4 Links
+		
+		a {
+			color: $link-color;
+			text-decoration: none;
+			&:hover {
+				color: $link-hover;
+				text-decoration: underline;
+			}
+		}
+	
+		// B.5 HR Lines
+		
+		hr {
+		  margin: $baseline 0;
+		  border: 0;
+		  border-top: 1px solid $gray;
+		  border-bottom: 1px solid $white;
+		}
+		
+		// B.6 TABLES
+		table {
+		
+			width: 100%;
+			margin-bottom: $baseline;
+			border: solid 1px $black;
+			
+			tr {
+			
+				td {
+					border-right: solid 1px $gray;
+				}
+			
+			}
+		
+			caption {}
+			
+			thead {
+				background-color: $black;
+			}
+			
+			tbody {}
+			
+		
+		}
+
+// END OF FILE ##############################################

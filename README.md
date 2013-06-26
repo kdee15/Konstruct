@@ -3,6 +3,8 @@ Konstruct 1.0
 
 Konstruct is a HTML & CSS framework developed to assist in building awesome si
 
+<hr />
+
 ## Documentation
 
 For the sake of sanity and simplicity, you can find all documentation in the <code>documentation/</code> folder. 
@@ -29,6 +31,8 @@ This project would not be possible without the help of so many people out there 
 
 Please check out <code>documentation/credits.html</code> for the credits. I know I missed a lot of people, if you are one, please let me know and I will rectify *ASAP*.
 
+<hr />
+
 ## Versions
 
 Konstruct is versioned under the [Semantic Versioning](http://semver.org/) guidelines.
@@ -41,6 +45,7 @@ Releases are numbered as follows:
 * Features and additions goes to <code>minor</code>
 * Complete new versions with no backwards compatibility path goes to <code>major</code>. This is usually also a milestone release and is considered stable and complete.
 
+<hr />
 
 ## Authors
 

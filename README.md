@@ -1,4 +1,4 @@
-Konstruct 1.0
+[Konstruct 1.0](http://traaidmark.github.io/Konstruct/)
 =============
 
 Konstruct is a HTML & CSS framework developed to assist in building awesome si

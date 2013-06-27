@@ -1,0 +1,189 @@
+// BASE LAYER [SITE] ##############################################
+
+	// A. GENERAL ++++++++++++++++++++++++++++++++++++++++++++++++
+		
+		html {
+			background-color: $grayLighter;
+		}
+		
+		h1 {
+			//font-family: $Quicksand-light;
+			font-weight: normal;
+			margin-bottom: $baseline;
+			text-align: right;
+		}
+		
+		h2,h3,h4,h5,h6 {
+			//font-family: $Pluto-regular;
+		}
+		
+		p {
+			
+			&.lead {
+				color: $gray;
+			}
+		}
+		
+		.amp {
+			//font-family: $Quicksand-book;
+		}
+		
+		bold,strong {
+			//font-family: $Sans-semiBold;
+		}
+		
+		em {
+			//font-family: $Sans-lightItalic;
+		}
+		
+		.done {
+			color: $green;
+		}
+	
+	// B. PAGE LAYOUT ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+		// B.1. Masthead 
+		
+		#masthead {
+			
+			// B.1.1 Logo
+			img {
+				width: 220px;
+				margin-top: $baseline * 2;
+				
+				&:hover {
+					background-color: $white;
+				}
+			}
+			
+			// B.1.2 Main Navigation
+			.main {
+				background-color: $konstruct-green;
+				
+				a {
+					font-size: $large;
+					color: $white;
+					padding: 10px 15px;
+					
+					&:hover {
+						background-color: $konstruct-greenDark;
+					}
+					
+					&.active {
+						background-color: $konstruct-greenDark;
+					}
+				}
+				
+			}
+			
+			// B.1.2 Sub Navigation
+			.sub {
+				margin-top: $baseline / 2;
+				background-color: $white;
+				padding: 5px 10px;
+				
+				a {
+				
+					color: $gray;
+					
+					&.active {
+						background-color: $konstruct-green;
+						color: $white;
+					}
+				
+				}
+			}
+		}
+		
+		// B.2. Mast
+		
+		#mast {
+			margin: $baseline 0;
+			
+		}
+		
+			
+			// B.2.1 Code Library
+			.library {
+				@extend .grid;
+				
+				.index {
+					@extend .grid__item;
+					@extend .desk--two-twelfths;
+					
+					ul {
+						@extend .vertical;
+						@extend .list;
+					
+					}
+					li {
+						border-bottom: solid 1px $grayLight;
+						padding: 6px 0;
+					}
+					
+					.title {
+						//font-family: $Pluto-regular;
+						background: $grayLight;
+						color: $white;
+						padding: 6px;
+						margin-top: $baseline;
+						border: none;
+					}
+				}
+				
+				.page {
+					@extend .grid__item;
+					@extend .desk--ten-twelfths;
+					background: $white;
+				
+					.content {
+						//padding: $baseline / 2;
+						
+					}
+				
+				}
+			}
+			
+			// B.2.1 End
+			
+			// B.2.2 Code View
+			
+			.code-view {
+			
+				@extend .grid;
+				
+				.view {
+					@extend .grid__item;
+					@extend .desk--full;
+					border-bottom: solid 1px $gray;
+					padding-bottom: $baseline;
+					margin-bottom: $baseline;
+					
+					.demo-grid {
+						background: $konstruct-blue;
+						margin-bottom: $baseline / 2;
+					}
+				}
+				
+				.html, .css {
+					@extend .grid__item;
+					@extend .desk--one-half;
+				}
+				h4 {
+					margin-top: 0;
+				}
+			
+			}
+			
+			// B.2.2 End
+		
+		// B.2. End
+		
+		// B.3. Footend
+		
+		#footend {
+			border-top: solid 2px $white;
+			text-align: center;
+		}
+	
+// END OF FILE ##############################################

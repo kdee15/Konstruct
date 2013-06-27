@@ -2665,7 +2665,15 @@ html {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  margin: 0;
+  height: 100%; }
+
+body {
+  background-color: rgba(34, 34, 34, 0.5);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(34, 34, 34, 0.9)), color-stop(50%, rgba(34, 34, 34, 0.3)), color-stop(100%, rgba(34, 34, 34, 0.9)));
+  background-image: -webkit-linear-gradient(left, rgba(34, 34, 34, 0.9) 0%, rgba(34, 34, 34, 0.3) 50%, rgba(34, 34, 34, 0.9) 100%);
+  background-image: linear-gradient(to right,rgba(34, 34, 34, 0.9) 0%, rgba(34, 34, 34, 0.3) 50%, rgba(34, 34, 34, 0.9) 100%); }
 
 h1 {
   font-weight: normal;
@@ -2683,7 +2691,7 @@ p.lead {
   #masthead img {
     margin: 50px auto 50px auto; }
     #masthead img:hover {
-      background-color: white; }
+      background-color: rgba(34, 34, 34, 0.2); }
   #masthead .main {
     background-color: #222222;
     padding: 10px; }
@@ -2692,9 +2700,9 @@ p.lead {
       color: white;
       padding: 5px 15px; }
       #masthead .main a:hover {
-        background-color: #e7685b; }
-      #masthead .main a.current {
         background-color: #c25045; }
+      #masthead .main a.current {
+        background-color: #e7685b; }
   #masthead .sub {
     margin-top: 12px;
     background-color: white;
@@ -2707,7 +2715,9 @@ p.lead {
 
 #mast {
   margin: 24px 0;
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+  padding-top: 24px;
+  padding-bottom: 24px; }
 
 .library .index li {
   border-bottom: solid 1px #999999;
@@ -2732,5 +2742,7 @@ p.lead {
   margin-top: 0; }
 
 #footend {
-  border-top: solid 2px white;
-  text-align: center; }
+  text-align: center;
+  margin: 0;
+  padding-bottom: 24px;
+  color: white; }

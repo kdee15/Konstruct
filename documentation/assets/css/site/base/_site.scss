@@ -16,7 +16,7 @@
 		
 		body {
 		
-			@include linear-gradient(to right, rgba( $grayDarker, 0.9 ) 0%, rgba( $grayDarker, 0.3 ) 50%, rgba( $grayDarker, 0.9 ) 100%, $fallback: rgba( $grayDarker, 0.5 ));
+			@include linear-gradient(to right, rgba( $grayDark, 0.3 ) 0%, rgba( $grayDark, 0.1 ) 50%, rgba( $grayDarker, 0.3 ) 100%, $fallback: rgba( $grayDarker, 0.5 ));
 		
 		}
 		
@@ -60,6 +60,7 @@
 		
 		#masthead {
 			text-align: center;
+			
 			// B.1.1 Logo
 			img {
 				
@@ -68,11 +69,14 @@
 				&:hover {
 					background-color: rgba( $grayDarker, 0.2 );
 				}
+			
+			
+			
 			}
 			
 			// B.1.2 Main Navigation
 			.main {
-				background-color: $grayDarker;
+				//background-color: $grayDarker;
 				padding: 10px;
 				
 				a {

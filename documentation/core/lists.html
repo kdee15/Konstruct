@@ -7,7 +7,7 @@
     
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Welcome to Konstruct!</title>
+        <title>Lists > Core > Konstruct</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -41,7 +41,7 @@
 						<header id="masthead">
 						
 							<!-- C1.1 Logo -->
-							<a class='current' href="index.html"><img src="../assets/images/konstruct/logo-dark.png" alt="Konstruct HTML & CSS Framework" /></a>
+							<a class='current' href="../index.html"><img src="../assets/images/konstruct/logo-dark.png" alt="Konstruct HTML & CSS Framework" /></a>
 						
 							<!-- C1.2 Navigation -->
 							<nav class="main navigation">
@@ -64,7 +64,7 @@
 						
 						<div class="container">
 						
-							<h1>Konstruct Core</h1>
+							<h1>Core Library</h1>
 							
 							<!-- C2.2: Section[STRUCTURE] -->
 							<div class="library">
@@ -88,12 +88,70 @@
 									<div class="content">
 									
 										<!-- C2.2.2: Section[PAGE] -->
-										<h2>The Core.</h2>
-										<p>The core of Konstruct is kept as tiny and basic as possible, including only the necessities <span class="amp">&amp;</span> stuff you really should have in your site.</p>
-										<p>Lolwut.</p>
-										<div class="messages">
-											<p class="info"><strong><i class="icon-info-sign"></i> Using SASS?</strong> 
-											You can <code>@extend</code> most of the core functionality into your existing styles, thereby reducing the class-clutter in your HTML. In cases where this is practical, you will see a notification.</p>
+										<h2>Lists</h2>
+										
+										<p>Lists are common elements in most sites. The pattern below takes out the grunt work for you, and forms the foundation for many other bricks in Konstruct.</p>
+										
+										<div class="code-view">
+										
+											<div class="view">
+												<h3>Horizontal Lists</h3>
+												<ul class="horizontal list">
+													<li><a href="#" class="selected">Item 1</a></li>
+													<li><a href="#">Item 2</a></li>
+													<li><a href="#">Item 3</a></li>
+												</ul>
+												
+												<h3>Vertical Lists</h3>
+												<ul class="vertical list">
+													<li><a href="#" class="selected">Item 1</a></li>
+													<li><a href="#">Item 2</a></li>
+													<li><a href="#">Item 3</a></li>
+												</ul>
+												
+												<h3>Aligned Horizontal Lists</h3>
+												<ul class="left horizontal list">
+													<li><a href="#" class="selected">Item 1</a></li>
+													<li><a href="#">Item 2</a></li>
+													<li><a href="#">Item 3</a></li>
+												</ul>
+												<ul class="center horizontal list">
+													<li><a href="#" class="selected">Item 1</a></li>
+													<li><a href="#">Item 2</a></li>
+													<li><a href="#">Item 3</a></li>
+												</ul>
+												<ul class="right horizontal list">
+													<li><a href="#" class="selected">Item 1</a></li>
+													<li><a href="#">Item 2</a></li>
+													<li><a href="#">Item 3</a></li>
+												</ul>
+												
+											</div>
+											
+											<div class="html">
+												<h4>HTML</h4>
+												<pre>
+													<code>&lt;ul class="horizontal list">
+															&lt;li class="selected">&lt;a href="#">Item 1&lt;/a>&lt;/li>
+															&lt;li>&lt;a href="#">Item 3&lt;/a>&lt;/li>
+															&lt;li>&lt;a href="#">Item 4&lt;/a>&lt;/li>
+															&lt;li>...&lt;/li>
+														&lt;/ul></code>
+												</pre>
+											</div>
+											
+											<div class="css">
+											
+												<div class="messages">
+													<p class="info"><strong><i class="icon-info-sign"></i> <code>@extend</code> this!</strong></p>
+												</div>
+											
+												<h4>Dependencies</h4>
+												<ul>
+													<li>Konstruct Core</li>
+												</ul>
+											</div>
+										
 										</div>
 										
 										<!-- C2.2.2: End -->

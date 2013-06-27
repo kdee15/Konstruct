@@ -208,6 +208,11 @@
 			padding-bottom: $baseline;
 			color: $white;
 			
+			p,li {font-size:$small;}
+			p {
+				margin: 0;
+			}
+			
 		}
 	
 // END OF FILE ##############################################

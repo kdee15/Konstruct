@@ -2659,7 +2659,13 @@ table {
     text-align: right; }
 
 html {
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+  background-image: url("../images/site/wallpaper.jpg");
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 h1 {
   font-weight: normal;
@@ -2672,33 +2678,36 @@ p.lead {
 .done {
   color: #46a546; }
 
-#masthead img {
-  width: 220px;
-  margin-top: 48px; }
-  #masthead img:hover {
-    background-color: white; }
-#masthead .main {
-  background-color: #72cac1; }
-  #masthead .main a {
-    font-size: 1.5em;
-    color: white;
-    padding: 10px 15px; }
-    #masthead .main a:hover {
-      background-color: #69b2a9; }
-    #masthead .main a.active {
-      background-color: #69b2a9; }
-#masthead .sub {
-  margin-top: 12px;
-  background-color: white;
-  padding: 5px 10px; }
-  #masthead .sub a {
-    color: #555555; }
-    #masthead .sub a.active {
-      background-color: #72cac1;
-      color: white; }
+#masthead {
+  text-align: center; }
+  #masthead img {
+    margin: 50px auto 50px auto; }
+    #masthead img:hover {
+      background-color: white; }
+  #masthead .main {
+    background-color: #222222;
+    padding: 10px; }
+    #masthead .main a {
+      font-size: 1.5em;
+      color: white;
+      padding: 5px 15px; }
+      #masthead .main a:hover {
+        background-color: #e7685b; }
+      #masthead .main a.current {
+        background-color: #c25045; }
+  #masthead .sub {
+    margin-top: 12px;
+    background-color: white;
+    padding: 5px 10px; }
+    #masthead .sub a {
+      color: #555555; }
+      #masthead .sub a.active {
+        background-color: #72cac1;
+        color: white; }
 
 #mast {
-  margin: 24px 0; }
+  margin: 24px 0;
+  background-color: #eeeeee; }
 
 .library .index li {
   border-bottom: solid 1px #999999;

@@ -4,6 +4,12 @@
 		
 		html {
 			background-color: $grayLighter;
+			background-image: url('../images/site/wallpaper.jpg');
+			background-attachment: fixed;
+			-webkit-background-size: cover;
+			        -moz-background-size: cover;
+			        -o-background-size: cover;
+			        background-size: cover;
 		}
 		
 		h1 {
@@ -45,11 +51,11 @@
 		// B.1. Masthead 
 		
 		#masthead {
-			
+			text-align: center;
 			// B.1.1 Logo
 			img {
-				width: 220px;
-				margin-top: $baseline * 2;
+				
+				margin: 50px auto 50px auto;
 				
 				&:hover {
 					background-color: $white;
@@ -58,19 +64,19 @@
 			
 			// B.1.2 Main Navigation
 			.main {
-				background-color: $konstruct-green;
-				
+				background-color: $grayDarker;
+				padding: 10px;
 				a {
 					font-size: $large;
 					color: $white;
-					padding: 10px 15px;
+					padding: 5px 15px;
 					
 					&:hover {
-						background-color: $konstruct-greenDark;
+						background-color: $konstruct-red;
 					}
 					
-					&.active {
-						background-color: $konstruct-greenDark;
+					&.current {
+						background-color: $konstruct-redDark;
 					}
 				}
 				
@@ -99,7 +105,7 @@
 		
 		#mast {
 			margin: $baseline 0;
-			
+			background-color: $grayLighter;
 		}
 		
 			

@@ -2379,13 +2379,13 @@ a .icon-flip-vertical:before {
   /**
    * Whole
    */
-  .portable--one-whole, .page-front .section-blocks .block.three {
+  .portable--one-whole, .page-front .section-blocks .block.one {
     width: 100%; }
 
   /**
    * Halves
    */
-  .portable--one-half, .portable--two-quarters, .portable--three-sixths, .portable--four-eighths, .portable--five-tenths, .portable--six-twelfths, .page-front .section-blocks .block.one, .page-front .section-blocks .block.two {
+  .portable--one-half, .portable--two-quarters, .portable--three-sixths, .portable--four-eighths, .portable--five-tenths, .portable--six-twelfths, .page-front .section-blocks .block.two, .page-front .section-blocks .block.three {
     width: 50%; }
 
   /**
@@ -2484,7 +2484,7 @@ a .icon-flip-vertical:before {
   /**
    * Halves
    */
-  .desk--one-half, .desk--two-quarters, .desk--three-sixths, .desk--four-eighths, .desk--five-tenths, .desk--six-twelfths, .code-view .html, .code-view .css {
+  .desk--one-half, .desk--two-quarters, .desk--three-sixths, .desk--four-eighths, .desk--five-tenths, .desk--six-twelfths, .code-view .html, .code-view .css, .page-front .section-blocks .block.four, .page-front .section-blocks .block.five {
     width: 50%; }
 
   /**
@@ -2750,7 +2750,8 @@ body {
 
 p.lead {
   color: #555555;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  line-height: 48px; }
 
 .done {
   color: #46a546; }
@@ -2841,13 +2842,31 @@ p.lead {
   padding-bottom: 12px; }
 .page-front .lead {
   text-align: center; }
-.page-front .section-blocks .block.one {
-  background: #e7685b; }
-.page-front .section-blocks .block.two {
-  background: #e7685b; }
-.page-front .section-blocks .block.three {
-  background: #e7685b; }
-.page-front .section-blocks .block h2 {
+.page-front .section-blocks .block h5 {
+  font-size: 1.125em;
+  text-transform: uppercase; }
+  .page-front .section-blocks .block h5 i {
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 12px;
+    color: #e7685b; }
+.page-front .section-blocks .block a {
+  padding: 3px;
+  margin-bottom: 3px; }
+  .page-front .section-blocks .block a i {
+    font-size: 1.5em; }
+.page-front .section-blocks .block .content {
+  padding: 24px;
+  background: white; }
+.page-front .section-blocks .block.one .content {
+  background: #f4bab4; }
+.page-front .section-blocks .block.one a {
+  background-color: #e7685b;
+  color: white; }
+  .page-front .section-blocks .block.one a:hover {
+    background-color: #c25045; }
+.page-front .section-blocks .block h5 {
   text-align: center; }
 
 .identify {

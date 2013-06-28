@@ -26,28 +26,65 @@
 					.block {
 						@extend .grid__item;
 						
+						h5 {
+							font-size: $medium;
+							text-transform: uppercase;
+							
+							i {
+								display: block;
+								text-align: center;
+								font-size: $x-large;
+								margin-bottom: $baseline/2;
+								color: $konstruct-red;
+							}
+						}
+						
+						a {
+							padding: 3px;
+							margin-bottom: 3px;
+							i {
+								font-size: $large;
+							}
+						}
+						
+						.content {
+							padding: $baseline;
+							background: $white;
+						}
+						
 						&.one {
-							@extend .portable--one-half;
-							@extend .desk--one-third;
-							background: $konstruct-red;
-						}
-						
-						&.two {
-							@extend .portable--one-half;
-							@extend .desk--one-third;
-							background: $konstruct-red;
-						}
-						
-						&.three {
 							@extend .portable--one-whole;
 							@extend .desk--one-third;
-							background: $konstruct-red;
+							
+							.content {
+								background: lighten($konstruct-red, 20%);
+								
+							}
+							
+							a {
+								background-color: $konstruct-red;
+								color: $white;
+								&:hover {
+									background-color: $konstruct-redDark;
+								}
+							}
+						}
+						
+						&.two, &.three {
+							@extend .portable--one-half;
+							@extend .desk--one-third;
+						}
+						
+						&.four, &.five {
+							@extend .desk--one-half;
+							@extend .desk--one-half;
 						}
 						
 						
-						h2 {
+						h5 {
 							text-align: center;
 						}
+						
 					}
 				
 				}

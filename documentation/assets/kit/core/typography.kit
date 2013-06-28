@@ -37,50 +37,178 @@
 		
 		<section class="container">
 			
-						<!-- C1. Header -->
+						<!-- C.1. Header -->
 						<header id="masthead">
 						
-							<!-- C1.1 Logo -->
+							<!-- C.1.1 Logo -->
 							<a class='current' href="../index.html"><img src="../assets/images/konstruct/logo-dark.png" alt="Konstruct HTML & CSS Framework" /></a>
 						
-							<!-- C1.2 Navigation -->
+							<!-- C.1.2 Navigation -->
 							<!-- @include ../includes/core-level-navigation.kit -->	
 							
 						</header>
 						
 		</section>
 		
-						<!-- C2. Mast -->
+						<!-- C.2. Mast -->
 						<section id="mast">
 						
 						<div class="container">
 						
 							<h1>Core Library</h1>
 							
-							<!-- C2.2: Section[STRUCTURE] -->
+							<!-- C.2.1: Section[STRUCTURE] -->
 							<div class="library">
 							
 								<div class="index">
 								
-									<!-- C2.2.1: Library[INDEX] -->
+									<!-- C2.1.1: Library[INDEX] -->
 								
 									<!-- @include ../includes/core-index-list.kit -->
 									
-									<!-- C2.2.1: End -->
+									<!-- C2.1.1: End -->
 									
 								</div>
 								
 								<div class="page">
 									<div class="content">
 									
-										<!-- C2.2.2: Section[PAGE] -->
-										<h2>The Core.</h2>
-										<p>The core of Konstruct is kept as tiny and basic as possible, including only the necessities <span class="amp">&amp;</span> stuff you really should have in your site.</p>
-										<p>Lolwut.</p>
-										<div class="messages">
-											<p class="info"><strong><i class="icon-info-sign"></i> Using SASS?</strong> 
-											You can <code>@extend</code> most of the core functionality into your existing styles, thereby reducing the class-clutter in your HTML. In cases where this is practical, you will see a notification.</p>
-										</div>
+										<!-- C.2.2.: Section[PAGE] -->
+										<h2>Typography.</h2>
+										<p>Konstruct's core typography setup is a barebones setup, built to work on a basic baseline. There are no strict rules here, just a foundation for you to go build your awesome on.</p>
+										
+										<section class="section-typography">
+										
+											<!-- C.2.2.1: BODY COPY ++++++++++++++++++++++++++++++ -->
+											<h1>Heading 1</h1>
+									        <h2>Heading 2</h2>
+									        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
+									        <h3>Heading 3</h3>
+									        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
+									        <h4>Heading 4</h4>
+									        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+									        <h5>Heading 5</h5>
+									        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+									        <h6>Heading 6</h6>
+									        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+											
+											<!-- C.2.2.2: Lists ++++++++++++++++++++++++++++++ -->
+											<p hidden>This should be hidden in all browsers, apart from IE6</p>
+											
+									        <h3>ordered list</h3>
+									        
+									                <ol>
+									                    <li>list item 1</li>
+									                    <li>list item 1
+									                        <ol>
+									                            <li>list item 2</li>
+									                            <li>list item 2
+									                                <ol>
+									                                    <li>list item 3</li>
+									                                    <li>list item 3</li>
+									                                </ol>
+									                            </li>
+									                            <li>list item 2</li>
+									                            <li>list item 2</li>
+									                        </ol>
+									                    </li>
+									                    <li>list item 1</li>
+									                    <li>list item 1</li>
+									                </ol>
+									        
+									                <h3>unordered list</h3>
+									        
+									                <ul>
+									                    <li>list item 1</li>
+									                    <li>list item 1
+									                        <ul>
+									                            <li>list item 2</li>
+									                            <li>list item 2
+									                                <ul>
+									                                    <li>list item 3</li>
+									                                    <li>list item 3</li>
+									                                </ul>
+									                            </li>
+									                            <li>list item 2</li>
+									                            <li>list item 2</li>
+									                        </ul>
+									                    </li>
+									                    <li>list item 1</li>
+									                    <li>list item 1</li>
+									                </ul>
+									        
+									        <hr />
+									        
+									        
+									        <!-- C.2.2.3: TABLES ++++++++++++++++++++++++++++++ -->
+									        <table>
+							                    <thead>
+							                        <tr>
+							                            <th>Album</th>
+							                            <th>Year</th>
+							                            <th>Price</th>
+							                        </tr>
+							                    </thead>
+							                    <tbody>
+							                        <tr>
+							                            <td>Are You Experienced</td>
+							                            <td>1967</td>
+							                            <td>$10.00</td>
+							                        </tr>
+							                        <tr>
+							                            <td>Axis: Bold as Love</td>
+							                            <td>1967</td>
+							                            <td>$12.00</td>
+							                        </tr>
+							                        <tr>
+							                            <td>Electric Ladyland</td>
+							                            <td>1968</td>
+							                            <td>$10.00</td>
+							                        </tr>
+							                        <tr>
+							                            <td>Band of Gypsys</td>
+							                            <td>1970</td>
+							                            <td>$12.00</td>
+							                        </tr>
+							                    </tbody>
+							                </table>
+											
+											
+											<!-- C.2.2.3: OTHER TEXT LEVEL SEMANTICS ++++++++++++++++++++++++++++++ -->
+											<p>
+									        The <a href="#">a element</a> example<br>
+									        The <abbr>abbr element</abbr> and <abbr title="Title text">abbr element with title</abbr> examples<br>
+									        The <b>b element</b> example<br>
+									        The <cite>cite element</cite> example<br>
+									        The <code>code element</code> example<br>
+									        The <del>del element</del> example<br>
+									        The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples<br>
+									        The <em>em element</em> example<br>
+									        The <i>i element</i> example<br>
+									        The img element <img src="http://lorempixel.com/16/16" alt=""> example<br>
+									        The <ins>ins element</ins> example<br>
+									        The <kbd>kbd element</kbd> example<br>
+									        The <mark>mark element</mark> example<br>
+									        The <q>q element <q>inside</q> a q element</q> example<br>
+									        The <s>s element</s> example<br>
+									        The <samp>samp element</samp> example<br>
+									        The <small>small element</small> example<br>
+									        The <span>span element</span> example<br>
+									        The <strong>strong element</strong> example<br>
+									        The <sub>sub element</sub> example<br>
+									        The <sup>sup element</sup> example<br>
+									        The <u>u element</u> example<br>
+									        The <var>var element</var> example
+									        </p>
+											
+											
+											<!-- C.2.2.1: HEADINGS ++++++++++++++++++++++++++++++ -->
+											
+											
+											
+											<!-- C.2.2.1: HEADINGS ++++++++++++++++++++++++++++++ -->
+										
+										</section>
 										
 										<!-- C2.2.2: End -->
 									

@@ -2589,34 +2589,27 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2em;
-  line-height: 48px;
-  margin-top: 0;
   margin-bottom: 48px; }
 
 h2 {
   font-size: 1.5em;
-  line-height: 48px;
-  margin-top: 24px;
   margin-bottom: 24px; }
 
 h3 {
   font-size: 1.125em;
-  line-height: 48px;
   margin-top: 24px;
   margin-bottom: 0; }
 
 h4 {
   font-size: 1em;
-  line-height: 24px; }
+  margin-bottom: 24px; }
 
 h5 {
   font-size: 0.75em;
-  line-height: 24px; }
+  margin-bottom: 24px; }
 
 h6 {
-  font-size: 0.625em;
-  line-height: 24px;
-  text-transform: uppercase; }
+  font-size: 0.625em; }
 
 body,
 p {
@@ -2644,19 +2637,39 @@ a {
     text-decoration: underline; }
 
 hr {
-  margin: 24px 0;
+  margin: 23px 0;
   border: 0;
-  border-top: 1px solid #555555;
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid #555555;
+  line-height: 24px; }
+
+ol, ul {
+  margin: 0 0 24px 0; }
+  ol ol, ol ul, ul ol, ul ul {
+    margin: 0; }
+  ol li, ul li {
+    line-height: 24px;
+    margin: 0;
+    padding: 0; }
 
 table {
   width: 100%;
-  margin-bottom: 24px;
-  border: solid 1px black; }
-  table tr td {
+  margin: 2px 0 24px 0;
+  padding: 0;
+  border: solid 1px #555555; }
+  table tr {
+    line-height: 24px;
+    height: auto; }
+  table td, table th {
+    line-height: 24px;
+    margin: 0;
     border-right: solid 1px #555555; }
+  table th {
+    font-weight: normal;
+    text-align: left; }
   table thead {
-    background-color: black; }
+    line-height: 24px; }
+  table tbody {
+    line-height: 24px; }
 
 .container {
   width: 100%;
@@ -2722,11 +2735,6 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(51, 51, 51, 0.3)), color-stop(50%, rgba(51, 51, 51, 0.1)), color-stop(100%, rgba(34, 34, 34, 0.3)));
   background-image: -webkit-linear-gradient(left, rgba(51, 51, 51, 0.3) 0%, rgba(51, 51, 51, 0.1) 50%, rgba(34, 34, 34, 0.3) 100%);
   background-image: linear-gradient(to right,rgba(51, 51, 51, 0.3) 0%, rgba(51, 51, 51, 0.1) 50%, rgba(34, 34, 34, 0.3) 100%); }
-
-h1 {
-  font-weight: normal;
-  margin-bottom: 24px;
-  text-align: right; }
 
 p.lead {
   color: #555555; }
@@ -2839,3 +2847,5 @@ p.lead {
     color: white; }
     .identify:after {
       content: " a wide desk view"; } }
+.section-typography {
+  background-image: url("../images/site/baseline.png"); }

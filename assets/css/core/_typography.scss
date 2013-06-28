@@ -52,6 +52,7 @@
 			font-size: 100%;
 			line-height: $baseline;
 			margin: 0 0 $baseline 0;
+			color: $grayDark;
 		}
 		
 		// B.2 Emphasis
@@ -113,6 +114,17 @@
 				line-height: $baseline;
 				margin: 0;
 				padding: 0;
+			}
+		}
+		
+		dl {
+			line-height: $baseline;
+			margin: 0 0 $baseline 0;
+			dt {
+				font-weight: bold;
+			}
+			dd {
+				
 			}
 		}
 	

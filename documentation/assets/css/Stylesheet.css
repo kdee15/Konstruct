@@ -2616,7 +2616,8 @@ p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 24px;
-  margin: 0 0 24px 0; }
+  margin: 0 0 24px 0;
+  color: #333333; }
 
 strong,
 b {
@@ -2650,6 +2651,12 @@ ol, ul {
     line-height: 24px;
     margin: 0;
     padding: 0; }
+
+dl {
+  line-height: 24px;
+  margin: 0 0 24px 0; }
+  dl dt {
+    font-weight: bold; }
 
 table {
   width: 100%;

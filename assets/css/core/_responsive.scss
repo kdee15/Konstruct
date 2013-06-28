@@ -1,0 +1,86 @@
+// CORE LAYER [RESPONSIVE] ##############################################
+
+	// A. RESPONSIVE CONTAINERS +++++++++++++++++++++++++++++++++++++++
+	
+		.container {
+			width: 100%;
+			margin: 0;
+			
+		}
+		
+		@include media-query(palm){ 
+		
+			.container {
+			
+				
+				margin: 0;	
+				//background: $red;
+			}
+		
+		 }
+		 
+		 @include media-query(lap){ 
+		 
+		 	.container {
+		 	
+		 		
+		 		margin: 0 $baseline;	
+		 		//background: $orange;
+		 	}	
+		 
+		  }
+		  
+		@include media-query(lap-and-up){ 
+		
+			.container {
+			
+				
+				margin: 0 $baseline;	
+				//background: $red;
+			}	
+		
+		 }
+		   
+		   
+		@include media-query(portable){ 
+		
+			.container {
+			
+				
+				margin: 0 auto;
+				width: 90%;	
+				//background: $yellow;
+			}
+		
+		 }
+	
+		@include media-query(desk){ 
+		
+			.container {
+			
+				width: 940px;
+				margin: 0 auto;
+				//background: $green;
+			
+			}
+		
+		 }
+		 
+		@include media-query(desk-wide){ 
+		
+			.container {
+			
+				width: 1200px;
+				margin: 0 auto;
+				//background: $blue;
+			
+			}
+		
+		 }
+		 
+		 
+	
+	// A. END +++++++++++++++++++++++++++++++++++++++
+
+
+// END OF FILE ##############################################

@@ -22,7 +22,10 @@
 		// A.3 Global Config
 		@import	"config/global";
 		
-	// B. VENDOR MIXINS ++++++++++++++++++++++++++++++++++++++++++++++
+	// B. MIXINS ++++++++++++++++++++++++++++++++++++++++++++++
+		
+		// B.1 Konstruct
+		@import	"mixins/mixins";
 		
 		// B.1 Bourbon
 		@import	"vendor/mixins/bourbon";
@@ -39,16 +42,7 @@
 	// D. CORE ++++++++++++++++++++++++++++++++++++++++++++++
 	
 		// D.1 Scaffolding
-		@import "core/scaffolding";
-		
-		// D.2 Typography
-		@import "core/typography";
-		
-		// D.3 Forms
-		//@import "core/forms";
-		
-		// D.4 Lists
-		@import "core/lists";
+		@import "core/core";
 	
 	// E. BRICKS ++++++++++++++++++++++++++++++++++++++++++++++
 	

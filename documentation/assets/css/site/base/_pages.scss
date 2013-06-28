@@ -1,0 +1,102 @@
+// BASE LAYER [SITE] ##############################################
+
+	// A. FRONT PAGE ++++++++++++++++++++++++++++++++++++++++++++++++
+		
+	// A. END ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	// B. LIBRARIES GENERAL ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	// B. END ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	// C. CORE LIBRARY ++++++++++++++++++++++++++++++++++++++++++++++++
+		
+		// C.1. Responsive
+		.identify {
+			color: $white;
+			padding: $baseline;
+		}
+		
+			@include media-query(palm){ 
+				
+					.identify {
+						background: $blue;
+						color: $red;
+						&:after {
+							content: " a mobile view";
+							
+						}
+					}
+				
+				 }
+				 
+				 @include media-query(lap){ 
+				 
+				 	.identify {
+				 		background: $orange;
+				 		color: $white;
+				 		&:after {
+				 			content: " a lap view";
+				 		}
+				 	}	
+				 
+				  }
+				  
+				@include media-query(lap-and-up){ 
+				
+					.identify {
+						background: $yellow;
+						color: $white;
+						&:after {
+							content: " a lap view";
+						}
+					}	
+				
+				 }
+				   
+				   
+				@include media-query(portable){ 
+				
+					.identify {
+						background: darken($yellow, 20%);
+						color: $white;
+						&:after {
+							content: " a portable view";
+						}
+					}
+				
+				 }
+			
+				@include media-query(desk){ 
+				
+					.identify {
+						background: $green;
+						color: $white;
+						&:after {
+							content: " a wide desk view";
+						}
+					}
+				
+				 }
+				 
+				@include media-query(desk-wide){ 
+				
+					.identify {
+						background: $blue;
+						color: $white;
+						&:after {
+							content: " a wide desk view";
+						}
+					}
+				
+				 }
+		
+		// C.1. End
+		
+	// C. END ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	// D. FRONT PAGE ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	// D. END ++++++++++++++++++++++++++++++++++++++++++++++++
+		
+	
+// END OF FILE ##############################################

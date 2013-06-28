@@ -46,6 +46,32 @@
  * You do not need to edit anything from this line onward; csswizardry-grids is
  * good to go. Happy griddin’!
  */
+/**
+ * Media query mixin.
+ *
+ * It’s not great practice to define solid breakpoints up-front, preferring to
+ * modify your design when it needs it, rather than assuming you’ll want a
+ * change at ‘mobile’. However, as inuit.css is required to take a hands off
+ * approach to design decisions, this is the closest we can get to baked-in
+ * responsiveness. It’s flexible enough to allow you to set your own breakpoints
+ * but solid enough to be frameworkified.
+ *
+ * We define some broad breakpoints in our vars file that are picked up here
+ * for use in a simple media query mixin. Our options are:
+ *
+ * palm
+ * lap
+ * lap-and-up
+ * portable
+ * desk
+ * desk-wide
+ *
+ * Not using a media query will, naturally, serve styles to all devices.
+ *
+ * `@include media-query(palm){ [styles here] }`
+ *
+ * We work out your end points for you:
+ */
 /* normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -2364,10 +2390,10 @@ a .icon-flip-vertical:before {
   /**
    * Thirds
    */
-  .portable--one-third, .portable--two-sixths, .portable--four-twelfths {
+  .portable--one-third, .portable--two-sixths, .library .index, .portable--four-twelfths {
     width: 33.333%; }
 
-  .portable--two-thirds, .portable--four-sixths, .portable--eight-twelfths {
+  .portable--two-thirds, .portable--four-sixths, .library .page, .portable--eight-twelfths {
     width: 66.666%; }
 
   /**
@@ -2632,6 +2658,31 @@ table {
   table thead {
     background-color: black; }
 
+.container {
+  width: 100%;
+  margin: 0; }
+
+@media only screen and (max-width: 480px) {
+  .container {
+    margin: 0; } }
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .container {
+    margin: 0 24px; } }
+@media only screen and (min-width: 481px) {
+  .container {
+    margin: 0 24px; } }
+@media only screen and (max-width: 1023px) {
+  .container {
+    margin: 0 auto;
+    width: 90%; } }
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 940px;
+    margin: 0 auto; } }
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto; } }
 .list, .library .index ul {
   margin: 0;
   padding: 0; }
@@ -2731,11 +2782,12 @@ p.lead {
   border-bottom: solid 1px #555555;
   padding-bottom: 24px;
   margin-bottom: 24px; }
-  .code-view .view .demo-grid {
-    background: #69b3e7;
-    margin-bottom: 12px; }
 .code-view h4 {
   margin-top: 0; }
+
+.demo-grid {
+  background: #69b3e7;
+  margin-bottom: 12px; }
 
 #footend {
   text-align: center;
@@ -2746,3 +2798,44 @@ p.lead {
     font-size: 0.75em; }
   #footend p {
     margin: 0; }
+
+.identify {
+  color: white;
+  padding: 24px; }
+
+@media only screen and (max-width: 480px) {
+  .identify {
+    background: deepskyblue;
+    color: #9d261d; }
+    .identify:after {
+      content: " a mobile view"; } }
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .identify {
+    background: #f89406;
+    color: white; }
+    .identify:after {
+      content: " a lap view"; } }
+@media only screen and (min-width: 481px) {
+  .identify {
+    background: #ffc40d;
+    color: white; }
+    .identify:after {
+      content: " a lap view"; } }
+@media only screen and (max-width: 1023px) {
+  .identify {
+    background: #a67e00;
+    color: white; }
+    .identify:after {
+      content: " a portable view"; } }
+@media only screen and (min-width: 1024px) {
+  .identify {
+    background: #46a546;
+    color: white; }
+    .identify:after {
+      content: " a wide desk view"; } }
+@media only screen and (min-width: 1200px) {
+  .identify {
+    background: deepskyblue;
+    color: white; }
+    .identify:after {
+      content: " a wide desk view"; } }

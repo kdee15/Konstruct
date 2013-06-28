@@ -1,6 +1,77 @@
-@import url(../fonts/Quicksand/quicksand.css);
-@import url(../fonts/Pluto/pluto.css);
-@import url(../fonts/Source-sans/source-sans.css);
+/**
+ * If you are building a non-responsive site but would still like to use
+ * csswizardry-grids, set this to ‘false’:
+ */
+/**
+ * Is this build mobile first? Setting to ‘true’ means that all grids will be
+ * 100% width if you do not apply a more specific class to them.
+ */
+/**
+ * Define your breakpoints. The first value is the prefix that shall be used for
+ * your classes (e.g. `.palm--one-half`), the second value is the media query
+ * that the breakpoint fires at.
+ */
+/**
+ * Define which namespaced breakpoints you would like to generate for each of
+ * widths, push and pull. This is handy if you only need pull on, say, desk, or
+ * you only need a new width breakpoint at mobile sizes. It allows you to only
+ * compile as much CSS as you need. All are turned on by default, but you can
+ * add and remove breakpoints at will.
+ *
+ * Push and pull shall only be used if `$push` and/or `$pull` and `$responsive`
+ * have been set to ‘true’.
+ */
+/**
+ * Set the spacing between your grid items.
+ */
+/**
+ * Would you like Sass’ silent classes, or regular CSS classes?
+ */
+/**
+ * Would you like push and pull classes enabled?
+ */
+/**
+ * Using `inline-block` means that the grid items need their whitespace removing
+ * in order for them to work correctly. Set the following to true if you are
+ * going to achieve this by manually removing/commenting out any whitespace in
+ * your HTML yourself.
+ *
+ * Setting this to false invokes a hack which cannot always be guaranteed,
+ * please see the following for more detail:
+ *
+ * github.com/csswizardry/csswizardry-grids/commit/744d4b23c9d2b77d605b5991e54a397df72e0688
+ * github.com/csswizardry/inuit.css/issues/170#issuecomment-14859371
+ */
+/**
+ * You do not need to edit anything from this line onward; csswizardry-grids is
+ * good to go. Happy griddin’!
+ */
+/**
+ * Media query mixin.
+ *
+ * It’s not great practice to define solid breakpoints up-front, preferring to
+ * modify your design when it needs it, rather than assuming you’ll want a
+ * change at ‘mobile’. However, as inuit.css is required to take a hands off
+ * approach to design decisions, this is the closest we can get to baked-in
+ * responsiveness. It’s flexible enough to allow you to set your own breakpoints
+ * but solid enough to be frameworkified.
+ *
+ * We define some broad breakpoints in our vars file that are picked up here
+ * for use in a simple media query mixin. Our options are:
+ *
+ * palm
+ * lap
+ * lap-and-up
+ * portable
+ * desk
+ * desk-wide
+ *
+ * Not using a media query will, naturally, serve styles to all devices.
+ *
+ * `@include media-query(palm){ [styles here] }`
+ *
+ * We work out your end points for you:
+ */
 /* normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -202,7 +273,7 @@ figure {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 1px solid silver;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -362,8 +433,8 @@ table {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url(../fonts/font-awesome/fontawesome-webfont.eot?v=3.2.1);
-  src: url(../fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=3.2.1) format("embedded-opentype"), url(../fonts/font-awesome/fontawesome-webfont.woff?v=3.2.1) format("woff"), url(../fonts/font-awesome/fontawesome-webfont.ttf?v=3.2.1) format("truetype"), url(../fonts/font-awesome/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1) format("svg");
+  src: url("../fonts/font-awesome/fontawesome-webfont.eot?v=3.2.1");
+  src: url("../fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=3.2.1") format("embedded-opentype"), url("../fonts/font-awesome/fontawesome-webfont.woff?v=3.2.1") format("woff"), url("../fonts/font-awesome/fontawesome-webfont.ttf?v=3.2.1") format("truetype"), url("../fonts/font-awesome/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -435,7 +506,7 @@ a [class*=" icon-"] {
 
 .icon-border {
   border: solid 1px #eeeeee;
-  padding: .2em .25em .15em;
+  padding: 0.2em 0.25em 0.15em;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
@@ -1868,57 +1939,6 @@ a .icon-flip-vertical:before {
    `class="grid__item  palm--one-third  desk--five-twelfths"`
  */
 /*------------------------------------*\
-    $VARIABLES
-\*------------------------------------*/
-/**
- * If you are building a non-responsive site but would still like to use
- * csswizardry-grids, set this to ‘false’:
- */
-/**
- * Is this build mobile first? Setting to ‘true’ means that all grids will be
- * 100% width if you do not apply a more specific class to them.
- */
-/**
- * Set the spacing between your grid items.
- */
-/**
- * Would you like Sass’ silent classes, or regular CSS classes?
- */
-/**
- * Would you like push and pull classes enabled?
- */
-/**
- * Using `inline-block` means that the grid items need their whitespace removing
- * in order for them to work correctly. Set the following to true if you are
- * going to achieve this by manually removing/commenting out any whitespace in
- * your HTML yourself.
- *
- * Setting this to false invokes a hack which cannot always be guaranteed,
- * please see the following for more detail:
- *
- * github.com/csswizardry/csswizardry-grids/commit/744d4b23c9d2b77d605b5991e54a397df72e0688
- * github.com/csswizardry/inuit.css/issues/170#issuecomment-14859371
- */
-/**
- * Define your breakpoints. The first value is the prefix that shall be used for
- * your classes (e.g. `.palm--one-half`), the second value is the media query
- * that the breakpoint fires at.
- */
-/**
- * Define which namespaced breakpoints you would like to generate for each of
- * widths, push and pull. This is handy if you only need pull on, say, desk, or
- * you only need a new width breakpoint at mobile sizes. It allows you to only
- * compile as much CSS as you need. All are turned on by default, but you can
- * add and remove breakpoints at will.
- *
- * Push and pull shall only be used if `$push` and/or `$pull` and `$responsive`
- * have been set to ‘true’.
- */
-/**
- * You do not need to edit anything from this line onward; csswizardry-grids is
- * good to go. Happy griddin’!
- */
-/*------------------------------------*\
     $MIXINS
 \*------------------------------------*/
 /**
@@ -1939,7 +1959,7 @@ a .icon-flip-vertical:before {
  * 2. Remove any margins and paddings that might affect the grid system.
  * 3. Apply a negative `margin-left` to negate the columns’ gutters.
  */
-.grid, .library, .code-view {
+.grid, .library, .code-view, .page-front .section-blocks {
   list-style: none;
   /* [1] */
   margin: 0;
@@ -1954,7 +1974,8 @@ a .icon-flip-vertical:before {
 .opera:-o-prefocus,
 .grid,
 .library,
-.code-view {
+.code-view,
+.page-front .section-blocks {
   word-spacing: -0.43em; }
 
 /**
@@ -1964,7 +1985,7 @@ a .icon-flip-vertical:before {
  * 4. Full-width unless told to behave otherwise.
  * 5. Required to combine fluid widths and fixed gutters.
  */
-.grid__item, .library .index, .library .page, .code-view .view, .code-view .html, .code-view .css {
+.grid__item, .library .index, .library .page, .code-view .view, .code-view .html, .code-view .css, .page-front .section-blocks .block {
   display: inline-block;
   /* [1] */
   padding-left: 20px;
@@ -1989,7 +2010,7 @@ a .icon-flip-vertical:before {
 .grid--rev {
   direction: rtl;
   text-align: left; }
-  .grid--rev > .grid__item, .library .grid--rev > .index, .library .grid--rev > .page, .code-view .grid--rev > .view, .code-view .grid--rev > .html, .code-view .grid--rev > .css {
+  .grid--rev > .grid__item, .library .grid--rev > .index, .library .grid--rev > .page, .code-view .grid--rev > .view, .code-view .grid--rev > .html, .code-view .grid--rev > .css, .page-front .section-blocks .grid--rev > .block {
     direction: ltr;
     text-align: left; }
 
@@ -1999,7 +2020,7 @@ a .icon-flip-vertical:before {
  */
 .grid--full {
   margin-left: 0; }
-  .grid--full > .grid__item, .library .grid--full > .index, .library .grid--full > .page, .code-view .grid--full > .view, .code-view .grid--full > .html, .code-view .grid--full > .css {
+  .grid--full > .grid__item, .library .grid--full > .index, .library .grid--full > .page, .code-view .grid--full > .view, .code-view .grid--full > .html, .code-view .grid--full > .css, .page-front .section-blocks .grid--full > .block {
     padding-left: 0; }
 
 /**
@@ -2007,7 +2028,7 @@ a .icon-flip-vertical:before {
  */
 .grid--right {
   text-align: right; }
-  .grid--right > .grid__item, .library .grid--right > .index, .library .grid--right > .page, .code-view .grid--right > .view, .code-view .grid--right > .html, .code-view .grid--right > .css {
+  .grid--right > .grid__item, .library .grid--right > .index, .library .grid--right > .page, .code-view .grid--right > .view, .code-view .grid--right > .html, .code-view .grid--right > .css, .page-front .section-blocks .grid--right > .block {
     text-align: left; }
 
 /**
@@ -2016,17 +2037,17 @@ a .icon-flip-vertical:before {
  */
 .grid--center {
   text-align: center; }
-  .grid--center > .grid__item, .library .grid--center > .index, .library .grid--center > .page, .code-view .grid--center > .view, .code-view .grid--center > .html, .code-view .grid--center > .css {
+  .grid--center > .grid__item, .library .grid--center > .index, .library .grid--center > .page, .code-view .grid--center > .view, .code-view .grid--center > .html, .code-view .grid--center > .css, .page-front .section-blocks .grid--center > .block {
     text-align: left; }
 
 /**
  * Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends
  * `.grid`.
  */
-.grid--middle > .grid__item, .library .grid--middle > .index, .library .grid--middle > .page, .code-view .grid--middle > .view, .code-view .grid--middle > .html, .code-view .grid--middle > .css {
+.grid--middle > .grid__item, .library .grid--middle > .index, .library .grid--middle > .page, .code-view .grid--middle > .view, .code-view .grid--middle > .html, .code-view .grid--middle > .css, .page-front .section-blocks .grid--middle > .block {
   vertical-align: middle; }
 
-.grid--bottom > .grid__item, .library .grid--bottom > .index, .library .grid--bottom > .page, .code-view .grid--bottom > .view, .code-view .grid--bottom > .html, .code-view .grid--bottom > .css {
+.grid--bottom > .grid__item, .library .grid--bottom > .index, .library .grid--bottom > .page, .code-view .grid--bottom > .view, .code-view .grid--bottom > .html, .code-view .grid--bottom > .css, .page-front .section-blocks .grid--bottom > .block {
   vertical-align: bottom; }
 
 /**
@@ -2034,7 +2055,7 @@ a .icon-flip-vertical:before {
  */
 .grid--narrow {
   margin-left: -10px; }
-  .grid--narrow > .grid__item, .library .grid--narrow > .index, .library .grid--narrow > .page, .code-view .grid--narrow > .view, .code-view .grid--narrow > .html, .code-view .grid--narrow > .css {
+  .grid--narrow > .grid__item, .library .grid--narrow > .index, .library .grid--narrow > .page, .code-view .grid--narrow > .view, .code-view .grid--narrow > .html, .code-view .grid--narrow > .css, .page-front .section-blocks .grid--narrow > .block {
     padding-left: 10px; }
 
 /**
@@ -2042,7 +2063,7 @@ a .icon-flip-vertical:before {
  */
 .grid--wide {
   margin-left: -40px; }
-  .grid--wide > .grid__item, .library .grid--wide > .index, .library .grid--wide > .page, .code-view .grid--wide > .view, .code-view .grid--wide > .html, .code-view .grid--wide > .css {
+  .grid--wide > .grid__item, .library .grid--wide > .index, .library .grid--wide > .page, .code-view .grid--wide > .view, .code-view .grid--wide > .html, .code-view .grid--wide > .css, .page-front .section-blocks .grid--wide > .block {
     padding-left: 40px; }
 
 /*------------------------------------*\
@@ -2358,22 +2379,22 @@ a .icon-flip-vertical:before {
   /**
    * Whole
    */
-  .portable--one-whole {
+  .portable--one-whole, .page-front .section-blocks .block.one {
     width: 100%; }
 
   /**
    * Halves
    */
-  .portable--one-half, .portable--two-quarters, .portable--three-sixths, .portable--four-eighths, .portable--five-tenths, .portable--six-twelfths {
+  .portable--one-half, .portable--two-quarters, .portable--three-sixths, .portable--four-eighths, .portable--five-tenths, .portable--six-twelfths, .page-front .section-blocks .block.two, .page-front .section-blocks .block.three {
     width: 50%; }
 
   /**
    * Thirds
    */
-  .portable--one-third, .portable--two-sixths, .portable--four-twelfths {
+  .portable--one-third, .portable--two-sixths, .library .index, .portable--four-twelfths {
     width: 33.333%; }
 
-  .portable--two-thirds, .portable--four-sixths, .portable--eight-twelfths {
+  .portable--two-thirds, .portable--four-sixths, .library .page, .portable--eight-twelfths {
     width: 66.666%; }
 
   /**
@@ -2463,13 +2484,13 @@ a .icon-flip-vertical:before {
   /**
    * Halves
    */
-  .desk--one-half, .desk--two-quarters, .desk--three-sixths, .desk--four-eighths, .desk--five-tenths, .desk--six-twelfths, .code-view .html, .code-view .css {
+  .desk--one-half, .desk--two-quarters, .desk--three-sixths, .desk--four-eighths, .desk--five-tenths, .desk--six-twelfths, .code-view .html, .code-view .css, .page-front .section-blocks .block.four, .page-front .section-blocks .block.five {
     width: 50%; }
 
   /**
    * Thirds
    */
-  .desk--one-third, .desk--two-sixths, .desk--four-twelfths {
+  .desk--one-third, .desk--two-sixths, .desk--four-twelfths, .page-front .section-blocks .block.one, .page-front .section-blocks .block.two, .page-front .section-blocks .block.three {
     width: 33.333%; }
 
   .desk--two-thirds, .desk--four-sixths, .desk--eight-twelfths {
@@ -2569,41 +2590,35 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2em;
-  line-height: 48px;
-  margin-top: 0;
   margin-bottom: 48px; }
 
 h2 {
   font-size: 1.5em;
-  line-height: 48px;
-  margin-top: 24px;
   margin-bottom: 24px; }
 
 h3 {
   font-size: 1.125em;
-  line-height: 48px;
   margin-top: 24px;
   margin-bottom: 0; }
 
 h4 {
   font-size: 1em;
-  line-height: 24px; }
+  margin-bottom: 24px; }
 
 h5 {
   font-size: 0.75em;
-  line-height: 24px; }
+  margin-bottom: 24px; }
 
 h6 {
-  font-size: 0.625em;
-  line-height: 24px;
-  text-transform: uppercase; }
+  font-size: 0.625em; }
 
 body,
 p {
-  font-family: "SourceSansProLight", Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 24px;
-  margin: 0 0 24px 0; }
+  margin: 0 0 24px 0;
+  color: #333333; }
 
 strong,
 b {
@@ -2624,315 +2639,173 @@ a {
     text-decoration: underline; }
 
 hr {
-  margin: 24px 0;
+  margin: 23px 0;
   border: 0;
-  border-top: 1px solid #555555;
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid #555555;
+  line-height: 24px; }
+
+ol, ul {
+  margin: 0 0 24px 0;
+  padding-left: 24px; }
+  ol ol, ol ul, ul ol, ul ul {
+    margin: 0;
+    padding-left: 24px; }
+  ol li, ul li {
+    line-height: 24px;
+    margin: 0;
+    padding: 0; }
+
+dl {
+  line-height: 24px;
+  margin: 0 0 24px 0; }
+  dl dt {
+    font-weight: bold; }
+  dl dd {
+    margin: 0 0 0 24px; }
 
 table {
   width: 100%;
-  margin-bottom: 24px;
-  border: solid 1px black; }
-  table tr td {
+  margin: 2px 0 24px 0;
+  padding: 0;
+  border: solid 1px #555555; }
+  table tr {
+    line-height: 24px;
+    height: auto; }
+  table td, table th {
+    line-height: 24px;
+    margin: 0;
     border-right: solid 1px #555555; }
+  table th {
+    font-weight: normal;
+    text-align: left; }
   table thead {
-    background-color: black; }
+    line-height: 24px; }
+  table tbody {
+    line-height: 24px; }
 
-.list, .pager, .tabs, .breadcrumbs, .breadcrumb, .library .index ul {
+.container {
+  width: 100%;
+  margin: 0; }
+
+@media only screen and (max-width: 480px) {
+  .container {
+    margin: 0; } }
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .container {
+    margin: 0 24px; } }
+@media only screen and (min-width: 481px) {
+  .container {
+    margin: 0 24px; } }
+@media only screen and (max-width: 1023px) {
+  .container {
+    margin: 0 auto;
+    width: 90%; } }
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 940px;
+    margin: 0 auto; } }
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto; } }
+.list, .library .index ul {
   margin: 0;
   padding: 0; }
-  .list li, .pager li, .tabs li, .breadcrumbs li, .breadcrumb li, .library .index ul li {
+  .list li, .library .index ul li {
     margin: 0;
     list-style: none; }
-    .list li a, .pager li a, .tabs li a, .breadcrumbs li a, .breadcrumb li a, .library .index ul li a {
+    .list li a, .library .index ul li a {
       padding: 0 5px; }
-  .list.horizontal li, .pager li, .tabs li, .breadcrumbs li, .breadcrumb li, .library .index ul.horizontal li {
+  .list.horizontal li, .library .index ul.horizontal li {
     display: inline; }
-    .list.horizontal li a, .pager li a, .tabs li a, .breadcrumbs li a, .breadcrumb li a, .library .index ul.horizontal li a {
+    .list.horizontal li a, .library .index ul.horizontal li a {
       display: inline-block; }
-  .list.vertical li, .vertical.pager li, .vertical.tabs li, .vertical.breadcrumbs li, .vertical.breadcrumb li, .library .index ul li {
+  .list.vertical li, .library .index ul li {
     display: block; }
-    .list.vertical li a, .vertical.pager li a, .vertical.tabs li a, .vertical.breadcrumbs li a, .vertical.breadcrumb li a, .library .index ul li a {
+    .list.vertical li a, .library .index ul li a {
       display: block; }
-
-.left, .breadcrumbs, .breadcrumb {
-  text-align: left; }
-
-.center, .pager {
-  text-align: center; }
-
-.right {
-  text-align: right; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold; }
-
-body,
-p {
-  color: #333333; }
-  body .lead,
-  p .lead {
-    font-size: 1.5em;
-    color: #222222;
-    margin-top: -24px;
-    margin-bottom: 48px; }
-
-strong,
-b {
-  color: #222222; }
-
-pre {
-  background-color: #222222;
-  color: white;
-  padding: 10px;
-  font-size: 0.75em; }
-
-code {
-  background-color: #222222;
-  color: white; }
-
-hr {
-  margin: 24px 0;
-  border: 0;
-  border-top: 1px solid #555555;
-  border-bottom: 1px solid white; }
-
-table {
-  width: 100%;
-  margin-bottom: 24px;
-  border: solid 1px black; }
-  table tr td {
-    border-right: solid 1px #555555; }
-  table thead {
-    background-color: black; }
-
-.supersize {
-  font-size: 60px !important; }
-
-.pager a {
-  background: white;
-  border: solid 1px #eeeeee;
-  color: #555555;
-  font-size: 1.125em;
-  padding: 10px 15px !important;
-  font-weight: bold; }
-  .pager a:hover, .pager a .selected, .pager a .current {
-    text-decoration: none;
-    background: deepskyblue;
-    color: white; }
-
-.tabs {
-  border-bottom: solid 1px #eeeeee !important; }
-  .tabs li {
-    white-space: nowrap; }
-    .tabs li a {
-      padding: 4px 10px;
-      background: #99e5ff;
-      color: white;
-      border: none;
-      font-size: 1.125em; }
-      .tabs li a:hover {
-        background: #66d9ff;
-        color: white; }
-      .tabs li a.selected {
-        background-color: #0099cc;
-        color: white;
-        font-weight: bold; }
-
-.breadcrumbs, .breadcrumb {
-  margin-bottom: 24px; }
-  .breadcrumbs li, .breadcrumb li {
-    font-size: 0.75em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #999999; }
-  .breadcrumbs i, .breadcrumb i {
-    font-size: 1.125em; }
-  .breadcrumbs a:after, .breadcrumb a:after {
-    content: "\f105";
-    font-family: 'FontAwesome';
-    color: #999999;
-    margin: 0px 0 0 10px;
-    display: inline-block; }
-
-.tooltip [title] {
-  position: relative; }
-.tooltip [title]:after {
-  content: attr(title);
-  color: white;
-  background: #333333;
-  font-size: 12px !important;
-  padding: 1px 15px;
-  position: absolute;
-  left: -9999px;
-  opacity: 0;
-  bottom: 100%;
-  white-space: nowrap;
-  -webkit-transition: 0.25s linear opacity; }
-.tooltip [title]:hover:after {
-  left: 5px;
-  bottom: -40px;
-  opacity: 1; }
-.tooltip [title]:hover:before {
-  content: "";
-  position: absolute;
-  bottom: -15px;
-  left: 5px;
-  border-width: 0 15px 15px 0;
-  border-style: solid;
-  border-color: #333333 transparent;
-  display: block;
-  width: 0; }
-
-.messages {
-  margin-bottom: 24px; }
-  .messages p {
-    padding: 12px;
-    background: #eeeeee; }
-  .messages i {
-    font-size: 1.125em;
-    margin-right: 6px; }
-  .messages strong {
-    display: block; }
-  .messages .error {
-    background: #f8dcda;
-    color: #9d261d; }
-    .messages .error strong {
-      color: #721c15; }
-  .messages .warning {
-    background: #fee9cc;
-    color: #c67605; }
-    .messages .warning strong {
-      color: #c67605; }
-  .messages .success {
-    background: #cdeacd;
-    color: #378137; }
-    .messages .success strong {
-      color: #378137; }
-  .messages .info {
-    background: #ccf2ff;
-    color: #0099cc; }
-    .messages .info strong {
-      color: #0099cc; }
-
-.button {
-  display: inline-block;
-  background: #555555;
-  color: white; }
-  .button:hover {
-    text-decoration: none; }
-  .button.small {
-    font-size: 0.75em;
-    border-radius: 3px; }
-  .button.medium {
-    font-size: 1em;
-    border-radius: 3px;
-    padding: 5px 10px; }
-  .button.large {
-    font-size: 1.5em;
-    border-radius: 5px;
-    padding: 10px 15px; }
-  .button.blue {
-    background: deepskyblue; }
-    .button.blue:hover {
-      background: #0099cc;
-      color: white; }
-  .button.orange {
-    background: #f89406; }
-    .button.orange:hover {
-      background: #c67605;
-      color: white; }
-  .button.green {
-    background: #46a546; }
-    .button.green:hover {
-      background: #378137;
-      color: white; }
-  .button.red {
-    background: #9d261d; }
-    .button.red:hover {
-      background: #721c15;
-      color: white; }
-
-.label {
-  display: inline-block;
-  background: #555555;
-  color: white;
-  font-size: 0.75em;
-  padding: 0px 6px;
-  border-radius: 3px; }
-  .label i {
-    font-size: 1.125em; }
-  .label.blue {
-    background: deepskyblue; }
-  .label.orange {
-    background: #f89406; }
-  .label.green {
-    background: #46a546; }
-  .label.red {
-    background: #9d261d; }
-
-.tabs {
-  border: none; }
+  .list.left, .library .index ul.left {
+    text-align: left; }
+  .list.center, .library .index ul.center {
+    text-align: center; }
+  .list.right, .library .index ul.right {
+    text-align: right; }
 
 html {
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+  background-image: url("../images/site/wallpaper.jpg");
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  height: 100%; }
 
-h1 {
-  font-family: "QuicksandLight", Arial, sans-serif;
-  font-weight: normal;
-  margin-bottom: 24px;
-  text-align: right; }
-
-h2, h3, h4, h5, h6 {
-  font-family: "PlutoRegular", Arial, sans-serif; }
+body {
+  background-color: rgba(34, 34, 34, 0.5);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(51, 51, 51, 0.3)), color-stop(50%, rgba(51, 51, 51, 0.1)), color-stop(100%, rgba(34, 34, 34, 0.3)));
+  background-image: -webkit-linear-gradient(left, rgba(51, 51, 51, 0.3) 0%, rgba(51, 51, 51, 0.1) 50%, rgba(34, 34, 34, 0.3) 100%);
+  background-image: linear-gradient(to right,rgba(51, 51, 51, 0.3) 0%, rgba(51, 51, 51, 0.1) 50%, rgba(34, 34, 34, 0.3) 100%); }
 
 p.lead {
-  color: #555555; }
-
-.amp {
-  font-family: "QuicksandBook", Arial, sans-serif; }
-
-bold, strong {
-  font-family: "SourceSansProSemibold", Arial, sans-serif; }
-
-em {
-  font-family: "SourceSansProLightItalic", Arial, sans-serif; }
+  color: #555555;
+  font-size: 1.5em;
+  line-height: 48px; }
 
 .done {
   color: #46a546; }
 
-#masthead img {
-  width: 220px;
-  margin-top: 48px; }
-  #masthead img:hover {
-    background-color: white; }
-#masthead .main {
-  background-color: #72cac1; }
-  #masthead .main a {
-    font-size: 1.5em;
-    color: white;
-    padding: 10px 15px; }
-    #masthead .main a:hover {
-      background-color: #69b2a9; }
-    #masthead .main a.active {
-      background-color: #69b2a9; }
-#masthead .sub {
-  margin-top: 12px;
-  background-color: white;
-  padding: 5px 10px; }
-  #masthead .sub a {
-    color: #555555; }
-    #masthead .sub a.active {
-      background-color: #72cac1;
-      color: white; }
+.page-front img {
+  margin: 50px auto 0px auto; }
+  .page-front img:hover {
+    background-color: rgba(34, 34, 34, 0.2); }
+
+.page-sub #masthead {
+  padding: 24px 0; }
+.page-sub img {
+  height: 50px;
+  margin: 0;
+  float: left; }
+  .page-sub img:hover {
+    background-color: rgba(34, 34, 34, 0.2); }
+.page-sub .main {
+  margin-left: 70px;
+  text-align: left; }
+
+#masthead {
+  text-align: center; }
+  #masthead .main {
+    background-color: #e7685b;
+    padding: 10px; }
+    #masthead .main a {
+      font-size: 1.5em;
+      color: white;
+      padding: 5px 15px; }
+      #masthead .main a:hover {
+        background-color: #c25045; }
+      #masthead .main a.current {
+        background-color: #e7685b; }
+  #masthead .sub {
+    margin-top: 12px;
+    background-color: white;
+    padding: 5px 10px; }
+    #masthead .sub a {
+      color: #555555; }
+      #masthead .sub a.active {
+        background-color: #72cac1;
+        color: white; }
 
 #mast {
-  margin: 24px 0; }
+  margin: 24px 0;
+  background-color: #eeeeee;
+  padding-top: 24px;
+  padding-bottom: 24px; }
 
 .library .index li {
   border-bottom: solid 1px #999999;
   padding: 6px 0; }
 .library .index .title {
-  font-family: "PlutoRegular", Arial, sans-serif;
   background: #999999;
   color: white;
   padding: 6px;
@@ -2945,12 +2818,96 @@ em {
   border-bottom: solid 1px #555555;
   padding-bottom: 24px;
   margin-bottom: 24px; }
-  .code-view .view .demo-grid {
-    background: #69b3e7;
-    margin-bottom: 12px; }
 .code-view h4 {
   margin-top: 0; }
 
+.demo-grid {
+  background: #69b3e7;
+  margin-bottom: 12px; }
+
 #footend {
-  border-top: solid 2px white;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 24px;
+  color: white; }
+  #footend p, #footend li {
+    font-size: 0.75em;
+    color: white; }
+  #footend p {
+    margin: 0; }
+
+.page-front h1 {
+  text-align: center;
+  border-bottom: solid 1px #e7685b;
+  padding-bottom: 12px; }
+.page-front .lead {
   text-align: center; }
+.page-front .section-blocks .block h5 {
+  font-size: 1.125em;
+  text-transform: uppercase; }
+  .page-front .section-blocks .block h5 i {
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 12px;
+    color: #e7685b; }
+.page-front .section-blocks .block a {
+  padding: 3px;
+  margin-bottom: 3px; }
+  .page-front .section-blocks .block a i {
+    font-size: 1.5em; }
+.page-front .section-blocks .block .content {
+  padding: 24px;
+  background: white; }
+.page-front .section-blocks .block.one .content {
+  background: #f4bab4; }
+.page-front .section-blocks .block.one a {
+  background-color: #e7685b;
+  color: white; }
+  .page-front .section-blocks .block.one a:hover {
+    background-color: #c25045; }
+.page-front .section-blocks .block h5 {
+  text-align: center; }
+
+.identify {
+  color: white;
+  padding: 24px; }
+
+@media only screen and (max-width: 480px) {
+  .identify {
+    background: deepskyblue;
+    color: #9d261d; }
+    .identify:after {
+      content: " a mobile view"; } }
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .identify {
+    background: #f89406;
+    color: white; }
+    .identify:after {
+      content: " a lap view"; } }
+@media only screen and (min-width: 481px) {
+  .identify {
+    background: #ffc40d;
+    color: white; }
+    .identify:after {
+      content: " a lap view"; } }
+@media only screen and (max-width: 1023px) {
+  .identify {
+    background: #a67e00;
+    color: white; }
+    .identify:after {
+      content: " a portable view"; } }
+@media only screen and (min-width: 1024px) {
+  .identify {
+    background: #46a546;
+    color: white; }
+    .identify:after {
+      content: " a wide desk view"; } }
+@media only screen and (min-width: 1200px) {
+  .identify {
+    background: deepskyblue;
+    color: white; }
+    .identify:after {
+      content: " a wide desk view"; } }
+.section-typography {
+  background-image: url("../images/site/baseline.png"); }

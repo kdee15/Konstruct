@@ -1959,7 +1959,7 @@ a .icon-flip-vertical:before {
  * 2. Remove any margins and paddings that might affect the grid system.
  * 3. Apply a negative `margin-left` to negate the columns’ gutters.
  */
-.grid, .library, .code-view {
+.grid, .library, .code-view, .page-front .section-blocks {
   list-style: none;
   /* [1] */
   margin: 0;
@@ -1974,7 +1974,8 @@ a .icon-flip-vertical:before {
 .opera:-o-prefocus,
 .grid,
 .library,
-.code-view {
+.code-view,
+.page-front .section-blocks {
   word-spacing: -0.43em; }
 
 /**
@@ -1984,7 +1985,7 @@ a .icon-flip-vertical:before {
  * 4. Full-width unless told to behave otherwise.
  * 5. Required to combine fluid widths and fixed gutters.
  */
-.grid__item, .library .index, .library .page, .code-view .view, .code-view .html, .code-view .css {
+.grid__item, .library .index, .library .page, .code-view .view, .code-view .html, .code-view .css, .page-front .section-blocks .block {
   display: inline-block;
   /* [1] */
   padding-left: 20px;
@@ -2009,7 +2010,7 @@ a .icon-flip-vertical:before {
 .grid--rev {
   direction: rtl;
   text-align: left; }
-  .grid--rev > .grid__item, .library .grid--rev > .index, .library .grid--rev > .page, .code-view .grid--rev > .view, .code-view .grid--rev > .html, .code-view .grid--rev > .css {
+  .grid--rev > .grid__item, .library .grid--rev > .index, .library .grid--rev > .page, .code-view .grid--rev > .view, .code-view .grid--rev > .html, .code-view .grid--rev > .css, .page-front .section-blocks .grid--rev > .block {
     direction: ltr;
     text-align: left; }
 
@@ -2019,7 +2020,7 @@ a .icon-flip-vertical:before {
  */
 .grid--full {
   margin-left: 0; }
-  .grid--full > .grid__item, .library .grid--full > .index, .library .grid--full > .page, .code-view .grid--full > .view, .code-view .grid--full > .html, .code-view .grid--full > .css {
+  .grid--full > .grid__item, .library .grid--full > .index, .library .grid--full > .page, .code-view .grid--full > .view, .code-view .grid--full > .html, .code-view .grid--full > .css, .page-front .section-blocks .grid--full > .block {
     padding-left: 0; }
 
 /**
@@ -2027,7 +2028,7 @@ a .icon-flip-vertical:before {
  */
 .grid--right {
   text-align: right; }
-  .grid--right > .grid__item, .library .grid--right > .index, .library .grid--right > .page, .code-view .grid--right > .view, .code-view .grid--right > .html, .code-view .grid--right > .css {
+  .grid--right > .grid__item, .library .grid--right > .index, .library .grid--right > .page, .code-view .grid--right > .view, .code-view .grid--right > .html, .code-view .grid--right > .css, .page-front .section-blocks .grid--right > .block {
     text-align: left; }
 
 /**
@@ -2036,17 +2037,17 @@ a .icon-flip-vertical:before {
  */
 .grid--center {
   text-align: center; }
-  .grid--center > .grid__item, .library .grid--center > .index, .library .grid--center > .page, .code-view .grid--center > .view, .code-view .grid--center > .html, .code-view .grid--center > .css {
+  .grid--center > .grid__item, .library .grid--center > .index, .library .grid--center > .page, .code-view .grid--center > .view, .code-view .grid--center > .html, .code-view .grid--center > .css, .page-front .section-blocks .grid--center > .block {
     text-align: left; }
 
 /**
  * Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends
  * `.grid`.
  */
-.grid--middle > .grid__item, .library .grid--middle > .index, .library .grid--middle > .page, .code-view .grid--middle > .view, .code-view .grid--middle > .html, .code-view .grid--middle > .css {
+.grid--middle > .grid__item, .library .grid--middle > .index, .library .grid--middle > .page, .code-view .grid--middle > .view, .code-view .grid--middle > .html, .code-view .grid--middle > .css, .page-front .section-blocks .grid--middle > .block {
   vertical-align: middle; }
 
-.grid--bottom > .grid__item, .library .grid--bottom > .index, .library .grid--bottom > .page, .code-view .grid--bottom > .view, .code-view .grid--bottom > .html, .code-view .grid--bottom > .css {
+.grid--bottom > .grid__item, .library .grid--bottom > .index, .library .grid--bottom > .page, .code-view .grid--bottom > .view, .code-view .grid--bottom > .html, .code-view .grid--bottom > .css, .page-front .section-blocks .grid--bottom > .block {
   vertical-align: bottom; }
 
 /**
@@ -2054,7 +2055,7 @@ a .icon-flip-vertical:before {
  */
 .grid--narrow {
   margin-left: -10px; }
-  .grid--narrow > .grid__item, .library .grid--narrow > .index, .library .grid--narrow > .page, .code-view .grid--narrow > .view, .code-view .grid--narrow > .html, .code-view .grid--narrow > .css {
+  .grid--narrow > .grid__item, .library .grid--narrow > .index, .library .grid--narrow > .page, .code-view .grid--narrow > .view, .code-view .grid--narrow > .html, .code-view .grid--narrow > .css, .page-front .section-blocks .grid--narrow > .block {
     padding-left: 10px; }
 
 /**
@@ -2062,7 +2063,7 @@ a .icon-flip-vertical:before {
  */
 .grid--wide {
   margin-left: -40px; }
-  .grid--wide > .grid__item, .library .grid--wide > .index, .library .grid--wide > .page, .code-view .grid--wide > .view, .code-view .grid--wide > .html, .code-view .grid--wide > .css {
+  .grid--wide > .grid__item, .library .grid--wide > .index, .library .grid--wide > .page, .code-view .grid--wide > .view, .code-view .grid--wide > .html, .code-view .grid--wide > .css, .page-front .section-blocks .grid--wide > .block {
     padding-left: 40px; }
 
 /*------------------------------------*\
@@ -2378,13 +2379,13 @@ a .icon-flip-vertical:before {
   /**
    * Whole
    */
-  .portable--one-whole {
+  .portable--one-whole, .page-front .section-blocks .block.three {
     width: 100%; }
 
   /**
    * Halves
    */
-  .portable--one-half, .portable--two-quarters, .portable--three-sixths, .portable--four-eighths, .portable--five-tenths, .portable--six-twelfths {
+  .portable--one-half, .portable--two-quarters, .portable--three-sixths, .portable--four-eighths, .portable--five-tenths, .portable--six-twelfths, .page-front .section-blocks .block.one, .page-front .section-blocks .block.two {
     width: 50%; }
 
   /**
@@ -2489,7 +2490,7 @@ a .icon-flip-vertical:before {
   /**
    * Thirds
    */
-  .desk--one-third, .desk--two-sixths, .desk--four-twelfths {
+  .desk--one-third, .desk--two-sixths, .desk--four-twelfths, .page-front .section-blocks .block.one, .page-front .section-blocks .block.two, .page-front .section-blocks .block.three {
     width: 33.333%; }
 
   .desk--two-thirds, .desk--four-sixths, .desk--eight-twelfths {
@@ -2644,9 +2645,11 @@ hr {
   line-height: 24px; }
 
 ol, ul {
-  margin: 0 0 24px 0; }
+  margin: 0 0 24px 0;
+  padding-left: 24px; }
   ol ol, ol ul, ul ol, ul ul {
-    margin: 0; }
+    margin: 0;
+    padding-left: 24px; }
   ol li, ul li {
     line-height: 24px;
     margin: 0;
@@ -2657,6 +2660,8 @@ dl {
   margin: 0 0 24px 0; }
   dl dt {
     font-weight: bold; }
+  dl dd {
+    margin: 0 0 0 24px; }
 
 table {
   width: 100%;
@@ -2744,18 +2749,33 @@ body {
   background-image: linear-gradient(to right,rgba(51, 51, 51, 0.3) 0%, rgba(51, 51, 51, 0.1) 50%, rgba(34, 34, 34, 0.3) 100%); }
 
 p.lead {
-  color: #555555; }
+  color: #555555;
+  font-size: 1.5em; }
 
 .done {
   color: #46a546; }
 
+.page-front img {
+  margin: 50px auto 0px auto; }
+  .page-front img:hover {
+    background-color: rgba(34, 34, 34, 0.2); }
+
+.page-sub #masthead {
+  padding: 24px 0; }
+.page-sub img {
+  height: 50px;
+  margin: 0;
+  float: left; }
+  .page-sub img:hover {
+    background-color: rgba(34, 34, 34, 0.2); }
+.page-sub .main {
+  margin-left: 70px;
+  text-align: left; }
+
 #masthead {
   text-align: center; }
-  #masthead img {
-    margin: 50px auto 50px auto; }
-    #masthead img:hover {
-      background-color: rgba(34, 34, 34, 0.2); }
   #masthead .main {
+    background-color: #e7685b;
     padding: 10px; }
     #masthead .main a {
       font-size: 1.5em;
@@ -2810,9 +2830,25 @@ p.lead {
   padding-bottom: 24px;
   color: white; }
   #footend p, #footend li {
-    font-size: 0.75em; }
+    font-size: 0.75em;
+    color: white; }
   #footend p {
     margin: 0; }
+
+.page-front h1 {
+  text-align: center;
+  border-bottom: solid 1px #e7685b;
+  padding-bottom: 12px; }
+.page-front .lead {
+  text-align: center; }
+.page-front .section-blocks .block.one {
+  background: #e7685b; }
+.page-front .section-blocks .block.two {
+  background: #e7685b; }
+.page-front .section-blocks .block.three {
+  background: #e7685b; }
+.page-front .section-blocks .block h2 {
+  text-align: center; }
 
 .identify {
   color: white;

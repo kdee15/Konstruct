@@ -105,9 +105,10 @@
 	
 		ol,ul {
 			margin: 0 0 $baseline 0;
-			
+			padding-left: $baseline;
 			ol,ul {
 				margin: 0 ;
+				padding-left: $baseline;
 			}
 			
 			li {
@@ -124,6 +125,7 @@
 				font-weight: bold;
 			}
 			dd {
+			margin: 0 0 0 $baseline;
 				
 			}
 		}

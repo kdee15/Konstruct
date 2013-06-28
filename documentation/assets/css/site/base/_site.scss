@@ -32,6 +32,8 @@
 			
 			&.lead {
 				color: $gray;
+				font-size: $large;
+				//margin-top: -$baseline;
 			}
 		}
 		
@@ -53,27 +55,64 @@
 	
 	// B. PAGE LAYOUT ++++++++++++++++++++++++++++++++++++++++++++++++
 	
+	
+		// B LAYOUT SWITCHES
+		
+			.page-front {
+			
+				// B.1.1 Logo
+				img {
+					
+					margin: 50px auto 0px auto;
+					
+					&:hover {
+						background-color: rgba( $grayDarker, 0.2 );
+					}
+				
+				}
+			
+			}
+			
+			.page-sub {
+			
+				#masthead {
+				
+					padding: $baseline 0;
+				
+				}
+			
+				// B.1.1 Logo
+				img {
+					height: 50px;
+					margin: 0;
+					float: left;
+					
+					&:hover {
+						background-color: rgba( $grayDarker, 0.2 );
+					}
+				
+				}
+				
+				.main {
+					margin-left:  70px;
+					text-align: left;
+				}
+			
+			}
+		
+		// B END
+	
+	
 		// B.1. Masthead 
 		
 		#masthead {
 			text-align: center;
 			
-			// B.1.1 Logo
-			img {
-				
-				margin: 50px auto 50px auto;
-				
-				&:hover {
-					background-color: rgba( $grayDarker, 0.2 );
-				}
 			
-			
-			
-			}
 			
 			// B.1.2 Main Navigation
 			.main {
-				//background-color: $grayDarker;
+				background-color: $konstruct-red;
 				padding: 10px;
 				
 				a {
@@ -207,9 +246,13 @@
 			padding-bottom: $baseline;
 			color: $white;
 			
-			p,li {font-size:$small;}
+			p,li {
+				font-size: $small;
+				color: $white;
+			}
 			p {
 				margin: 0;
+				
 			}
 			
 		}

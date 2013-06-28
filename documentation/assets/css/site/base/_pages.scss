@@ -1,7 +1,60 @@
 // BASE LAYER [SITE] ##############################################
 
 	// A. FRONT PAGE ++++++++++++++++++++++++++++++++++++++++++++++++
+		.page-front {
 		
+			// A.1 Text stuff
+			
+				h1 {
+					text-align: center;
+					border-bottom: solid 1px $konstruct-red;
+					padding-bottom: $baseline/2;
+				}
+			
+				.lead {
+					text-align: center;
+				}
+			
+			// A.1 End	
+		
+			// A.2 Grid
+			
+				.section-blocks {
+				
+					@extend .grid;
+					
+					.block {
+						@extend .grid__item;
+						
+						&.one {
+							@extend .portable--one-half;
+							@extend .desk--one-third;
+							background: $konstruct-red;
+						}
+						
+						&.two {
+							@extend .portable--one-half;
+							@extend .desk--one-third;
+							background: $konstruct-red;
+						}
+						
+						&.three {
+							@extend .portable--one-whole;
+							@extend .desk--one-third;
+							background: $konstruct-red;
+						}
+						
+						
+						h2 {
+							text-align: center;
+						}
+					}
+				
+				}
+			
+			// A.2 End
+		
+		}
 	// A. END ++++++++++++++++++++++++++++++++++++++++++++++++
 	
 	// B. LIBRARIES GENERAL ++++++++++++++++++++++++++++++++++++++++++++++++

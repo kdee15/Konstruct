@@ -61,6 +61,14 @@
 		
 			.page-front {
 			
+				@include media-query(portable){ 
+				
+					img {
+					width: 100%;
+					}
+				
+				 }
+			
 				// B.1.1 Logo
 				img {
 					

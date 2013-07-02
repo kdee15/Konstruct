@@ -4,22 +4,23 @@
 	@import	"base/base";
 	
 	// 2. MOBILE STYLING
-	@include media-query(palm){
-	
-		
-	
+	@media only screen and (max-width: 480px) {
+	    @import	"mobile/mobile";
 	}
 	
 	// 3. TABLET STYLING
-	@include media-query(lap){	
+	@media only screen and (min-width: 481px) and (max-width: 1023px) {
+	    @import	"tablets/tablets";
 	}
 	
 	// 4. DESK STYLING
-	@include media-query(desk){
+	@media only screen and (min-width: 1024px) {
+	    @import	"desk/desk";
 	}
 	
 	// 5. WIDE DESK STYLING
-	@include media-query(desk-wide){
+	@media only screen and (min-width: 1200px) {
+	    //@import	"mobile/mobile";
 	}
 
 

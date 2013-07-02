@@ -14,7 +14,7 @@
 			
 				
 				margin: 0;	
-				//background: $red;
+				background: $orange;
 			}
 		
 		 }
@@ -24,43 +24,20 @@
 		 	.container {
 		 	
 		 		
-		 		margin: 0 $baseline;	
-		 		//background: $orange;
+		 		padding: 0 $baseline;	
+		 		background: $yellow;
 		 	}	
 		 
 		  }
-		  
-		@include media-query(lap-and-up){ 
-		
-			.container {
-			
-				
-				margin: 0 $baseline;	
-				//background: $red;
-			}	
-		
-		 }
-		   
-		   
-		@include media-query(portable){ 
-		
-			.container {
-			
-				
-				margin: 0 auto;
-				width: 90%;	
-				//background: $yellow;
-			}
-		
-		 }
-	
+		 
+		 
 		@include media-query(desk){ 
 		
 			.container {
 			
 				width: 940px;
 				margin: 0 auto;
-				//background: $green;
+				background: $green;
 			
 			}
 		
@@ -72,14 +49,11 @@
 			
 				width: 1200px;
 				margin: 0 auto;
-				//background: $blue;
+				background: $blue;
 			
 			}
 		
-		 }
-		 
-		 
-	
+		 }	
 	// A. END +++++++++++++++++++++++++++++++++++++++
 
 

@@ -1,0 +1,27 @@
+// SITE LAYER  ##############################################
+
+	// 1. BASE STYLING
+	@import	"base/base";
+	
+	// 2. MOBILE STYLING
+	@include media-query(palm){
+	
+		
+	
+	}
+	
+	// 3. TABLET STYLING
+	@include media-query(lap){	
+	}
+	
+	// 4. DESK STYLING
+	@include media-query(desk){
+	}
+	
+	// 5. WIDE DESK STYLING
+	@include media-query(desk-wide){
+	}
+
+
+
+// END OF FILE ##############################################

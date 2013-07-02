@@ -1,24 +1,26 @@
-// SITE LAYER  ##############################################
+// SITE GROUP  ##############################################
 
-	// 1. BASE STYLING
+	// This file is a group file containing your layers
+
+	// A. BASE STYLING ++++++++++++++++++++++++++++++++++++
 	@import	"base/base";
 	
-	// 2. MOBILE STYLING
+	// B. MOBILE STYLING ++++++++++++++++++++++++++++++++++++
 	@media only screen and (max-width: 480px) {
 	    @import	"mobile/mobile";
 	}
 	
-	// 3. TABLET STYLING
+	// C. TABLET STYLING ++++++++++++++++++++++++++++++++++++
 	@media only screen and (min-width: 481px) and (max-width: 1023px) {
 	    @import	"tablets/tablets";
 	}
 	
-	// 4. DESK STYLING
+	// D. DESK STYLING ++++++++++++++++++++++++++++++++++++
 	@media only screen and (min-width: 1024px) {
 	    @import	"desk/desk";
 	}
 	
-	// 5. WIDE DESK STYLING
+	// E. WIDE DESK STYLING ++++++++++++++++++++++++++++++++++++
 	@media only screen and (min-width: 1200px) {
 	    //@import	"mobile/mobile";
 	}

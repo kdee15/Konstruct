@@ -26,13 +26,20 @@
 		$link-color:			$blue;
 		$link-hover:			darken($link-color, 15);
 		
-	// A. END ++++++++++++++++++++++++++++++++++++++++++++++++	
-		
-	// B. MEDIA QUERIES CONFIG ++++++++++++++++++++++++++++++++++++++++++++++++
+	// A. END ++++++++++++++++++++++++++++++++++++++++++++++++
 	
-	
+	// B. MEDIA QUERIES ++++++++++++++++++++++++++++++++++++++++++++++++	
 		
+		$breakpoints: (
+		    'mobile' '(max-width: 480px)',
+		    'tablet' '(min-width: 481px) and (max-width: 1023px)',
+		    'desk' '(min-width: 1024px)',
+		    'desk-wide' '(min-width: 1200px)'
+		)!default;
 		
+	// B. END ++++++++++++++++++++++++++++++++++++++++++++++++	
+		
+	// C. CSSWIZARDRY GRIDS ++++++++++++++++++++++++++++++++++++++++++++++++
 		
 		/**
 		 * If you are building a non-responsive site but would still like to use
@@ -47,18 +54,6 @@
 		 */
 		$mobile-first:          true!default;
 		
-		/**
-		 * Define your breakpoints. The first value is the prefix that shall be used for
-		 * your classes (e.g. `.palm--one-half`), the second value is the media query
-		 * that the breakpoint fires at.
-		 */
-		$breakpoints: (
-		    'palm' '(max-width: 480px)',
-		    'lap' '(min-width: 481px) and (max-width: 1023px)',
-		    'portable' '(max-width: 1023px)',
-		    'desk' '(min-width: 1024px)'
-		)!default;
-		
 		
 		/**
 		 * Define which namespaced breakpoints you would like to generate for each of
@@ -70,14 +65,7 @@
 		 * Push and pull shall only be used if `$push` and/or `$pull` and `$responsive`
 		 * have been set to ‘true’.
 		 */
-		$breakpoint-has-widths: ('palm', 'lap', 'portable', 'desk')!default;
-		$breakpoint-has-push:   ('palm', 'lap', 'portable', 'desk')!default;
-		$breakpoint-has-pull:   ('palm', 'lap', 'portable', 'desk')!default;
-		
-		
-	// B. END ++++++++++++++++++++++++++++++++++++++++++++++++	
-	
-	// C. CSSWIZARDRY GRIDS ++++++++++++++++++++++++++++++++++++++++++++++++	
+		$breakpoint-has-widths: ('mobile', 'tablet', 'desk', 'desk-wide')!default;
 	
 		/**
 		 * Set the spacing between your grid items.
@@ -89,13 +77,6 @@
 		 * Would you like Sass’ silent classes, or regular CSS classes?
 		 */
 		$use-silent-classes:    false!default;
-		
-		
-		/**
-		 * Would you like push and pull classes enabled?
-		 */
-		$push:                  false!default;
-		$pull:                  false!default;
 		
 		
 		/**
@@ -126,10 +107,6 @@
 		}	
 	
 	// C. END ++++++++++++++++++++++++++++++++++++++++++++++++
-		
-		
-		
-		
 		
 	
 // END OF FILE ##############################################

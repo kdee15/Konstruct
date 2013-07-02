@@ -1,3 +1,86 @@
-.container {
-	//background:  $blue;
-}
+// DEV LAYER [Dev] ##############################################
+
+	// A. RESPONSIVE HELPERS +++++++++++++++++++++++++++++++++++++++
+	
+		body:after {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			padding: $baseline;
+			font-size: $large;
+			color: $white;
+			
+		}
+		
+		.container {
+			background: $grayLighter;
+		}	
+		
+		@include media-query(mobile){ 
+		
+			body:after {
+				content: "Mobile";
+				background: $orange;
+			}
+			
+			.container {
+				background: $orange;
+			}
+		
+		 }
+		 
+		 @include media-query(tablet){ 
+		 
+		 	body:after {
+		 	
+		 		content: "Tablet";	
+		 		background: $yellow;
+		 	}
+		 	
+		 	.container {
+		 		background: $yellow;
+		 	}
+		 
+		  }
+		 
+		 
+		@include media-query(desk){ 
+		
+			body:after {
+			
+				content: "Desk";
+				background: $green;
+			}
+			
+			.container {
+				background: $green;
+			}
+		
+		 }
+		 
+		@include media-query(desk-wide){ 
+		
+			body:after {
+			
+				content: "Wide Desk";
+				background: $blue;
+			}
+			
+			.container {
+				background: $blue;
+			}
+		
+		 }	
+	// A. END +++++++++++++++++++++++++++++++++++++++
+	
+	// B. SCAFFOLDING HELPERS +++++++++++++++++++++++++++++++++++++++
+	
+		.grid-content {
+			background: $white;
+			margin-bottom: $baseline;
+		}
+	
+	// B. END +++++++++++++++++++++++++++++++++++++++
+
+
+// END OF FILE ##############################################

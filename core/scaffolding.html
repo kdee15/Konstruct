@@ -26,9 +26,9 @@
        	 	<script src="../../assets/js/vendor/html5shiv.js"></script>
         
         <!-- B. END ++++++++++++++++++++++++++++++++++++++ -->
-
+		
     </head>
-    <body>
+    <body class="page-sub">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -41,13 +41,13 @@
 						<header id="masthead">
 						
 							<!-- C1.1 Logo -->
-							<a class='current' href="../index.html"><img src="../assets/images/konstruct/logo-dark.png" alt="Konstruct HTML & CSS Framework" /></a>
+							<a class='current-parent current' href="index.html"><img src="../assets/images/konstruct/logo-button.svg" alt="Konstruct HTML & CSS Framework" class="logo" /></a>
 						
 							<!-- C1.2 Navigation -->
 							<nav class="main navigation">
 	<ul class="horizontal list">
 		<li><a href="../index.html">Homepage</a></li>
-		<li><a href="index.html" class="current">Core</a></li>
+		<li class='current-parent'><a href="index.html" class="current-parent current">Core</a></li>
 	</ul>
 </nav>	
 							
@@ -68,15 +68,16 @@
 								<div class="index">
 								
 									<!-- C2.2.1: Library[INDEX] -->
-								
+									
 									<ul>
-	<li><a href="index.html"><i class="icon-file-text"></i> Welcome</a></li>
-	<li><a href="scaffolding.html"><i class="icon-code"></i> Scaffolding</a></li>
+	<li class='current-parent'><a class='current-parent' href="index.html"><i class="icon-file-text"></i> Welcome</a></li>
+	<li class='current'><a class='current' href="scaffolding.html"><i class="icon-code"></i> Scaffolding</a></li>
 	<li><a href="responsive.html"><i class="icon-code"></i> Media Queries</a></li>
 	<li><a href="typography.html"><i class="icon-code"></i> Typography</a></li>
 	<li><a href="forms.html"><i class="icon-code"></i> Forms</a></li>
 	<li><a href="lists.html"><i class="icon-code"></i> Lists</a></li>
-</ul>									
+</ul>
+																	
 									<!-- C2.2.1: End -->
 									
 								</div>
@@ -86,7 +87,8 @@
 									
 										<!-- C2.2.2: Section[PAGE] -->
 										<h2>Scaffolding</h2>
-										<p>The scaffolding in Konstruct is from </p>
+										<p>Konstruct Scaffolding are responsive by default.</p>
+										<p>The scaffolding in Konstruct is from <a href="https://twitter.com/csswizardry">@CSSWizardry</a> and is a great solution to grids!</p>
 										
 										<div class="code-view">
 										
@@ -95,11 +97,11 @@
 												<h3>Halves</h3>
 												<div class="grid">
 												
-													<div class="grid__item desk--one-half">
-														<div class="demo-grid">This is a half</div>
+													<div class="grid__item one-half">
+														<div class="demo-grid">Halves</div>
 													</div>
-													<div class="grid__item desk--one-half">
-														<div class="demo-grid">This is the other half</div>
+													<div class="grid__item one-half">
+														<div class="demo-grid">Halves</div>
 													</div>
 												
 												</div>
@@ -107,20 +109,20 @@
 												<h3>Thirds</h3>
 												<div class="grid">
 												
-													<div class="grid__item desk--one-third">
-														<div class="demo-grid">This is one third</div>
+													<div class="grid__item one-third">
+														<div class="demo-grid">Thirds</div>
 													</div>
-													<div class="grid__item desk--two-thirds">
-														<div class="demo-grid">This is two thirds</div>
+													<div class="grid__item two-thirds">
+														<div class="demo-grid">Thirds</div>
 													</div>
-													<div class="grid__item desk--one-third">
-														<div class="demo-grid">This is one third</div>
+													<div class="grid__item one-third">
+														<div class="demo-grid">Thirds</div>
 													</div>
-													<div class="grid__item desk--one-third">
-														<div class="demo-grid">This is one third</div>
+													<div class="grid__item one-third">
+														<div class="demo-grid">Thirds</div>
 													</div>
-													<div class="grid__item desk--one-third">
-														<div class="demo-grid">This is one third</div>
+													<div class="grid__item one-third">
+														<div class="demo-grid">Thirds</div>
 													</div>
 												
 												</div>
@@ -128,17 +130,17 @@
 												<h3>Quarters</h3>
 												<div class="grid">
 												
-													<div class="grid__item desk--one-quarter">
-														<div class="demo-grid">This is one Quarter</div>
+													<div class="grid__item one-quarter">
+														<div class="demo-grid">Quarters</div>
 													</div>
-													<div class="grid__item desk--three-quarters">
-														<div class="demo-grid">This is three quarters</div>
+													<div class="grid__item three-quarters">
+														<div class="demo-grid">Quarters</div>
 													</div>
-													<div class="grid__item desk--two-quarters">
-														<div class="demo-grid">This is two quarters</div>
+													<div class="grid__item two-quarters">
+														<div class="demo-grid">Quarters</div>
 													</div>
-													<div class="grid__item desk--two-quarters">
-														<div class="demo-grid">This is two quarters</div>
+													<div class="grid__item two-quarters">
+														<div class="demo-grid">Quarters</div>
 													</div>
 												
 												</div>
@@ -146,26 +148,26 @@
 												<h3>Fifths</h3>
 												<div class="grid">
 												
-													<div class="grid__item desk--two-fifths">
-														<div class="demo-grid">This is two fifths</div>
+													<div class="grid__item two-fifths">
+														<div class="demo-grid">Fifths</div>
 													</div>
-													<div class="grid__item desk--three-fifths">
-														<div class="demo-grid">This is three fifths</div>
+													<div class="grid__item three-fifths">
+														<div class="demo-grid">Fifths</div>
 													</div>
-													<div class="grid__item desk--one-fifth">
-														<div class="demo-grid">This is one fifth</div>
+													<div class="grid__item one-fifth">
+														<div class="demo-grid">Fifths</div>
 													</div>
-													<div class="grid__item desk--one-fifth">
-														<div class="demo-grid">This is one fifth</div>
+													<div class="grid__item one-fifth">
+														<div class="demo-grid">Fifths</div>
 													</div>
-													<div class="grid__item desk--one-fifth">
-														<div class="demo-grid">This is one fifth</div>
+													<div class="grid__item one-fifth">
+														<div class="demo-grid">Fifths</div>
 													</div>
-													<div class="grid__item desk--one-fifth">
-														<div class="demo-grid">This is one fifth</div>
+													<div class="grid__item one-fifth">
+														<div class="demo-grid">Fifths</div>
 													</div>
-													<div class="grid__item desk--one-fifth">
-														<div class="demo-grid">This is one fifth</div>
+													<div class="grid__item one-fifth">
+														<div class="demo-grid">Fifths</div>
 													</div>
 												
 												</div>
@@ -213,7 +215,7 @@
 		
 						<!-- C3. Footer -->
 						<footer id="footend">
-	<h6>&copy; 2013 - Adrian Kirsten</h6>
+	<img src="../assets/images/konstruct/logo-button-alternate.svg" alt="Made with Konstruct" />
 	<p>Licensed under the Apache License, Version 2.0</p>
 	<p>Proudly designed <span class="amp">&amp;</span> developed in South Africa by <a href="https://twitter.com/traaidmark">@traaidmark</a>.</p>
 	<ul class="center horizontal list">
@@ -221,7 +223,8 @@
 		<li><a href="#">Changelog</a></li>
 		<li><a href="#">Report a bug</a></li>
 	</ul>
-</footer>					
+</footer>
+						
 					</section>			
 		
 		<!-- C. END ++++++++++++++++++++++++++++++++++++++ -->

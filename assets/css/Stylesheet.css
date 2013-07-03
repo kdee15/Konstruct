@@ -7,11 +7,6 @@
  * 100% width if you do not apply a more specific class to them.
  */
 /**
- * Define your breakpoints. The first value is the prefix that shall be used for
- * your classes (e.g. `.palm--one-half`), the second value is the media query
- * that the breakpoint fires at.
- */
-/**
  * Define which namespaced breakpoints you would like to generate for each of
  * widths, push and pull. This is handy if you only need pull on, say, desk, or
  * you only need a new width breakpoint at mobile sizes. It allows you to only
@@ -28,9 +23,6 @@
  * Would you like Sass’ silent classes, or regular CSS classes?
  */
 /**
- * Would you like push and pull classes enabled?
- */
-/**
  * Using `inline-block` means that the grid items need their whitespace removing
  * in order for them to work correctly. Set the following to true if you are
  * going to achieve this by manually removing/commenting out any whitespace in
@@ -45,32 +37,6 @@
 /**
  * You do not need to edit anything from this line onward; csswizardry-grids is
  * good to go. Happy griddin’!
- */
-/**
- * Media query mixin.
- *
- * It’s not great practice to define solid breakpoints up-front, preferring to
- * modify your design when it needs it, rather than assuming you’ll want a
- * change at ‘mobile’. However, as inuit.css is required to take a hands off
- * approach to design decisions, this is the closest we can get to baked-in
- * responsiveness. It’s flexible enough to allow you to set your own breakpoints
- * but solid enough to be frameworkified.
- *
- * We define some broad breakpoints in our vars file that are picked up here
- * for use in a simple media query mixin. Our options are:
- *
- * palm
- * lap
- * lap-and-up
- * portable
- * desk
- * desk-wide
- *
- * Not using a media query will, naturally, serve styles to all devices.
- *
- * `@include media-query(palm){ [styles here] }`
- *
- * We work out your end points for you:
  */
 /* normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -273,7 +239,7 @@ figure {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -433,8 +399,8 @@ table {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/font-awesome/fontawesome-webfont.eot?v=3.2.1");
-  src: url("../fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=3.2.1") format("embedded-opentype"), url("../fonts/font-awesome/fontawesome-webfont.woff?v=3.2.1") format("woff"), url("../fonts/font-awesome/fontawesome-webfont.ttf?v=3.2.1") format("truetype"), url("../fonts/font-awesome/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1") format("svg");
+  src: url(../fonts/font-awesome/fontawesome-webfont.eot?v=3.2.1);
+  src: url(../fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=3.2.1) format("embedded-opentype"), url(../fonts/font-awesome/fontawesome-webfont.woff?v=3.2.1) format("woff"), url(../fonts/font-awesome/fontawesome-webfont.ttf?v=3.2.1) format("truetype"), url(../fonts/font-awesome/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1) format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -506,7 +472,7 @@ a [class*=" icon-"] {
 
 .icon-border {
   border: solid 1px #eeeeee;
-  padding: 0.2em 0.25em 0.15em;
+  padding: .2em .25em .15em;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
@@ -1878,75 +1844,6 @@ a .icon-flip-vertical:before {
 .icon-renren:before {
   content: "\f18b"; }
 
-.container {
-  width: 940px;
-  margin: 0 auto; }
-
-/*------------------------------------*\
-    $CSSWIZARDRY-GRIDS
-\*------------------------------------*/
-/**
- * CONTENTS
- * INTRODUCTION.........How the grid system works.
- * VARIABLES............Your settings.
- * MIXINS...............Library mixins.
- * GRID SETUP...........Build the grid structure.
- * WIDTHS...............Build our responsive widths around our breakpoints.
- * PUSH.................Push classes.
- * PULL.................Pull classes.
- */
-/*------------------------------------*\
-    $INTRODUCTION
-\*------------------------------------*/
-/**
- * csswizardry grids provides you with widths to suit a number of breakpoints
- * designed around devices of a size you specify. Out of the box, csswizardry
- * grids caters to the following types of device:
- *
- * palm     --  palm-based devices, like phones and small tablets
- * lap      --  lap-based devices, like iPads or laptops
- * portable --  all of the above
- * desk     --  stationary devices, like desktop computers
- * regular  --  any/all types of device
- *
- * These namespaces are then used in the library to give you the ability to
- * manipulate your layouts based around them, for example:
- *
-   <div class="grid__item  one-whole  lap--one-half  desk--one-third">
- *
- * This would give you a grid item which is 100% width unless it is on a lap
- * device, at which point it become 50% wide, or it is on a desktop device, at
- * which point it becomes 33.333% width.
- *
- * csswizardry grids also has push and pull classes which allow you to nudge
- * grid items left and right by a defined amount. These follow the same naming
- * convention as above, but are prepended by either `push--` or `pull--`, for
- * example:
- *
-   `class="grid__item  one-half  push--one-half"`
- *
- * This would give you a grid item which is 50% width and pushed over to the
- * right by 50%.
- *
- * All classes in csswizardry grids follow this patten, so you should fairly
- * quickly be able to piece together any combinations you can imagine, for
- * example:
- *
-   `class="grid__item  one-whole  lap--one-half  desk--one-third  push--desk--one-third"`
- *
-   `class="grid__item  one-quarter  palm--one-half  push--palm--one-half"`
- *
-   `class="grid__item  palm--one-third  desk--five-twelfths"`
- */
-/*------------------------------------*\
-    $MIXINS
-\*------------------------------------*/
-/**
- * These mixins are for the library to use only, you should not need to modify
- * them at all.
- *
- * Enclose a block of code with a media query as named in `$breakpoints`.
- */
 /**
  * Drop relative positioning into silent classes which can’t take advantage of
  * the `[class*="push--"]` and `[class*="pull--"]` selectors.
@@ -2181,298 +2078,199 @@ a .icon-flip-vertical:before {
   /**
    * Whole
    */
-  .palm--one-whole {
+  .mobile--one-whole {
     width: 100%; }
 
   /**
    * Halves
    */
-  .palm--one-half, .palm--two-quarters, .palm--three-sixths, .palm--four-eighths, .palm--five-tenths, .palm--six-twelfths {
+  .mobile--one-half, .mobile--two-quarters, .mobile--three-sixths, .mobile--four-eighths, .mobile--five-tenths, .mobile--six-twelfths {
     width: 50%; }
 
   /**
    * Thirds
    */
-  .palm--one-third, .palm--two-sixths, .palm--four-twelfths {
+  .mobile--one-third, .mobile--two-sixths, .mobile--four-twelfths {
     width: 33.333%; }
 
-  .palm--two-thirds, .palm--four-sixths, .palm--eight-twelfths {
+  .mobile--two-thirds, .mobile--four-sixths, .mobile--eight-twelfths {
     width: 66.666%; }
 
   /**
    * Quarters
    */
-  .palm--one-quarter, .palm--two-eighths, .palm--three-twelfths {
+  .mobile--one-quarter, .mobile--two-eighths, .mobile--three-twelfths {
     width: 25%; }
 
-  .palm--three-quarters, .palm--six-eighths, .palm--nine-twelfths {
+  .mobile--three-quarters, .mobile--six-eighths, .mobile--nine-twelfths {
     width: 75%; }
 
   /**
    * Fifths
    */
-  .palm--one-fifth, .palm--two-tenths {
+  .mobile--one-fifth, .mobile--two-tenths {
     width: 20%; }
 
-  .palm--two-fifths, .palm--four-tenths {
+  .mobile--two-fifths, .mobile--four-tenths {
     width: 40%; }
 
-  .palm--three-fifths, .palm--six-tenths {
+  .mobile--three-fifths, .mobile--six-tenths {
     width: 60%; }
 
-  .palm--four-fifths, .palm--eight-tenths {
+  .mobile--four-fifths, .mobile--eight-tenths {
     width: 80%; }
 
   /**
    * Sixths
    */
-  .palm--one-sixth, .palm--two-twelfths {
+  .mobile--one-sixth, .mobile--two-twelfths {
     width: 16.666%; }
 
-  .palm--five-sixths, .palm--ten-twelfths {
+  .mobile--five-sixths, .mobile--ten-twelfths {
     width: 83.333%; }
 
   /**
    * Eighths
    */
-  .palm--one-eighth {
+  .mobile--one-eighth {
     width: 12.5%; }
 
-  .palm--three-eighths {
+  .mobile--three-eighths {
     width: 37.5%; }
 
-  .palm--five-eighths {
+  .mobile--five-eighths {
     width: 62.5%; }
 
-  .palm--seven-eighths {
+  .mobile--seven-eighths {
     width: 87.5%; }
 
   /**
    * Tenths
    */
-  .palm--one-tenth {
+  .mobile--one-tenth {
     width: 10%; }
 
-  .palm--three-tenths {
+  .mobile--three-tenths {
     width: 30%; }
 
-  .palm--seven-tenths {
+  .mobile--seven-tenths {
     width: 70%; }
 
-  .palm--nine-tenths {
+  .mobile--nine-tenths {
     width: 90%; }
 
   /**
    * Twelfths
    */
-  .palm--one-twelfth {
+  .mobile--one-twelfth {
     width: 8.333%; }
 
-  .palm--five-twelfths {
+  .mobile--five-twelfths {
     width: 41.666%; }
 
-  .palm--seven-twelfths {
+  .mobile--seven-twelfths {
     width: 58.333%; }
 
-  .palm--eleven-twelfths {
+  .mobile--eleven-twelfths {
     width: 91.666%; } }
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   /**
    * Whole
    */
-  .lap--one-whole {
+  .tablet--one-whole, .page-front .section-blocks .block.one {
     width: 100%; }
 
   /**
    * Halves
    */
-  .lap--one-half, .lap--two-quarters, .lap--three-sixths, .lap--four-eighths, .lap--five-tenths, .lap--six-twelfths {
+  .tablet--one-half, .tablet--two-quarters, .tablet--three-sixths, .tablet--four-eighths, .tablet--five-tenths, .tablet--six-twelfths, .page-front .section-blocks .block.two, .page-front .section-blocks .block.three, .page-front .section-blocks .block.four, .page-front .section-blocks .block.five {
     width: 50%; }
 
   /**
    * Thirds
    */
-  .lap--one-third, .lap--two-sixths, .lap--four-twelfths {
+  .tablet--one-third, .tablet--two-sixths, .library .index, .tablet--four-twelfths {
     width: 33.333%; }
 
-  .lap--two-thirds, .lap--four-sixths, .lap--eight-twelfths {
+  .tablet--two-thirds, .tablet--four-sixths, .library .page, .tablet--eight-twelfths {
     width: 66.666%; }
 
   /**
    * Quarters
    */
-  .lap--one-quarter, .lap--two-eighths, .lap--three-twelfths {
+  .tablet--one-quarter, .tablet--two-eighths, .tablet--three-twelfths {
     width: 25%; }
 
-  .lap--three-quarters, .lap--six-eighths, .lap--nine-twelfths {
+  .tablet--three-quarters, .tablet--six-eighths, .tablet--nine-twelfths {
     width: 75%; }
 
   /**
    * Fifths
    */
-  .lap--one-fifth, .lap--two-tenths {
+  .tablet--one-fifth, .tablet--two-tenths {
     width: 20%; }
 
-  .lap--two-fifths, .lap--four-tenths {
+  .tablet--two-fifths, .tablet--four-tenths {
     width: 40%; }
 
-  .lap--three-fifths, .lap--six-tenths {
+  .tablet--three-fifths, .tablet--six-tenths {
     width: 60%; }
 
-  .lap--four-fifths, .lap--eight-tenths {
+  .tablet--four-fifths, .tablet--eight-tenths {
     width: 80%; }
 
   /**
    * Sixths
    */
-  .lap--one-sixth, .lap--two-twelfths {
+  .tablet--one-sixth, .tablet--two-twelfths {
     width: 16.666%; }
 
-  .lap--five-sixths, .lap--ten-twelfths {
+  .tablet--five-sixths, .tablet--ten-twelfths {
     width: 83.333%; }
 
   /**
    * Eighths
    */
-  .lap--one-eighth {
+  .tablet--one-eighth {
     width: 12.5%; }
 
-  .lap--three-eighths {
+  .tablet--three-eighths {
     width: 37.5%; }
 
-  .lap--five-eighths {
+  .tablet--five-eighths {
     width: 62.5%; }
 
-  .lap--seven-eighths {
+  .tablet--seven-eighths {
     width: 87.5%; }
 
   /**
    * Tenths
    */
-  .lap--one-tenth {
+  .tablet--one-tenth {
     width: 10%; }
 
-  .lap--three-tenths {
+  .tablet--three-tenths {
     width: 30%; }
 
-  .lap--seven-tenths {
+  .tablet--seven-tenths {
     width: 70%; }
 
-  .lap--nine-tenths {
+  .tablet--nine-tenths {
     width: 90%; }
 
   /**
    * Twelfths
    */
-  .lap--one-twelfth {
+  .tablet--one-twelfth {
     width: 8.333%; }
 
-  .lap--five-twelfths {
+  .tablet--five-twelfths {
     width: 41.666%; }
 
-  .lap--seven-twelfths {
+  .tablet--seven-twelfths {
     width: 58.333%; }
 
-  .lap--eleven-twelfths {
-    width: 91.666%; } }
-@media only screen and (max-width: 1023px) {
-  /**
-   * Whole
-   */
-  .portable--one-whole, .page-front .section-blocks .block.one {
-    width: 100%; }
-
-  /**
-   * Halves
-   */
-  .portable--one-half, .portable--two-quarters, .portable--three-sixths, .portable--four-eighths, .portable--five-tenths, .portable--six-twelfths, .page-front .section-blocks .block.two, .page-front .section-blocks .block.three {
-    width: 50%; }
-
-  /**
-   * Thirds
-   */
-  .portable--one-third, .portable--two-sixths, .library .index, .portable--four-twelfths {
-    width: 33.333%; }
-
-  .portable--two-thirds, .portable--four-sixths, .library .page, .portable--eight-twelfths {
-    width: 66.666%; }
-
-  /**
-   * Quarters
-   */
-  .portable--one-quarter, .portable--two-eighths, .portable--three-twelfths {
-    width: 25%; }
-
-  .portable--three-quarters, .portable--six-eighths, .portable--nine-twelfths {
-    width: 75%; }
-
-  /**
-   * Fifths
-   */
-  .portable--one-fifth, .portable--two-tenths {
-    width: 20%; }
-
-  .portable--two-fifths, .portable--four-tenths {
-    width: 40%; }
-
-  .portable--three-fifths, .portable--six-tenths {
-    width: 60%; }
-
-  .portable--four-fifths, .portable--eight-tenths {
-    width: 80%; }
-
-  /**
-   * Sixths
-   */
-  .portable--one-sixth, .portable--two-twelfths {
-    width: 16.666%; }
-
-  .portable--five-sixths, .portable--ten-twelfths {
-    width: 83.333%; }
-
-  /**
-   * Eighths
-   */
-  .portable--one-eighth {
-    width: 12.5%; }
-
-  .portable--three-eighths {
-    width: 37.5%; }
-
-  .portable--five-eighths {
-    width: 62.5%; }
-
-  .portable--seven-eighths {
-    width: 87.5%; }
-
-  /**
-   * Tenths
-   */
-  .portable--one-tenth {
-    width: 10%; }
-
-  .portable--three-tenths {
-    width: 30%; }
-
-  .portable--seven-tenths {
-    width: 70%; }
-
-  .portable--nine-tenths {
-    width: 90%; }
-
-  /**
-   * Twelfths
-   */
-  .portable--one-twelfth {
-    width: 8.333%; }
-
-  .portable--five-twelfths {
-    width: 41.666%; }
-
-  .portable--seven-twelfths {
-    width: 58.333%; }
-
-  .portable--eleven-twelfths {
+  .tablet--eleven-twelfths {
     width: 91.666%; } }
 @media only screen and (min-width: 1024px) {
   /**
@@ -2484,16 +2282,16 @@ a .icon-flip-vertical:before {
   /**
    * Halves
    */
-  .desk--one-half, .desk--two-quarters, .desk--three-sixths, .desk--four-eighths, .desk--five-tenths, .desk--six-twelfths, .code-view .html, .code-view .css, .page-front .section-blocks .block.four, .page-front .section-blocks .block.five {
+  .desk--one-half, .desk--two-quarters, .desk--three-sixths, .desk--four-eighths, .desk--five-tenths, .desk--six-twelfths, .code-view .html, .code-view .css {
     width: 50%; }
 
   /**
    * Thirds
    */
-  .desk--one-third, .desk--two-sixths, .desk--four-twelfths, .page-front .section-blocks .block.one, .page-front .section-blocks .block.two, .page-front .section-blocks .block.three {
+  .desk--one-third, .desk--two-sixths, .desk--four-twelfths, .page-front .section-blocks .block.one, .page-front .section-blocks .block.two, .page-front .section-blocks .block.three, .page-front .section-blocks .block.five {
     width: 33.333%; }
 
-  .desk--two-thirds, .desk--four-sixths, .desk--eight-twelfths {
+  .desk--two-thirds, .desk--four-sixths, .desk--eight-twelfths, .page-front .section-blocks .block.four {
     width: 66.666%; }
 
   /**
@@ -2573,18 +2371,105 @@ a .icon-flip-vertical:before {
 
   .desk--eleven-twelfths {
     width: 91.666%; } }
-/*------------------------------------*\
-    $PUSH
-\*------------------------------------*/
-/**
- * Push classes, to move grid items over to the right by certain amounts.
- */
-/*------------------------------------*\
-    $PULL
-\*------------------------------------*/
-/**
- * Pull classes, to move grid items back to the left by certain amounts.
- */
+@media only screen and (min-width: 1200px) {
+  /**
+   * Whole
+   */
+  .desk-wide--one-whole {
+    width: 100%; }
+
+  /**
+   * Halves
+   */
+  .desk-wide--one-half, .desk-wide--two-quarters, .desk-wide--three-sixths, .desk-wide--four-eighths, .desk-wide--five-tenths, .desk-wide--six-twelfths {
+    width: 50%; }
+
+  /**
+   * Thirds
+   */
+  .desk-wide--one-third, .desk-wide--two-sixths, .desk-wide--four-twelfths {
+    width: 33.333%; }
+
+  .desk-wide--two-thirds, .desk-wide--four-sixths, .desk-wide--eight-twelfths {
+    width: 66.666%; }
+
+  /**
+   * Quarters
+   */
+  .desk-wide--one-quarter, .desk-wide--two-eighths, .desk-wide--three-twelfths {
+    width: 25%; }
+
+  .desk-wide--three-quarters, .desk-wide--six-eighths, .desk-wide--nine-twelfths {
+    width: 75%; }
+
+  /**
+   * Fifths
+   */
+  .desk-wide--one-fifth, .desk-wide--two-tenths {
+    width: 20%; }
+
+  .desk-wide--two-fifths, .desk-wide--four-tenths {
+    width: 40%; }
+
+  .desk-wide--three-fifths, .desk-wide--six-tenths {
+    width: 60%; }
+
+  .desk-wide--four-fifths, .desk-wide--eight-tenths {
+    width: 80%; }
+
+  /**
+   * Sixths
+   */
+  .desk-wide--one-sixth, .desk-wide--two-twelfths {
+    width: 16.666%; }
+
+  .desk-wide--five-sixths, .desk-wide--ten-twelfths {
+    width: 83.333%; }
+
+  /**
+   * Eighths
+   */
+  .desk-wide--one-eighth {
+    width: 12.5%; }
+
+  .desk-wide--three-eighths {
+    width: 37.5%; }
+
+  .desk-wide--five-eighths {
+    width: 62.5%; }
+
+  .desk-wide--seven-eighths {
+    width: 87.5%; }
+
+  /**
+   * Tenths
+   */
+  .desk-wide--one-tenth {
+    width: 10%; }
+
+  .desk-wide--three-tenths {
+    width: 30%; }
+
+  .desk-wide--seven-tenths {
+    width: 70%; }
+
+  .desk-wide--nine-tenths {
+    width: 90%; }
+
+  /**
+   * Twelfths
+   */
+  .desk-wide--one-twelfth {
+    width: 8.333%; }
+
+  .desk-wide--five-twelfths {
+    width: 41.666%; }
+
+  .desk-wide--seven-twelfths {
+    width: 58.333%; }
+
+  .desk-wide--eleven-twelfths {
+    width: 91.666%; } }
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
 
@@ -2684,22 +2569,14 @@ table {
     line-height: 24px; }
 
 .container {
-  width: 100%;
-  margin: 0; }
+  width: 100%; }
 
 @media only screen and (max-width: 480px) {
-  .container {
-    margin: 0; } }
+  body {
+    padding: 0 12px; } }
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
-  .container {
-    margin: 0 24px; } }
-@media only screen and (min-width: 481px) {
-  .container {
-    margin: 0 24px; } }
-@media only screen and (max-width: 1023px) {
-  .container {
-    margin: 0 auto;
-    width: 90%; } }
+  body {
+    padding: 0 24px; } }
 @media only screen and (min-width: 1024px) {
   .container {
     width: 940px;
@@ -2733,7 +2610,7 @@ table {
 
 html {
   background-color: #eeeeee;
-  background-image: url("../images/site/wallpaper.jpg");
+  background-image: url(../images/site/wallpaper.jpg);
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2756,58 +2633,74 @@ p.lead {
 .done {
   color: #46a546; }
 
-@media only screen and (max-width: 1023px) {
-  .page-front img {
-    width: 100%; } }
-.page-front img {
-  margin: 50px auto 0px auto; }
-  .page-front img:hover {
-    background-color: rgba(34, 34, 34, 0.2); }
+code {
+  background: #e1f4f2; }
+
+.page-front #masthead {
+  text-align: center; }
+  .page-front #masthead img {
+    margin: 50px auto 12px auto; }
+    .page-front #masthead img:hover {
+      background-color: rgba(34, 34, 34, 0.2); }
 
 .page-sub #masthead {
   padding: 24px 0; }
-.page-sub img {
+.page-sub .logo {
   height: 50px;
   margin: 0;
   float: left; }
-  .page-sub img:hover {
+  .page-sub .logo:hover {
     background-color: rgba(34, 34, 34, 0.2); }
 .page-sub .main {
   margin-left: 70px;
   text-align: left; }
 
-#masthead {
-  text-align: center; }
-  #masthead .main {
-    background-color: #e7685b;
-    padding: 10px; }
-    #masthead .main a {
-      font-size: 1.5em;
-      color: white;
-      padding: 5px 15px; }
-      #masthead .main a:hover {
-        background-color: #c25045; }
-      #masthead .main a.current {
-        background-color: #e7685b; }
-  #masthead .sub {
-    margin-top: 12px;
-    background-color: white;
-    padding: 5px 10px; }
-    #masthead .sub a {
-      color: #555555; }
-      #masthead .sub a.active {
-        background-color: #72cac1;
-        color: white; }
+.main {
+  padding: 12px;
+  border-top: solid 1px white; }
+  .main a {
+    font-size: 1.125em;
+    color: white;
+    padding: 15px 15px;
+    display: inline-block; }
+    .main a:hover {
+      color: #72cac1; }
+    .main a.current {
+      color: #69b2a9; }
 
 #mast {
-  margin: 24px 0;
+  margin: 0 0 24px 0;
   background-color: #eeeeee;
   padding-top: 24px;
-  padding-bottom: 24px; }
+  padding-bottom: 24px;
+  border-top: solid 5px #69b2a9;
+  border-bottom: solid 5px #333333; }
 
-.library .index li {
+#footend {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 24px;
+  color: white; }
+  #footend img {
+    width: 50px; }
+  #footend p, #footend li {
+    font-size: 0.75em;
+    color: white; }
+  #footend p {
+    margin: 0; }
+
+.library .index li a {
+  display: block;
   border-bottom: solid 1px #999999;
-  padding: 6px 0; }
+  padding: 5px 5px !important; }
+  .library .index li a:hover {
+    text-decoration: none; }
+  .library .index li a.current {
+    background: white;
+    color: #555555;
+    border-bottom: solid 1px #222222; }
+    .library .index li a.current i {
+      color: deepskyblue; }
 .library .index .title {
   background: #999999;
   color: white;
@@ -2825,19 +2718,18 @@ p.lead {
   margin-top: 0; }
 
 .demo-grid {
-  background: #69b3e7;
-  margin-bottom: 12px; }
-
-#footend {
-  text-align: center;
-  margin: 0;
-  padding-bottom: 24px;
+  background: #72cac1;
+  margin-bottom: 12px;
+  padding: 12px;
   color: white; }
-  #footend p, #footend li {
-    font-size: 0.75em;
-    color: white; }
-  #footend p {
-    margin: 0; }
+  .demo-grid i {
+    display: block;
+    font-size: 100px;
+    text-align: center; }
+  .demo-grid span {
+    font-size: 1.125em;
+    text-align: center;
+    display: block; }
 
 .page-front h1 {
   text-align: center;
@@ -2853,12 +2745,19 @@ p.lead {
     text-align: center;
     font-size: 2em;
     margin-bottom: 12px;
-    color: #e7685b; }
-.page-front .section-blocks .block a {
-  padding: 3px;
-  margin-bottom: 3px; }
-  .page-front .section-blocks .block a i {
-    font-size: 1.5em; }
+    color: #69b2a9; }
+.page-front .section-blocks .block .button {
+  padding: 5px 10px;
+  margin-bottom: 3px;
+  color: #333333;
+  background: #e1f4f2; }
+  .page-front .section-blocks .block .button:hover {
+    text-decoration: none;
+    background: #72cac1;
+    color: white; }
+  .page-front .section-blocks .block .button i {
+    font-size: 1.5em;
+    color: #69b2a9; }
 .page-front .section-blocks .block .content {
   padding: 24px;
   background: white; }
@@ -2869,48 +2768,95 @@ p.lead {
   color: white; }
   .page-front .section-blocks .block.one a:hover {
     background-color: #c25045; }
+    .page-front .section-blocks .block.one a:hover i {
+      font-size: 1.5em;
+      color: #e7685b; }
+  .page-front .section-blocks .block.one a i {
+    font-size: 1.5em;
+    color: #c25045; }
 .page-front .section-blocks .block h5 {
   text-align: center; }
 
-.identify {
-  color: white;
-  padding: 24px; }
+.section-typography {
+  background-image: url(../images/site/baseline.png); }
 
+.media-queries .identify {
+  float: right;
+  color: white;
+  padding: 24px;
+  font-family: 'FontAwesome';
+  font-size: 2em;
+  width: auto;
+  position: relative;
+  margin: -20px 0 24px 0; }
+  .media-queries .identify:before {
+    position: absolute;
+    top: 23px;
+    left: -80px;
+    content: "";
+    color: #eeeeee;
+    font-size: 70px; }
 @media only screen and (max-width: 480px) {
-  .identify {
+  .media-queries .identify {
     background: deepskyblue;
-    color: #9d261d; }
-    .identify:after {
-      content: " a mobile view"; } }
+    color: white; }
+    .media-queries .identify:after {
+      content: ""; } }
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
-  .identify {
+  .media-queries .identify {
     background: #f89406;
     color: white; }
-    .identify:after {
-      content: " a lap view"; } }
-@media only screen and (min-width: 481px) {
-  .identify {
-    background: #ffc40d;
-    color: white; }
-    .identify:after {
-      content: " a lap view"; } }
-@media only screen and (max-width: 1023px) {
-  .identify {
-    background: #a67e00;
-    color: white; }
-    .identify:after {
-      content: " a portable view"; } }
+    .media-queries .identify:after {
+      content: ""; } }
 @media only screen and (min-width: 1024px) {
-  .identify {
+  .media-queries .identify {
     background: #46a546;
     color: white; }
-    .identify:after {
-      content: " a wide desk view"; } }
+    .media-queries .identify:after {
+      content: ""; } }
 @media only screen and (min-width: 1200px) {
-  .identify {
+  .media-queries .identify {
     background: deepskyblue;
     color: white; }
-    .identify:after {
-      content: " a wide desk view"; } }
-.section-typography {
-  background-image: url("../images/site/baseline.png"); }
+    .media-queries .identify:after {
+      content: " "; } }
+
+@media only screen and (max-width: 480px) {
+  .demo-grid {
+    background: #72cac1;
+    margin-bottom: 12px;
+    padding: 12px;
+    color: white; }
+    .demo-grid i {
+      display: block;
+      font-size: 30px;
+      text-align: center; }
+    .demo-grid span {
+      font-size: 0.75em;
+      text-align: center;
+      display: block; }
+
+  .page {
+    background: none !important; }
+    .page .content {
+      margin: 12px; } }
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .demo-grid {
+    background: #72cac1;
+    margin-bottom: 12px;
+    padding: 12px;
+    color: white; }
+    .demo-grid i {
+      display: block;
+      font-size: 50px;
+      text-align: center; }
+    .demo-grid span {
+      font-size: 1.125em;
+      text-align: center;
+      display: block; } }
+@media only screen and (min-width: 1024px) {
+  .page-front img {
+    width: 300px;
+    margin: 50px auto 0px auto; }
+    .page-front img:hover {
+      background-color: rgba(34, 34, 34, 0.2); } }

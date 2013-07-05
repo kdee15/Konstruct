@@ -1856,7 +1856,7 @@ a .icon-flip-vertical:before {
  * 2. Remove any margins and paddings that might affect the grid system.
  * 3. Apply a negative `margin-left` to negate the columns’ gutters.
  */
-.grid, .library, .code-view, .page-front .section-blocks, .the-build {
+.grid, .library, .code-view, .page-front .section-blocks {
   list-style: none;
   /* [1] */
   margin: 0;
@@ -1872,8 +1872,7 @@ a .icon-flip-vertical:before {
 .grid,
 .library,
 .code-view,
-.page-front .section-blocks,
-.the-build {
+.page-front .section-blocks {
   word-spacing: -0.43em; }
 
 /**
@@ -1883,7 +1882,7 @@ a .icon-flip-vertical:before {
  * 4. Full-width unless told to behave otherwise.
  * 5. Required to combine fluid widths and fixed gutters.
  */
-.grid__item, .library .index, .library .page, .code-view .view, .code-view .html, .code-view .css, .page-front .section-blocks .block, .the-build .foundation-title, .the-build .brick, .the-build .foundation, .the-build .vendor {
+.grid__item, .library .index, .library .page, .code-view .view, .code-view .html, .code-view .css, .page-front .section-blocks .block {
   display: inline-block;
   /* [1] */
   padding-left: 20px;
@@ -1908,7 +1907,7 @@ a .icon-flip-vertical:before {
 .grid--rev {
   direction: rtl;
   text-align: left; }
-  .grid--rev > .grid__item, .library .grid--rev > .index, .library .grid--rev > .page, .code-view .grid--rev > .view, .code-view .grid--rev > .html, .code-view .grid--rev > .css, .page-front .section-blocks .grid--rev > .block, .the-build .grid--rev > .foundation-title, .the-build .grid--rev > .brick, .the-build .grid--rev > .foundation, .the-build .grid--rev > .vendor {
+  .grid--rev > .grid__item, .library .grid--rev > .index, .library .grid--rev > .page, .code-view .grid--rev > .view, .code-view .grid--rev > .html, .code-view .grid--rev > .css, .page-front .section-blocks .grid--rev > .block {
     direction: ltr;
     text-align: left; }
 
@@ -1918,7 +1917,7 @@ a .icon-flip-vertical:before {
  */
 .grid--full {
   margin-left: 0; }
-  .grid--full > .grid__item, .library .grid--full > .index, .library .grid--full > .page, .code-view .grid--full > .view, .code-view .grid--full > .html, .code-view .grid--full > .css, .page-front .section-blocks .grid--full > .block, .the-build .grid--full > .foundation-title, .the-build .grid--full > .brick, .the-build .grid--full > .foundation, .the-build .grid--full > .vendor {
+  .grid--full > .grid__item, .library .grid--full > .index, .library .grid--full > .page, .code-view .grid--full > .view, .code-view .grid--full > .html, .code-view .grid--full > .css, .page-front .section-blocks .grid--full > .block {
     padding-left: 0; }
 
 /**
@@ -1926,7 +1925,7 @@ a .icon-flip-vertical:before {
  */
 .grid--right {
   text-align: right; }
-  .grid--right > .grid__item, .library .grid--right > .index, .library .grid--right > .page, .code-view .grid--right > .view, .code-view .grid--right > .html, .code-view .grid--right > .css, .page-front .section-blocks .grid--right > .block, .the-build .grid--right > .foundation-title, .the-build .grid--right > .brick, .the-build .grid--right > .foundation, .the-build .grid--right > .vendor {
+  .grid--right > .grid__item, .library .grid--right > .index, .library .grid--right > .page, .code-view .grid--right > .view, .code-view .grid--right > .html, .code-view .grid--right > .css, .page-front .section-blocks .grid--right > .block {
     text-align: left; }
 
 /**
@@ -1935,17 +1934,17 @@ a .icon-flip-vertical:before {
  */
 .grid--center {
   text-align: center; }
-  .grid--center > .grid__item, .library .grid--center > .index, .library .grid--center > .page, .code-view .grid--center > .view, .code-view .grid--center > .html, .code-view .grid--center > .css, .page-front .section-blocks .grid--center > .block, .the-build .grid--center > .foundation-title, .the-build .grid--center > .brick, .the-build .grid--center > .foundation, .the-build .grid--center > .vendor {
+  .grid--center > .grid__item, .library .grid--center > .index, .library .grid--center > .page, .code-view .grid--center > .view, .code-view .grid--center > .html, .code-view .grid--center > .css, .page-front .section-blocks .grid--center > .block {
     text-align: left; }
 
 /**
  * Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends
  * `.grid`.
  */
-.grid--middle > .grid__item, .library .grid--middle > .index, .library .grid--middle > .page, .code-view .grid--middle > .view, .code-view .grid--middle > .html, .code-view .grid--middle > .css, .page-front .section-blocks .grid--middle > .block, .the-build .grid--middle > .foundation-title, .the-build .grid--middle > .brick, .the-build .grid--middle > .foundation, .the-build .grid--middle > .vendor {
+.grid--middle > .grid__item, .library .grid--middle > .index, .library .grid--middle > .page, .code-view .grid--middle > .view, .code-view .grid--middle > .html, .code-view .grid--middle > .css, .page-front .section-blocks .grid--middle > .block {
   vertical-align: middle; }
 
-.grid--bottom > .grid__item, .library .grid--bottom > .index, .library .grid--bottom > .page, .code-view .grid--bottom > .view, .code-view .grid--bottom > .html, .code-view .grid--bottom > .css, .page-front .section-blocks .grid--bottom > .block, .the-build .grid--bottom > .foundation-title, .the-build .grid--bottom > .brick, .the-build .grid--bottom > .foundation, .the-build .grid--bottom > .vendor {
+.grid--bottom > .grid__item, .library .grid--bottom > .index, .library .grid--bottom > .page, .code-view .grid--bottom > .view, .code-view .grid--bottom > .html, .code-view .grid--bottom > .css, .page-front .section-blocks .grid--bottom > .block {
   vertical-align: bottom; }
 
 /**
@@ -1953,7 +1952,7 @@ a .icon-flip-vertical:before {
  */
 .grid--narrow {
   margin-left: -10px; }
-  .grid--narrow > .grid__item, .library .grid--narrow > .index, .library .grid--narrow > .page, .code-view .grid--narrow > .view, .code-view .grid--narrow > .html, .code-view .grid--narrow > .css, .page-front .section-blocks .grid--narrow > .block, .the-build .grid--narrow > .foundation-title, .the-build .grid--narrow > .brick, .the-build .grid--narrow > .foundation, .the-build .grid--narrow > .vendor {
+  .grid--narrow > .grid__item, .library .grid--narrow > .index, .library .grid--narrow > .page, .code-view .grid--narrow > .view, .code-view .grid--narrow > .html, .code-view .grid--narrow > .css, .page-front .section-blocks .grid--narrow > .block {
     padding-left: 10px; }
 
 /**
@@ -1961,7 +1960,7 @@ a .icon-flip-vertical:before {
  */
 .grid--wide {
   margin-left: -40px; }
-  .grid--wide > .grid__item, .library .grid--wide > .index, .library .grid--wide > .page, .code-view .grid--wide > .view, .code-view .grid--wide > .html, .code-view .grid--wide > .css, .page-front .section-blocks .grid--wide > .block, .the-build .grid--wide > .foundation-title, .the-build .grid--wide > .brick, .the-build .grid--wide > .foundation, .the-build .grid--wide > .vendor {
+  .grid--wide > .grid__item, .library .grid--wide > .index, .library .grid--wide > .page, .code-view .grid--wide > .view, .code-view .grid--wide > .html, .code-view .grid--wide > .css, .page-front .section-blocks .grid--wide > .block {
     padding-left: 40px; }
 
 /*------------------------------------*\
@@ -1976,7 +1975,7 @@ a .icon-flip-vertical:before {
 /**
  * Whole
  */
-.one-whole, .the-build .foundation-title, .the-build .vendor {
+.one-whole {
   width: 100%; }
 
 /**
@@ -2085,7 +2084,7 @@ a .icon-flip-vertical:before {
   /**
    * Halves
    */
-  .mobile--one-half, .mobile--two-quarters, .mobile--three-sixths, .mobile--four-eighths, .mobile--five-tenths, .mobile--six-twelfths, .the-build .brick {
+  .mobile--one-half, .mobile--two-quarters, .mobile--three-sixths, .mobile--four-eighths, .mobile--five-tenths, .mobile--six-twelfths {
     width: 50%; }
 
   /**
@@ -2190,7 +2189,7 @@ a .icon-flip-vertical:before {
   /**
    * Thirds
    */
-  .tablet--one-third, .tablet--two-sixths, .library .index, .tablet--four-twelfths, .the-build .brick {
+  .tablet--one-third, .tablet--two-sixths, .library .index, .tablet--four-twelfths {
     width: 33.333%; }
 
   .tablet--two-thirds, .tablet--four-sixths, .library .page, .tablet--eight-twelfths {
@@ -2307,7 +2306,7 @@ a .icon-flip-vertical:before {
   /**
    * Fifths
    */
-  .desk--one-fifth, .desk--two-tenths, .the-build .foundation {
+  .desk--one-fifth, .desk--two-tenths {
     width: 20%; }
 
   .desk--two-fifths, .desk--four-tenths {
@@ -2322,7 +2321,7 @@ a .icon-flip-vertical:before {
   /**
    * Sixths
    */
-  .desk--one-sixth, .desk--two-twelfths, .library .index, .the-build .brick {
+  .desk--one-sixth, .desk--two-twelfths, .library .index {
     width: 16.666%; }
 
   .desk--five-sixths, .desk--ten-twelfths, .library .page {
@@ -2569,72 +2568,6 @@ table {
   table tbody {
     line-height: 24px; }
 
-form label {
-  width: 95%;
-  line-height: 24px;
-  display: block; }
-form input[type="text"],
-form input[type="password"],
-form input[type="select"],
-form input[type="search"] {
-  width: 90%;
-  margin-bottom: 0px;
-  display: block;
-  padding: 12px; }
-form textarea {
-  padding: 12px;
-  width: 90%;
-  height: 200px;
-  line-height: 24px;
-  margin-bottom: 5px;
-  display: block;
-  clear: left;
-  overflow: auto; }
-form input[type="radio"],
-form input[type="checkbox"] {
-  margin: 0px 8px 0px 12px;
-  display: inline-block; }
-
-.radio,
-.checkbox {
-  padding: 0 0 0 0 !important; }
-  .radio ul,
-  .checkbox ul {
-    margin-bottom: -1px !important; }
-
-.textarea {
-  margin-bottom: 23px; }
-
-legend {
-  padding-bottom: 24px; }
-
-input[type="file"] {
-  margin: 0px 6px 3px 6px; }
-
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  position: relative;
-  top: 5px;
-  margin-bottom: 24px; }
-
-form {
-  margin-bottom: 24px; }
-  form .field-item {
-    margin-bottom: 24px;
-    padding: 0 0 2px 0; }
-  form input {
-    border: solid 1px #999999; }
-
-form.stacked label {
-  display: block; }
-form.stacked .radio label, form.stacked .checkbox label {
-  display: inline-block; }
-form.inline label {
-  display: inline-block;
-  width: 150px;
-  line-height: 24px; }
-
 .container {
   width: 100%; }
 
@@ -2652,37 +2585,27 @@ form.inline label {
   .container {
     width: 1200px;
     margin: 0 auto; } }
-.list, .radio ul,
-.checkbox ul, .library .index ul {
+.list, .library .index ul {
   margin: 0;
   padding: 0; }
-  .list li, .radio ul li,
-  .checkbox ul li, .library .index ul li {
+  .list li, .library .index ul li {
     margin: 0;
     list-style: none; }
-    .list li a, .radio ul li a,
-    .checkbox ul li a, .library .index ul li a {
+    .list li a, .library .index ul li a {
       padding: 0 5px; }
-  .list.horizontal li, .radio ul.horizontal li,
-  .checkbox ul.horizontal li, .library .index ul.horizontal li {
+  .list.horizontal li, .library .index ul.horizontal li {
     display: inline; }
-    .list.horizontal li a, .radio ul.horizontal li a,
-    .checkbox ul.horizontal li a, .library .index ul.horizontal li a {
+    .list.horizontal li a, .library .index ul.horizontal li a {
       display: inline-block; }
-  .list.vertical li, .radio ul.vertical li,
-  .checkbox ul.vertical li, .library .index ul li {
+  .list.vertical li, .library .index ul li {
     display: block; }
-    .list.vertical li a, .radio ul.vertical li a,
-    .checkbox ul.vertical li a, .library .index ul li a {
+    .list.vertical li a, .library .index ul li a {
       display: block; }
-  .list.left, .radio ul.left,
-  .checkbox ul.left, .library .index ul.left {
+  .list.left, .library .index ul.left {
     text-align: left; }
-  .list.center, .radio ul.center,
-  .checkbox ul.center, .library .index ul.center {
+  .list.center, .library .index ul.center {
     text-align: center; }
-  .list.right, .radio ul.right,
-  .checkbox ul.right, .library .index ul.right {
+  .list.right, .library .index ul.right {
     text-align: right; }
 
 html {
@@ -2701,14 +2624,6 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(51, 51, 51, 0.3)), color-stop(50%, rgba(51, 51, 51, 0.1)), color-stop(100%, rgba(34, 34, 34, 0.3)));
   background-image: -webkit-linear-gradient(left, rgba(51, 51, 51, 0.3) 0%, rgba(51, 51, 51, 0.1) 50%, rgba(34, 34, 34, 0.3) 100%);
   background-image: linear-gradient(to right,rgba(51, 51, 51, 0.3) 0%, rgba(51, 51, 51, 0.1) 50%, rgba(34, 34, 34, 0.3) 100%); }
-
-h2 {
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 24px !important;
-  padding-bottom: 24px;
-  color: #999999;
-  border-bottom: dashed 1px #eeeeee; }
 
 p.lead {
   color: #555555;
@@ -2776,28 +2691,16 @@ code {
 
 .library .index li a {
   display: block;
-  padding: 0 0px !important;
-  background: #e6e6e6;
-  margin-bottom: 2px;
-  color: #999999; }
+  border-bottom: solid 1px #999999;
+  padding: 5px 5px !important; }
   .library .index li a:hover {
     text-decoration: none; }
-    .library .index li a:hover i {
-      color: #69b2a9; }
-  .library .index li a i {
-    color: #555555;
-    background: #e1e1e1;
-    display: inline-block;
-    padding: 15px;
-    width: 15px;
-    text-align: center;
-    font-size: 1.125em; }
   .library .index li a.current {
     background: white;
-    color: #555555; }
+    color: #555555;
+    border-bottom: solid 1px #222222; }
     .library .index li a.current i {
-      color: white;
-      background: #72cac1; }
+      color: deepskyblue; }
 .library .index .title {
   background: #999999;
   color: white;
@@ -2827,9 +2730,6 @@ code {
     font-size: 1.125em;
     text-align: center;
     display: block; }
-
-.baseline {
-  background-image: url(../images/site/baseline.png); }
 
 .page-front h1 {
   text-align: center;
@@ -2877,29 +2777,8 @@ code {
 .page-front .section-blocks .block h5 {
   text-align: center; }
 
-.the-build li {
-  margin-bottom: 24px; }
-.the-build i {
-  display: block;
-  font-size: 2em; }
-.the-build .brick a {
-  color: white;
-  background: #e7685b;
-  display: block;
-  text-align: center;
-  padding: 24px 0; }
-.the-build .foundation a {
-  color: white;
-  background: #72cac1;
-  display: block;
-  text-align: center;
-  padding: 24px 0; }
-.the-build .vendor a {
-  color: white;
-  background: #69b3e7;
-  display: block;
-  text-align: center;
-  padding: 24px 0; }
+.section-typography {
+  background-image: url(../images/site/baseline.png); }
 
 .media-queries .identify {
   float: right;
@@ -2908,15 +2787,14 @@ code {
   font-family: 'FontAwesome';
   font-size: 2em;
   width: auto;
-  position: absolute;
-  top: 124px;
-  right: 0; }
+  position: relative;
+  margin: -20px 0 24px 0; }
   .media-queries .identify:before {
     position: absolute;
     top: 23px;
     left: -80px;
     content: "";
-    color: white;
+    color: #eeeeee;
     font-size: 70px; }
 @media only screen and (max-width: 480px) {
   .media-queries .identify {

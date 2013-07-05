@@ -26,7 +26,7 @@
        	 	<script src="../../assets/js/vendor/html5shiv.js"></script>
         
         <!-- B. END ++++++++++++++++++++++++++++++++++++++ -->
-
+		
     </head>
     <body class="page-sub">
         <!--[if lt IE 7]>
@@ -37,7 +37,7 @@
 		
 		<section class="container">
 			
-						<!-- C1. Header -->
+						<!-- C.1. Header -->
 						<header id="masthead">
 						
 							<!-- C1.1 Logo -->
@@ -55,14 +55,14 @@
 						
 		</section>
 		
-						<!-- C2. Mast -->
+						<!-- C.2. Mast -->
 						<section id="mast">
 						
 						<div class="container">
 						
 							<h1>Core Library</h1>
 							
-							<!-- C2.2: Section[STRUCTURE] -->
+							<!-- C.2.1: Section[STRUCTURE] -->
 							<div class="library">
 							
 								<div class="index">
@@ -71,11 +71,12 @@
 									
 									<ul>
 	<li class='current-parent'><a class='current-parent' href="index.html"><i class="icon-file-text"></i> Welcome</a></li>
-	<li><a href="scaffolding.html"><i class="icon-code"></i> Scaffolding</a></li>
-	<li><a href="responsive.html"><i class="icon-code"></i> Media Queries</a></li>
-	<li><a href="typography.html"><i class="icon-code"></i> Typography</a></li>
-	<li class='current'><a class='current' href="forms.html"><i class="icon-code"></i> Forms</a></li>
-	<li><a href="lists.html"><i class="icon-code"></i> Lists</a></li>
+	<li><a href="vendor.html"><i class="icon-code"></i> Vendors</a></li>
+	<li><a href="scaffolding.html"><i class="icon-table"></i> Scaffolding</a></li>
+	<li><a href="responsive.html"><i class="icon-exchange"></i> Media Queries</a></li>
+	<li><a href="typography.html"><i class="icon-font"></i> Typography</a></li>
+	<li class='current'><a class='current' href="forms.html"><i class="icon-tasks"></i> Forms</a></li>
+	<li><a href="lists.html"><i class="icon-list-ul"></i> Lists</a></li>
 </ul>
 																	
 									<!-- C2.2.1: End -->
@@ -85,14 +86,68 @@
 								<div class="page">
 									<div class="content">
 									
-										<!-- C2.2.2: Section[PAGE] -->
-										<h2>The Core.</h2>
-										<p>The core of Konstruct is kept as tiny and basic as possible, including only the necessities <span class="amp">&amp;</span> stuff you really should have in your site.</p>
-										<p>Lolwut.</p>
-										<div class="messages">
-											<p class="info"><strong><i class="icon-info-sign"></i> Using SASS?</strong> 
-											You can <code>@extend</code> most of the core functionality into your existing styles, thereby reducing the class-clutter in your HTML. In cases where this is practical, you will see a notification.</p>
-										</div>
+										<!-- C.2.2.: Section[PAGE] -->
+										<h2>Forms.</h2>
+										<p class="lead">Konstruct's core forms offer you a form system that is applicable to almost any application, but does also support the better forms pattern I developed over time.</p>
+										<p>You can <code>@extend</code> the <code>.inline</code> for wider screens and then just stack it with <code>.stacked</code> for lower screen sizes. In between sizes are sorted through percentage based widths.</p>
+										
+										<section class="section-forms baseline">
+										
+																						
+											<!-- C.2.2.1: BASIC FORM ++++++++++++++++++++++++++++++ -->
+											<h3>Basic Stacked Form</h3>
+											<form class="stacked">
+											
+												<div class="field-item text">
+													<label for="name">Name:</label>
+													<input type="text" name="name" value="Adrian Kirsten" id="name" />
+												</div>
+												
+												<div class="field-item text">
+													<label for="surname">Surname:</label>
+													<input type="text" name="name" value="" id="surname" />
+												</div>
+												
+												<div class="field-item text">
+													<label for="phone">Phone Number:</label>
+													<input type="text" name="name" value="" id="phone" />
+												</div>
+												
+												<div class="field-item radio">
+													<ul>
+														<li>May I spam you with requests?</li>
+														<li><input type="radio" id="yes" name="rad"><label for="yes">Sure</label></li>
+														<li><input type="radio" id="no" name="rad"><label for="no">No thanks</label></li>
+													</ul>
+												</div>
+												
+												<div class="field-item textarea">
+													<label for="about">About you</label>
+													<textarea id="about" >Textarea text</textarea>
+												</div>
+												
+												<div class="field-item select">
+													<label for="eye">Eye Color</label>
+													<select id="eye">
+														<option selected="selected">Select your color</option>
+														<option>Green</option>
+														<option>Orange</option>
+														<option>Blue</option>
+														<option>Brown</option>
+													</select>
+												</div>
+											
+												<footer class="form-controls">
+													<button type="submit">Submit</button>
+												</footer>
+											
+											</form>
+											
+											
+											
+											<!-- C.2.2.1: HEADINGS ++++++++++++++++++++++++++++++ -->
+										
+										</section>
 										
 										<!-- C2.2.2: End -->
 									
@@ -117,7 +172,7 @@
 		<li><a href="#">Report a bug</a></li>
 	</ul>
 </footer>
-							
+									
 					</section>			
 		
 		<!-- C. END ++++++++++++++++++++++++++++++++++++++ -->

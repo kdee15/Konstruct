@@ -34,9 +34,9 @@ Please check the CHANGELOG.md file for the most up to date changelog of this pro
 
 ## Contribute
 
-Any and all help in making Konstruct an awesome framework is appreciated. 
+Any and all help in making Konstruct an awesome framework is appreciated. There are some guidelines to use when doing so though, just keep us all sane :) 
 
-Please check out <code>documentation/contribute.html</code>
+Please check out the CONTRIBUTING.md file.
 
 <hr />
 

@@ -1,35 +1,42 @@
 [Konstruct 1.0](http://traaidmark.github.io/Konstruct/)
 =============
 
-Konstruct is a HTML & CSS framework developed to assist in building awesome si
+Konstruct is a HTML & CSS framework developed to assist in building awesome stuff on the internet.
 
 <hr />
 
 ## Documentation
 
-For the sake of sanity and simplicity, you can find all documentation in the <code>documentation/</code> folder. 
+For the sake of sanity and simplicity, you can find all documentation over at [http://traaidmark.github.io/Konstruct](http://traaidmark.github.io/Konstruct/). 
 
 Documentation is a huge priority for this project, and no feature will ever go out without corresponding documentation.
 
-### Get Going
+### Getting Started
 
-**IMPORTANT:** There is no stable release yet. Please don't use this project yet.
+You can get Konstruct in two ways right now:
 
-### Roadmap & Changelog
-
-Please check the <code>documentation/changelog.html</code> for the most up to date changelog & roadmap of this project.
-
-### Contribute
-
-Any and all help in making Konstruct an awesome framework is appreciated. 
-
-Please check out <code>documentation/contribute.html</code>
+* Download the latest release - [v.1.0](#)
+* Clone the *Main Branch* - [https://github.com/traaidmark/Konstruct.git](https://github.com/traaidmark/Konstruct.git)
 
 ### Credits
 
 This project would not be possible without the help of so many people out there on the internet. From code snippets, patterns, ideas & inspiration. Please take a moment to go check these guys out. They make the rest of us look good.
 
-Please check out <code>documentation/credits.html</code> for the credits. I know I missed a lot of people, if you are one, please let me know and I will rectify *ASAP*.
+Please check out [http://traaidmark.github.io/Konstruct/credits.html](http://traaidmark.github.io/Konstruct/credits.html) for the credits. I know I missed a lot of people, if you are one, please let me know and I will rectify *ASAP*.
+
+<hr />
+
+## Changelog
+
+Please check the CHANGELOG.md file for the most up to date changelog of this project.
+
+<hr />
+
+## Contribute
+
+Any and all help in making Konstruct an awesome framework is appreciated. 
+
+Please check out <code>documentation/contribute.html</code>
 
 <hr />
 

@@ -48,8 +48,7 @@
 		// B.1 Paragraph	
 		body,
 		p {
-			font-family: $base-font; 
-			font-size: 100%;
+			font-family: $base-font;
 			line-height: $baseline;
 			margin: 0 0 $baseline 0;
 			color: $grayDark;
@@ -169,6 +168,47 @@
 		}
 	
 	// D. END ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	// D. RESPONSIVE FONT SIZES ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+		body {
+			font-size: 75%; // For the feature phone.
+		}
+	
+		@include media-query(mobile){ 
+		
+			body {
+				font-size: 87.5%;
+			}
+		
+		 }
+		 
+		 @include media-query(tablet){ 
+		 
+		 	body {
+		 		font-size: 87.5%;
+		 	}
+		 
+		  }
+		 
+		 
+		@include media-query(desk){ 
+		
+			body {
+				font-size: 100%;
+			}
+		
+		 }
+		 
+		@include media-query(desk-wide){ 
+		
+			body {
+				font-size: 112.5%;
+			}
+		
+		 }
+	 
+	 // D. END ++++++++++++++++++++++++++++++++++++++++++++++++
 	
 
 // END OF FILE ##############################################

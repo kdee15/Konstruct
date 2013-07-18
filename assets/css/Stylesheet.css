@@ -2497,7 +2497,6 @@ h6 {
 body,
 p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 100%;
   line-height: 24px;
   margin: 0 0 24px 0;
   color: #333333; }
@@ -2565,6 +2564,21 @@ table {
   table tbody {
     line-height: 24px; }
 
+body {
+  font-size: 75%; }
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 87.5%; } }
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  body {
+    font-size: 87.5%; } }
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 100%; } }
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 112.5%; } }
 form label {
   width: 95%;
   line-height: 24px;

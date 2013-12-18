@@ -25,24 +25,21 @@
 	// B. MIXINS ++++++++++++++++++++++++++++++++++++++++++++++
 		
 		// B.1 Konstruct
-		@import	"mixins/mixins";
-		
-		// B.1 Bourbon
-		@import	"vendor/mixins/bourbon";
+		@import	"konstruct/mixins/mixins";
 		
 
 	// C. IMPORTANT COMPONENTS ++++++++++++++++++++++++++++++++++++++++++++++
 	
 		// C.1. Normalize.css
-		@import	"vendor/normalize";
+		@import	"konstruct/vendor/normalize";
 		
 		// C.2. Font Awesome
-		@import "vendor/fontAwesome";
+		@import "konstruct/vendor/fontAwesome";
 
 	// D. CORE ++++++++++++++++++++++++++++++++++++++++++++++
 	
 		// D.1 Scaffolding
-		@import "core/core";
+		@import "konstruct/core/core";
 	
 	// E. BRICKS ++++++++++++++++++++++++++++++++++++++++++++++
 	

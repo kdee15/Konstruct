@@ -1,8 +1,8 @@
 /**
-* @preserve HTML5 Shiv v3.6.2 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
+* @preserve HTML5 Shiv v3.6.2 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed  
 */
 ;(function(window, document) {
-/*jshint evil:true */
+/*jshint evil:true  */
   /** version */
   var version = '3.6.2';
 
@@ -27,7 +27,7 @@
   /** Cached data for each document */
   var expandoData = {};
 
-  /** Detect whether the browser supports unknown elements */
+  /** Detect whether the browser supports unknown elements    */
   var supportsUnknownElements;
 
   (function() {
@@ -48,7 +48,7 @@
           );
         }());
     } catch(e) {
-      // assign a false positive if detection fails => unable to shiv
+      // assign a false positive   if detection fails => unable to shiv
       supportsHtml5Styles = true;
       supportsUnknownElements = true;
     }

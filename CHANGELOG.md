@@ -16,15 +16,14 @@ This is a major update, and should be stable enough for a production site. A lot
 
 ### Resolved Issues
 
-* 
 * Tweaked project structure to be less crazy on bigger website work.
+* Grunt
+	* Added Grunt to the project! No more silly apps needed.
+	* Added package.json - Built to work with Konstruct specifically.
 * Bricks
 	* Added bricks system, finally.
 * Core
-	* Added Typography
-	* Added Forms
-	* Added Lists
-	* Added Media Query System
+	* Removed Bourbon - I just don't use this enough to justify the overheads.
 * Documentation
 	* Updated CHANGELOG.md
 	* Updated README.md

@@ -4,6 +4,34 @@ This file serves as a general changelog for Konstruct releases. This file *shoul
 
 <hr />
 
+## V.1.1 -
+
+This is a major update, and should be stable enough for a production site. A lot of the tweaks come from using Konstruct in a production environment.
+
+### Known Issues
+
+* Some Forms & Typography elements don't align up to the baseline yet. Deemed to not be a blocker, but will be nice to sort this out at some point.
+* The Media Query System doesn't play nice with everything yet.
+* Documentation is not yet polished to my liking. :(
+
+### Resolved Issues
+
+* 
+* Tweaked project structure to be less crazy on bigger website work.
+* Bricks
+	* Added bricks system, finally.
+* Core
+	* Added Typography
+	* Added Forms
+	* Added Lists
+	* Added Media Query System
+* Documentation
+	* Updated CHANGELOG.md
+	* Updated README.md
+	* Added this CHANGELOG.md
+* [traaidmark.github.io/Konstruct](http://traaidmark.github.io/Konstruct)
+	* Planning a rework of the documentation website.
+
 ## V.1.0 - 
 
 This release is a ground up rewrite from the now deprecated Construct project. It focusses purely on *core* functionality and system layer stuff. Konstruct bricks is planned but won't be added until <code>v.1.1.</code> & onwards.

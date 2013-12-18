@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
 
-    // 1. All configuration goes here 
+    // 1. CONFIGURATION +++++++++++++++++++++++++++++++++++++++++++++++
+    
     grunt.initConfig({
 
 		// 1.1. Concatenate Javascript assets
@@ -34,17 +35,83 @@ module.exports = function(grunt) {
                     dest: 'assets/images/'
                 }]
             }
-        }
+        },
         // 1.3. End
+        
+        // 1.4. SASS Processor
+        sass: {
+            dist: {
+                options: {
+                    style: 'compressed'
+                },
+                files: {
+                    'assets/css/Stylesheet.css': 'assets/css/Stylesheet.scss'
+                }
+            } 
+        },
+        // 1.4. End
+        
+        // 1.5. Watcher
+        
+        watch: {
+        
+        	// 1.5.1. Watch scripts
+        
+            scripts: {
+                files: [
+                	'assets/js/*.js',
+                	'assets/js/libraries/*.js',
+                	'assets/js/scripts/*.js'
+                ],
+                tasks: ['concat', 'uglify'],
+                options: {
+                    spawn: false,
+                },
+            },
+            
+            // 1.5.1. End
+            
+            // 1.5.2. Watch css
+            
+            css: {
+                files: ['assets/css/*.scss'],
+                tasks: ['sass'],
+                options: {
+                    spawn: false,
+                }
+            }
+            
+            // 1.5.2. End
+        }
+        
+        // 1.5. End
 
     });
-
-    // 3. Where we tell Grunt we plan to use this plug-in.
+    
+    // 1. END +++++++++++++++++++++++++++++++++++++++++++++++
+    
+    // 2. LOGGING EVENTS +++++++++++++++++++++++++++++++++++++++++++++++
+    
+    grunt.event.on('watch', function(action, filepath, target) {
+      grunt.log.writeln(target + ': ' + filepath + ' has ' + action);
+    });
+    
+    // 2. END +++++++++++++++++++++++++++++++++++++++++++++++
+    
+    // 3. LOAD PLUGINS +++++++++++++++++++++++++++++++++++++++++++++++
+    
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    
+    // 3. END +++++++++++++++++++++++++++++++++++++++++++++++
 
-    // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'imagemin']);
+    // 4. RUNNING +++++++++++++++++++++++++++++++++++++++++++++++
+    
+    grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'sass']);
+    
+    // 4. END +++++++++++++++++++++++++++++++++++++++++++++++
 
 };

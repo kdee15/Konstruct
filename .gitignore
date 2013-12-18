@@ -1,3 +1,4 @@
 .DS_Store
 *.esproj
 node_modules/*
+.sass-cache/*

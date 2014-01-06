@@ -1,0 +1,4 @@
+name: Konstruct Documentation
+markdown: redcarpet
+pygments: false
+baseurl: /Konstruct

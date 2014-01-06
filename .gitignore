@@ -1,2 +1,5 @@
 .DS_Store
 *.esproj
+.Sass-cache
+node_modules/*
+params.json

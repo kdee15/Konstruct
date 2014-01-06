@@ -131,15 +131,7 @@ module.exports = function(grunt) {
     
     // 1. END +++++++++++++++++++++++++++++++++++++++++++++++
     
-    // 2. LOGGING EVENTS +++++++++++++++++++++++++++++++++++++++++++++++
-    
-    grunt.event.on('watch', function(action, filepath, target) {
-      grunt.log.writeln(target + ': ' + filepath + ' has ' + action);
-    });
-    
-    // 2. END +++++++++++++++++++++++++++++++++++++++++++++++
-    
-    // 3. LOAD PLUGINS +++++++++++++++++++++++++++++++++++++++++++++++
+    // 2. LOAD PLUGINS +++++++++++++++++++++++++++++++++++++++++++++++
     
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -148,13 +140,14 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-notify');
     
-    // 3. END +++++++++++++++++++++++++++++++++++++++++++++++
+    // 2. END +++++++++++++++++++++++++++++++++++++++++++++++
 
-    // 4. RUNNING +++++++++++++++++++++++++++++++++++++++++++++++
+    // 3. RUNNING +++++++++++++++++++++++++++++++++++++++++++++++
     
     grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'sass', 'autoprefixer', 'cssmin']);
     
-    // 4. END +++++++++++++++++++++++++++++++++++++++++++++++
+    // 3. END +++++++++++++++++++++++++++++++++++++++++++++++
 
 };

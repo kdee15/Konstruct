@@ -1,2 +1,3 @@
 _site
 *.esproj
+node_modules/*

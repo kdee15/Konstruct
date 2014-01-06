@@ -1,4 +1,4 @@
-[Konstruct 2.0](http://traaidmark.github.io/Konstruct/) Documentation
+Konstruct Documentation
 =============
 
 This <code>GH-PAGES</code> branch serves as the official documentation site for the [Konstruct](http://traaidmark.github.io/Konstruct/) project. I try to make this as complete and up to date as possible, and each major release should have matching docs to go with it!

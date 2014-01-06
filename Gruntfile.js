@@ -103,7 +103,7 @@ module.exports = function(grunt) {
             // 1.5.2. Watch css
             
             css: {
-                files: ['assets/css/*.scss'],
+                files: ['assets/css/**/*.scss'],
                 tasks: ['sass', 'autoprefixer', 'cssmin'],
                 options: {
                     spawn: false,

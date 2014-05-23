@@ -19,30 +19,24 @@
 		// A.2 Brand Config
 		@import	"config/brand";
 		
-		// A.3 Global Config
+		// A.3 Global Config  
 		@import	"config/global";
 		
 	// B. MIXINS ++++++++++++++++++++++++++++++++++++++++++++++
 		
 		// B.1 Konstruct
-		@import	"mixins/mixins";
-		
-		// B.1 Bourbon
-		@import	"vendor/mixins/bourbon";
+		@import	"konstruct/mixins/mixins";
 		
 
 	// C. IMPORTANT COMPONENTS ++++++++++++++++++++++++++++++++++++++++++++++
 	
 		// C.1. Normalize.css
-		@import	"vendor/normalize";
-		
-		// C.2. Font Awesome
-		@import "vendor/fontAwesome";
+		@import	"konstruct/vendor/normalize";
 
 	// D. CORE ++++++++++++++++++++++++++++++++++++++++++++++
 	
 		// D.1 Scaffolding
-		@import "core/core";
+		@import "konstruct/core/core";
 	
 	// E. BRICKS ++++++++++++++++++++++++++++++++++++++++++++++
 	
@@ -51,10 +45,6 @@
 	// F. SITE ++++++++++++++++++++++++++++++++++++++++++++++
 		
 		@import "site/site";
-		
-	// G. FONTS ++++++++++++++++++++++++++++++++++++++++++++++
-	
-	//	@import "dev/dev"; // A couple of helper classes for debug stuff. Pretty much useless right now.
 	
 // 000000000000000000000000000000000000000000000000000000000000000000
 	

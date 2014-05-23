@@ -3,29 +3,29 @@
 
 	// A. FONTS ++++++++++++++++++++++++++++++++++++++++++++++++
 	
-	
-		// @IMPORT YOUR FONT CSS FILES IN HERE
+	    // A.1. Import Source Sans
+		@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600);
+		
+		// A.2. Import Lato
+		@import url(http://fonts.googleapis.com/css?family=Lato:300);
 		
 		
 	// B. FONT STACKS ++++++++++++++++++++++++++++++++++++++++++++++++
 
-		// B.1 Arial Font Stack
+		// B.1 Helvetica Font Stack
 		$helvetica: 	"Helvetica Neue", Helvetica, Arial, sans-serif;
 		
-		// B.2 Arial Font Stack
-		$verdana: 		Verdana, Geneva, sans-serif;
-		
-		// B.3 Arial Font Stack
-		$lucida-grande: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
-		
-		// B.4 Arial Font Stack
-		$georgia: 		Georgia, Cambria, "Times New Roman", Times, serif;
-		
-		// B.5 Arial Font Stack
+		// B.5 Monospace Font Stack
 		$monospace: 	"Bitstream Vera Sans Mono", Consolas, Courier, monospace;
 		
 		// B.6 Arial Font Stack
 		$arial:			Arial, Helvetica, sans-serif;
+		
+		// B.7 Source Sans Font Stack
+		$source:	'Source Sans Pro', sans-serif;
+		
+		// B.7 Source Sans Font Stack
+		$lato:	'lato', sans-serif;
 		
 		
 		// ADD YOUR OWN FONT STACKS HERE
@@ -33,7 +33,7 @@
 		
 	// C. FONT SETUP ++++++++++++++++++++++++++++++++++++++++++++++++
 
-		$base-font:			$helvetica; // Change your default font type.
+		$base-font:			$lato; // Change your default font type.
 		$base-size: 		16px; 		// Choose your base font size. I like 16px and Relative Readability.
 		$baseline: 			24px; 		// Choose your Line Height.
 		

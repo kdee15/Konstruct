@@ -11,7 +11,7 @@
 
 # FRAMEWORK
 
-    Konstruct -- http://www.traaidmark.com/project/konstruct
+    Konstruct -- http://traaidmark.com/project/konstruct-css3-framework/
 
 # TECHNOLOGY COLOPHON
 

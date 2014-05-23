@@ -1,4 +1,4 @@
-[Konstruct 1.0](http://traaidmark.github.io/Konstruct/)
+[Konstruct 1.2](http://traaidmark.github.io/Konstruct/)
 =============
 
 Konstruct is a HTML & CSS framework developed to assist in building awesome stuff on the internet.
@@ -7,38 +7,16 @@ Konstruct is a HTML & CSS framework developed to assist in building awesome stuf
 
 ## Documentation
 
-For the sake of sanity and simplicity, you can find all documentation over at [http://traaidmark.github.io/Konstruct](http://traaidmark.github.io/Konstruct/). 
-
-Documentation is a huge priority for this project, and no feature will ever go out without corresponding documentation.
+Documentation is a huge priority for this project. We don't have this in place yet, but will soon!
 
 ### Getting Started
 
 You can get Konstruct in two ways right now:
 
-* Download the latest release - [v.1.0](#)
+* Download the latest release - [v.1.2](https://github.com/traaidmark/Konstruct/archive/master.zip)
 * Clone the *Main Branch* - [https://github.com/traaidmark/Konstruct.git](https://github.com/traaidmark/Konstruct.git)
 
-### Credits
-
-This project would not be possible without the help of so many people out there on the internet. From code snippets, patterns, ideas & inspiration. Please take a moment to go check these guys out. They make the rest of us look good.
-
-Please check out [http://traaidmark.github.io/Konstruct/credits.html](http://traaidmark.github.io/Konstruct/credits.html) for the credits. I know I missed a lot of people, if you are one, please let me know and I will rectify *ASAP*.
-
-<hr />
-
-## Changelog
-
-Please check the CHANGELOG.md file for the most up to date changelog of this project.
-
-<hr />
-
-## Contribute
-
-Any and all help in making Konstruct an awesome framework is appreciated. There are some guidelines to use when doing so though, just keep us all sane :) 
-
-Please check out the CONTRIBUTING.md file.
-
-<hr />
+You will need to install NodeJS and Sass. When you have both, simply run <code>npm install</code> to install grunt to your repo. You can then process sass & js files with <code>grunt watch</code>.
 
 ## Versions
 

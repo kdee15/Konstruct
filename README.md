@@ -16,6 +16,8 @@ You can get Konstruct in two ways right now:
 * Download the latest release - [v.1.2](https://github.com/traaidmark/Konstruct/archive/master.zip)
 * Clone the *Main Branch* - [https://github.com/traaidmark/Konstruct.git](https://github.com/traaidmark/Konstruct.git)
 
+You will need to install NodeJS and Sass. When you have both, simply run <code>npm install</code> to install grunt to your repo. You can then process sass & js files with <code>grunt watch</code>.
+
 ## Versions
 
 Konstruct is versioned under the [Semantic Versioning](http://semver.org/) guidelines.

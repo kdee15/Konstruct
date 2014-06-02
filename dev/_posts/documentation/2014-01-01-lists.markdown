@@ -5,4 +5,37 @@ date:   2014-01-01 12:01:00
 categories: documentation core
 ---
 
-This page will talk you through the process of setting up your brand.
+Lists are such an integral part of building a front end, that we decided to include this into Konstruct's core. You don't *have* to use it, but we suggest you do. 
+
+A few of Konstruct's bricks use this implementation of lists.
+
+### The HTML
+
+``` html
+<ul class="my-list">
+    <li>My List Item</li>
+    <li>My List Item</li>
+    <li>My List Item</li>
+</ul>
+```
+
+We have taken the <code>@extend</code> feature of SASS to heart, and base all of our work on that as much as possible. See General > SASS for more information.
+
+#### Horizontal List
+
+``` css
+.my-list {
+    @extend .horizontal;
+    @extend .list;
+}
+```
+**Note:** You can use normal <code>text-align:</code> to position this list horizontally.
+
+#### Vertical List
+
+``` css
+.my-list {
+    @extend .vertical;
+    @extend .list;
+}
+```

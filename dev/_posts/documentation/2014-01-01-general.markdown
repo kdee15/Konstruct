@@ -1,0 +1,8 @@
+---
+layout: post-doc
+title:  "General Configuration"
+date:   2014-01-01 12:00:00
+categories: documentation config
+---
+
+This page will talk you through the process of setting up your fonts.

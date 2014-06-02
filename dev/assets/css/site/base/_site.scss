@@ -1,0 +1,279 @@
+// SITE LAYER  ##############################################
+
+	// A. SITEWIDE STYLING ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+		html, body {
+			background: $k_gray;
+		}
+		
+		// A.1. Typography 
+		h1, h2{
+		    font-family: $source;
+			font-weight: 200;
+			text-transform: uppercase;
+		}
+		
+		h2 {
+		    color: $k-red;
+		}
+		
+		h3, h4, h5, h6 {
+		
+		   font-family: $source;
+		   font-weight: 400;
+		   text-transform: uppercase;
+		   color: $k-aqua;
+		
+		}
+		
+		h3 {
+		    margin-bottom: $baseline;
+		}
+		
+		p, ul, li, ol, td {
+		    font-family: $lato;
+			font-weight: 300;
+			color: $k-black;
+		}
+		
+		a {
+		
+		    color: $k-red;
+		    transition: 0.2s;
+		    
+		    &:hover {
+		        text-decoration: none;
+		        color: $k-redDark;
+		        transition: 0.2s;
+		    }
+		
+		}
+		
+		code {
+		    background: $k-redDark;
+		    color: $white;
+		    font-size: $small;
+		    padding: $baseline / 4;
+		}
+		
+		pre {
+		    background: $k-redDark;
+		    padding: $baseline / 2;
+		    code {
+		        padding: 0;
+		    }
+		}
+		// A.1. End
+	
+	// A. END ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	// B. MASTHEAD ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	    // B.1. FRONT PAGE
+	    .page-front {
+	        
+	        #masthead {
+	        
+	                padding: $baseline 0;
+	            
+	            }
+	    
+	    }
+	    // B.1. END
+	    
+	    // B.2. NOT FRONT PAGE
+	    .not-front {
+	    
+	        #masthead {
+	    
+	            background: $white;
+	        
+	        }
+	    
+	    }
+	    // B.2. END
+	    
+	    // B.3. Generic Styles
+	
+		#masthead {
+			
+			@include clearfix();
+			
+			.container {
+			    position: relative;
+			}
+			
+			// B.1. Logo 
+			.logo {
+				img {
+				   width: 222px; 
+				}
+			}
+			// B.1. End
+			
+			// B.2. Navigation
+			.nav-main {
+				
+				@include vertical-align(absolute);
+				right: 0;
+				
+				ul {
+					margin: 0;
+					padding: 0;
+					list-style: none;
+					li {
+					    float: left;
+					}
+				}
+				
+				a {
+					display: inline-block!important;
+					text-transform: uppercase;
+					font-weight: 200;
+					color: $k-black;
+					padding: 12px!important;
+				}
+				
+				.download {
+				
+				    background: $k-aqua;
+				    color: $white;
+				    overflow: hidden;
+				    position: relative;
+				    
+				    &:after {
+				        position: absolute;
+				        top: 0;
+				        left: 0;
+				        background: $k-aquaDark;
+				        content: attr(data-hover);
+				        width: 100%;
+				        padding: 12px 0!important;
+				        text-align: center;
+				        transform: translateY(-100%);
+				    }
+				    
+				    &:hover:after {
+				        transform: translateY(0%);
+				        transition: transform 0.3s ease;
+				    
+				    }
+				
+				}
+				
+				
+			}
+			// B.2. End
+			
+			// B.3. Menu Navigation
+			.nav-menu {
+				
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba($k-red, 0.9);
+				transform: translateY(-100%);
+				transition: transform 0.3s ease-out;
+				
+				&:target {
+				    transform: translateY(0%);
+				    transition: transform 0.3s ease-in, opacity 0.2s ease;
+				}
+				
+				.close-menu {
+				    background: $k-redDark;
+				    color: $k-red;
+				    position: absolute;
+				    top: 0;
+				    right: 0;
+				    font-size: $x-large;
+				    padding: 24px 30px;
+				}
+				
+				ul {
+					@extend .list;
+					@extend .vertical;
+					text-align: center;
+					@include vertical-align(relative);
+					
+					li {
+					    margin-bottom: $baseline / 2;
+					}
+					
+					a {
+						display: inline-block!important;
+						width: 30%;
+						text-transform: uppercase;
+						line-height: normal;
+						font-weight: 200;
+						font-size: $x-large;
+						color: $white;
+						border: solid 2px transparent;
+						padding: 12px!important;
+						
+						transition: border-color 0.4s ease 0s;
+						
+						&:hover {
+						    border-color: $k-redDark;
+						    //color: $white;
+						    transition: border-color 0.4s ease 0s;
+						
+						}
+						
+					}
+					
+				}
+				
+				
+			}
+			// B.3. End
+			
+			
+		}
+		
+		// B.3. END
+	
+	// B. END ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	// C. MAST ++++++++++++++++++++++++++++++++++++++++++++++++
+		
+		.not-front {
+		    #mast {
+		        margin: $baseline * 2 0;
+		    }
+		}
+		
+		
+		#mast {
+		
+		    // C.1. GRID SETUP
+		    .listings {
+		        
+		        @extend .grid;
+		        
+		        .sidebar {
+		            @extend .grid__item;
+		            @extend .one-fifth;
+		        }
+		        
+		        .content {
+		            @extend .grid__item;
+		            @extend .four-fifths;
+		        }
+		    }
+			
+		}
+		
+	// C. END ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	// D. FOOTEND ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+		#footend {
+			background: $white;
+		}
+		
+	// D. END ++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ##############################################

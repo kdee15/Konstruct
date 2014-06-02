@@ -1,0 +1,130 @@
+// SITE LAYER [PAGES] ##############################################
+
+	// 1. HOMEPAGE +++++++++++++++++++++++++++++++++++++++++++
+	
+	    html, .page-front, #mast, .welcome-screen {
+	        height: 100%!important;
+	    }
+	
+	    .page-front {
+	        
+	        // 1.1. SECTIONS
+	        .section {
+	            padding: $baseline * 2 0;
+	            
+	            &.welcome-screen {
+	            }
+	            
+	            
+	            &.build {
+	                background: $k-red;
+	                
+	                h1 {
+	                    margin: 0;
+	                    color: $k-redDark;
+	                    text-align: center;
+	                }
+	                
+	            }
+	            
+	            &.about {
+	                background: $k-aqua;
+	                text-align: center;
+	                
+	                .figure-icon {
+	                    img {
+	                        width: 150px;
+	                        margin: 0 auto;
+	                        margin-bottom: $baseline;
+	                    }
+	                }
+	                
+	                h2 {
+	                    margin: 0;
+	                    color: $white;
+	                    text-align: center;
+	                }
+	            }
+	        
+	        }
+	        // 1.1. END
+	        
+	        // 1.2. Welcome Screen
+	        html, body, #mast, .welcome-screen, .container {
+	            height: 100%!important;
+	        }
+	        .welcome-screen {
+	        
+	            .figure-mascot {
+	                img {
+	                    margin: 0 auto;
+	                }
+	            }
+	        
+	        }
+	        // 1.2. End
+	        
+	    }
+	
+	// 1. END +++++++++++++++++++++++++++++++++++++++++++
+	
+	// 2. CHANGELOG +++++++++++++++++++++++++++++++++++++++++++
+	
+	// 2. END +++++++++++++++++++++++++++++++++++++++++++
+	
+	// 3. DOCUMENTATION +++++++++++++++++++++++++++++++++++++++++++
+	
+	    .page-documentation {
+	    
+	        // 3.1. Listings grid
+	        .listings {
+	        
+	            // 3.1.1. Sidebar
+	            .sidebar {
+	            
+	                background: rgba($white, 0.5);
+	                
+	                h3 {
+	                    color: $k-grayDark;
+	                }
+	                
+	                ul {
+	                
+	                    @extend .list;
+	                    @extend .vertical;
+	                
+	                    li {}
+	                    
+	                    a {
+	                        color: $k-black;
+	                        border-bottom: solid 1px $k-gray;
+	                        padding: 4px!important;
+	                        
+	                        &:hover {
+	                        
+	                            background: $white;
+	                        
+	                        }
+	                        
+	                    }
+	                
+	                }
+	                
+	            }
+	            
+	            // 3.1.2. Content
+	            .content {
+	                background: $white;
+	            }
+	        
+	        }
+	        // 3.1. End
+	    }
+	
+	// 3. END +++++++++++++++++++++++++++++++++++++++++++
+	
+	// 1. HOMEPAGE +++++++++++++++++++++++++++++++++++++++++++
+	
+	// 1. END +++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ##############################################

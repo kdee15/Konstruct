@@ -1,14 +1,27 @@
-// CORE LAYER [RESPONSIVE] ##############################################
+// CORE LAYER [CONTAINERS] ##############################################
+
+    // [DESCRIPTION]:
+    //
+    // Adds a container to your site / content that is fixed width on larger screens, and 100% on small screens. 
+
+    // [USAGE]:
+    // 
+    //<div class="container">
+    //    
+    //    <!-- Site content here -->
+    //    
+    //</div>
 
 	// A. RESPONSIVE CONTAINERS +++++++++++++++++++++++++++++++++++++++
 	
 		.container {
-			width: 100%;
+			max-width: 100%;
 		}
 		
 		@include media-query(mobile){ 
 		
 			.container {
+			    margin: 0 $baseline/4;
 			}
 		
 		 }
@@ -16,6 +29,7 @@
 		 @include media-query(tablet){ 
 		 
 		 	.container {
+		 	    margin: 0 $baseline/2;
 		 	}	
 		 
 		  }

@@ -5,4 +5,21 @@ date:   2014-01-01 12:02:00
 categories: documentation javascript
 ---
 
-This page will talk you through the process of setting up your fonts.
+Reveal.js is a very simple, but very powerful Jquery script that shows/hides content based on it's display settings. It's quick and simple to implement, and can power most of your dynamic front end needs.
+
+### Basic Usage
+
+```html
+<a href="#my-hidden-content" class="reveal">Toggle the content</a>
+
+<div id="my-hidden-content" class="hidden">
+    This content is hidden by default.
+</div>
+```
+
+### Example
+
+This example is a modal window we built, running reveal.js entirely. This is just an idea of the things you can do with it!
+
+<p data-height="538" data-theme-id="1950" data-slug-hash="fsxFl" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/traaidmark/pen/fsxFl/'>Quick & Dirty Modals</a> by Adrian Kirsten (<a href='http://codepen.io/traaidmark'>@traaidmark</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>

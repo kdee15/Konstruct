@@ -1,0 +1,56 @@
+---
+layout: post-doc
+title:  "Fonts"
+date:   2014-01-01 12:02:00
+categories: documentation config
+---
+
+This is the file where you can set up all of your typographical needs. You can import fonts, set up their variables and set default sizes, line-heights and general spacing.
+
+### Importing Fonts
+
+It's common to include your hosted fonts through javascript, but if you prefer not to, or can't, you can add the CSS import in the <code>// A. FONTS</code> section.
+
+We have included 2 fonts for you.
+
+### Font Variables
+
+We include some common font stacks, including the above mentioned 2. You can simply set a variable for your favorite stack, and reuse as you wish! Here is an example of a font stack variable in use:
+
+```css
+// the variable:
+$helvetica: 	"Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// the usage:
+h1 {
+    font-family: $helvetica;
+}
+```
+
+### Base Setup
+
+Here we set up the base sizes we will base all our work on.
+
+```css
+    // Change your default font type.
+    $base-font:			$lato;
+    
+    // Choose your base font size. I like 16px and Relative Readability.
+    $base-size: 		16px;
+    
+    // Choose your Line Height. This is also used for margins, padding and other spacing related elements. It's a great way to get consistency in your spacing system.
+    $baseline: 			24px;
+```
+
+### Font Sizes
+
+The font sizes Konstruct sets in the typography.scss file are set here. The sizes are in *em* and is relative to <code>$base-size</code>.
+
+```css
+    $x-large:			2em; 		// 32px
+    $large:				1.5em; 		// 24px
+    $medium:			1.125em; 	// 18px
+    $normal:			1em; 		// 16px
+    $small:				0.75em; 	// 12px
+    $x-small:			0.625em; 	// 10px
+```

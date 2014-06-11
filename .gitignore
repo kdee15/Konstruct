@@ -1,4 +1,4 @@
 _site
 *.esproj
-dev/node_modules/*
-dev/.sass-cache/*
+node_modules/*
+.sass-cache/*

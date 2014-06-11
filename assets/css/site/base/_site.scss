@@ -4,6 +4,7 @@
 	
 		html, body {
 			background: $k_gray;
+            margin: 0;
 		}
 		
 		// A.1. Typography 
@@ -50,19 +51,25 @@
 		}
 		
 		code {
-		    background: $grayDark;
+		    background: $k-aqua;
 		    color: $white;
 		    font-size: $small;
 		    padding: $baseline / 4;
 		}
 		
 		pre {
-		    background: $grayDark;
+		    background: $k-aqua;
 		    padding: $baseline / 2;
 		    code {
 		        padding: 0;
 		    }
 		}
+
+        form {
+            border: solid 1px $grayLighter;
+            padding: $baseline;
+            background: lighten($grayLighter, 5%);
+        }
 		// A.1. End
 	
 	// A. END ++++++++++++++++++++++++++++++++++++++++++++++++
@@ -132,6 +139,12 @@
 					font-weight: 200;
 					color: $k-black;
 					padding: 12px!important;
+                    //transition: color 0.3s; 
+                    
+                    &:hover {
+                        //color: $k-aqua;
+                        //transition: color 0.3s; 
+                    }
 				}
 				
 				.download {
@@ -176,20 +189,26 @@
 				background: rgba($k-red, 0.9);
 				transform: translateY(-100%);
 				transition: transform 0.3s ease-out;
-				
+				z-index: 900;
 				&:target {
 				    transform: translateY(0%);
 				    transition: transform 0.3s ease-in, opacity 0.2s ease;
 				}
 				
 				.close-menu {
-				    background: $k-redDark;
-				    color: $k-red;
-				    position: absolute;
-				    top: 0;
-				    right: 0;
+				    color: $white;
+                    width: 50px;
+                    height: 50px;
+                    border: solid 1px $white;
+                    border-radius: 100%;
 				    font-size: $x-large;
-				    padding: 24px 30px;
+				    padding: 0px 50px;
+                    transition: color 0.3s;
+                    
+                    &:hover {
+                        color: $k-redDark;
+                        transition: color 0.3s;
+                    }
 				}
 				
 				ul {
@@ -272,6 +291,20 @@
 	
 		#footend {
 			background: $white;
+            
+            .container {
+                padding-top: $baseline * 2;
+                padding-bottom: $baseline * 2;
+                text-align: center;
+                h6 {
+                    margin: 0;
+                    color: $gray;
+                    
+                    a {
+                        color: $grayDarker;
+                    }
+                }
+            }
 		}
 		
 	// D. END ++++++++++++++++++++++++++++++++++++++++++++++++

@@ -1,0 +1,88 @@
+---
+layout: post-doc
+title:  "Forms"
+date:   2014-01-01 12:01:00
+categories: documentation core
+---
+
+We have included two basic form layout types, which should be standard enough for anyone to use. These produce either stacked, or inline form elements.
+
+#### Stacked
+<form class="form stacked">
+<div class="field-item text text-my-name">
+<label for="field-my-name">My Name</label>
+<input type="text" name="field-my-name" value="" id="field-my-name" placeholder="What is your name?">
+</div>
+</form>
+``` html
+<form class="form stacked">
+    
+<!-- Form content here -->
+    
+</form>
+```
+
+#### Inline
+<form class="form inline">
+<div class="field-item text text-my-other-name">
+<label for="field-my-other-name">My Other Name</label>
+<input type="text" name="field-my-other-name" value="" id="field-my-other-name" placeholder="What is your other name?">
+</div>
+</form>
+``` html
+<form class="form inline">
+    
+<!-- Form content here -->
+    
+</form>
+```
+
+## Form Elements
+
+Form elements are built up using a method we use every day, to the point where we believe it should be in core.
+
+#### Input Fields
+
+``` html
+<div class="field-item text text-my-other-name">
+    <label for="field-my-other-name">My Other Name</label>
+    <input type="text" name="field-my-other-name" value="" id="field-my-other-name" placeholder="What is your other name?">
+</div>
+```
+
+#### Select Boxes
+
+``` html
+<div class="field-item select-box select-colors">
+    <label for="select-colors">My Other Name</label>
+    <select name="select-colors" id="select-colors">
+        <option selected="selected">What's your favorite color?</option>
+        <option>Green</option>
+        <option>Orange</option>
+        <option>Blue</option>
+        <option>Brown</option>
+    </select>
+</div>
+```
+
+#### Radio / Checkboxes
+
+``` html
+<div class="field-item radio-buttons radio-colors">
+    <ul>
+        <li><label for="radio-color-red"><input type="radio" name="radio-colors" value="red" id="radio-color-red" /> Red</label></li>
+        <li><label for="radio-color-green"><input type="radio" name="radio-colors" value="green" id="radio-color-green" /> Green</label></li>
+        <li><label for="radio-color-blue"><input type="radio" name="radio-colors" value="blue" id="radio-color-blue" /> Blue</label></li>
+    </ul>
+</div>
+```
+
+#### Textarea
+
+``` html
+<div class="field-item textarea textarea-description">
+    <label for="textarea-description">Tell me more about you</label>
+    <textarea id="textarea-description" name="textarea-description">
+    </textarea>
+</div>
+```

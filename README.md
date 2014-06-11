@@ -14,4 +14,3 @@ This <code>GH-PAGES</code> branch serves as the official documentation site for 
 ## Licensing
 
 The content belongs to the project, but you are welcome to use the code for whatever you want. A link back and a virtual *highfive* would be nice though.
-

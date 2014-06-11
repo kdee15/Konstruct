@@ -1,6 +1,7 @@
 name: Konstruct Website
 markdown: redcarpet
 pygments: false
+baseurl: ""
 url: /
 version: 1
 permalink: /:categories/:title

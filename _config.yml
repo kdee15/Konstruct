@@ -1,8 +1,8 @@
 name: Konstruct Website
 markdown: redcarpet
 pygments: false
-baseurl: ""
-url: /
+baseurl: "/Konstruct"
+url: http://localhost:4000
 version: 1
 permalink: /:categories/:title
 exclude: [README.md, ROADMAP.md, Gruntfile.js, package.json, 'node_modules', 'TRM - traaidmark.com.esproj']

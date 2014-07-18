@@ -1,2 +1,11 @@
+# KONSTRUCT IGNORE FILE
+
+# IGNORE GRUNT FODDER
+
+node_modules/
+.sass-cache/
+
+# IGNORE ANY SYSTEM FODDER
+
 .DS_Store
 *.esproj

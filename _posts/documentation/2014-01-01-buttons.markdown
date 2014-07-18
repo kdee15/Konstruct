@@ -1,0 +1,133 @@
+---
+layout: post-doc
+title:  "Buttons"
+date:   2014-01-01 12:01:00
+categories: documentation bricks
+---
+
+By default, buttons come in 3 differen't size variations. There are small, medium &amp; large buttons you can use, and they have the flat button style attached to them by default.
+
+## Slide Buttons
+
+<ul>
+    <li>Sizing: <strong>[small, medium, large]</strong></li>
+    <li>Colour: <strong>[blue, green, yellow, orange, red, pink, purple, $custom]</strong></li>
+</ul>
+
+```html
+<a href="#" class="small blue button">Small Button</a>
+```
+
+#### Small Buttons
+
+<ul class="horizontal list">
+    <li><a href="#" class="small blue flat button" data-hover="Small Button"><span>Small Button</span></a></li>
+    <li><a href="#" class="small green flat button" data-hover="Small Button"><span>Small Button</span></a></li>
+    <li><a href="#" class="small yellow flat button" data-hover="Small Button"><span>Small Button</span></a></li>
+    <li><a href="#" class="small orange flat button" data-hover="Small Button"><span>Small Button</span></a></li>
+    <li><a href="#" class="small red flat button" data-hover="Small Button"><span>Small Button</span></a></li>
+    <li><a href="#" class="small pink flat button" data-hover="Small Button"><span>Small Button</span></a></li>
+    <li><a href="#" class="small purple flat button" data-hover="Small Button"><span>Small Button</span></a></li>
+</ul>
+
+#### Medium Buttons
+
+<ul class="horizontal list">
+    <li><a href="#" class="medium blue flat button" data-hover="Medium Button"><span>Medium Button</span></a></li>
+    <li><a href="#" class="medium green flat button" data-hover="Medium Button"><span>Medium Button</span></a></li>
+    <li><a href="#" class="medium yellow flat button" data-hover="Medium Button"><span>Medium Button</span></a></li>
+    <li><a href="#" class="medium orange flat button" data-hover="Medium Button"><span>Medium Button</span></a></li>
+</ul>
+
+#### Large Buttons
+
+<ul class="horizontal list">
+    <li><a href="#" class="large blue flat button" data-hover="Large Button"><span>Large Button</span></a></li>
+    <li><a href="#" class="large green flat button" data-hover="Large Button"><span>Large Button</span></a></li>
+    <li><a href="#" class="large yellow flat button" data-hover="Large Button"><span>Large Button</span></a></li>
+    <li><a href="#" class="large orange flat button" data-hover="Large Button"><span>Large Button</span></a></li>
+</ul>
+
+## Outline Buttons
+
+<ul>
+    <li>Sizing: <strong>[small, medium, large]</strong></li>
+    <li>Colour: <strong>[blue, green, yellow, orange, red, pink, purple, $custom]</strong></li>
+</ul>
+
+```html
+<a href="#" class="small blue outline-button">Small Button</a>
+```
+
+#### Small Buttons
+
+<ul class="horizontal list">
+    <li><a href="#" class="small blue outline button" data-hover="Small Button">Small Button</a></li>
+    <li><a href="#" class="small green outline button" data-hover="Small Button">Small Button</a></li>
+    <li><a href="#" class="small yellow outline button" data-hover="Small Button">Small Button</a></li>
+    <li><a href="#" class="small orange outline button" data-hover="Small Button">Small Button</a></li>
+    <li><a href="#" class="small red outline button" data-hover="Small Button">Small Button</a></li>
+    <li><a href="#" class="small pink outline button" data-hover="Small Button">Small Button</a></li>
+    <li><a href="#" class="small purple outline button" data-hover="Small Button">Small Button</a></li>
+</ul>
+
+#### Medium Buttons
+
+<ul class="horizontal list">
+    <li><a href="#" class="medium blue outline button" data-hover="Medium Button">Medium Button</a></li>
+    <li><a href="#" class="medium green outline button" data-hover="Medium Button">Medium Button</a></li>
+    <li><a href="#" class="medium yellow outline button" data-hover="Medium Button">Medium Button</a></li>
+    <li><a href="#" class="medium orange outline button" data-hover="Medium Button">Medium Button</a></li>
+</ul>
+
+#### Large Buttons
+
+<ul class="horizontal list">
+    <li><a href="#" class="large blue outline button" data-hover="Large Button">Large Button</a></li>
+    <li><a href="#" class="large green outline button" data-hover="Large Button">Large Button</a></li>
+    <li><a href="#" class="large yellow outline button" data-hover="Large Button">Large Button</a></li>
+    <li><a href="#" class="large orange outline button" data-hover="Large Button">Large Button</a></li>
+</ul>
+
+## Pill Buttons
+
+<ul>
+    <li>Sizing: <strong>[small, medium, large]</strong></li>
+    <li>Colour: <strong>[blue, green, yellow, orange, red, pink, purple, $custom]</strong></li>
+</ul>
+
+```html
+<a href="#" class="small blue pill button">Small Button</a>
+```
+
+#### Small Buttons
+
+<ul class="horizontal list">
+    <li><a href="#" class="small blue pill button" data-hover="Small Button"><span>Small Button</span></a></li>
+    <li><a href="#" class="small green pill button" data-hover="Small Button"><span>Small Button</span></a></li>
+    <li><a href="#" class="small yellow pill button" data-hover="Small Button"><span>Small Button</span></a></li>
+    <li><a href="#" class="small orange pill button" data-hover="Small Button"><span>Small Button</span></a></li>
+    <li><a href="#" class="small red pill button" data-hover="Small Button"><span>Small Button</span></a></li>
+    <li><a href="#" class="small pink pill button" data-hover="Small Button"><span>Small Button</span></a></li>
+    <li><a href="#" class="small purple pill button" data-hover="Small Button"><span>Small Button</span></a></li>
+</ul>
+
+#### Medium Buttons
+
+<ul class="horizontal list">
+    <li><a href="#" class="medium blue pill button" data-hover="Medium Button"><span>Medium Button</span></a></li>
+    <li><a href="#" class="medium green pill button" data-hover="Medium Button"><span>Medium Button</span></a></li>
+    <li><a href="#" class="medium yellow pill button" data-hover="Medium Button"><span>Medium Button</span></a></li>
+    <li><a href="#" class="medium orange pill button" data-hover="Medium Button"><span>Medium Button</span></a></li>
+</ul>
+
+#### Large Buttons
+
+<ul class="horizontal list">
+    <li><a href="#" class="large blue pill button" data-hover="Large Button"><span>Large Button</span></a></li>
+    <li><a href="#" class="large green pill button" data-hover="Large Button"><span>Large Button</span></a></li>
+    <li><a href="#" class="large yellow pill button" data-hover="Large Button"><span>Large Button</span></a></li>
+    <li><a href="#" class="large orange pill button" data-hover="Large Button"><span>Large Button</span></a></li>
+</ul>
+
+

@@ -378,18 +378,14 @@
 	
 	// 1. END +++++++++++++++++++++++++++++++++++++++++++
 	
-	// 2. CHANGELOG +++++++++++++++++++++++++++++++++++++++++++
-	
-	// 2. END +++++++++++++++++++++++++++++++++++++++++++
-	
-	// 3. DOCUMENTATION +++++++++++++++++++++++++++++++++++++++++++
+	// 2. DOCUMENTATION +++++++++++++++++++++++++++++++++++++++++++
 	
 	    .page-documentation {
 	    
-	        // 3.1. Listings grid
+	        // 2.1. Listings grid
 	        .listings {
 	        
-	            // 3.1.1. Sidebar
+	            // 2.1.1. Sidebar
 	            .sidebar {
 	            
 	                background: rgba($white, 0.5);
@@ -406,15 +402,10 @@
 	                    li {}
 	                    
 	                    a {
-	                        color: $k-black;
-	                        border-bottom: solid 1px $k-gray;
-	                        padding: 4px!important;
-	                        
-	                        &:hover {
-	                        
-	                            background: $white;
-	                        
-	                        }
+                            @extend .blue;
+                            @extend .medium;
+	                        @extend .pill;
+                            @extend .button;
 	                        
 	                    }
 	                
@@ -422,7 +413,7 @@
 	                
 	            }
 	            
-	            // 3.1.2. Content
+	            // 2.1.2. Content
 	            .content {
 	            
 	                background: $white;
@@ -436,13 +427,113 @@
 	            }
 	        
 	        }
-	        // 3.1. End
+	        // 2.1. End
+            
+            // 2.2. Front page
+            
+            .figure-mascot {
+                img {
+                    margin: 0 auto;
+                }
+            }
+            
+            // 2.2. End
 	    }
 	
+	// 2. END +++++++++++++++++++++++++++++++++++++++++++
+	
+	// 3. HOMEPAGE +++++++++++++++++++++++++++++++++++++++++++
+	   .page-changelog {
+        
+           // 3.1. SIDEBAR 
+           
+           .figure-mascot {
+               margin: 0 0 $baseline 0;
+           }
+           
+           .aside-banner {
+                
+               padding: $baseline;
+               
+               border: solid 2px $k_aqua;
+               
+               p {
+                    color: $k_aqua;
+                   text-align: right;
+                   margin: 0;
+               }
+               
+           }
+           // 3.1. END
+           
+           // 3.2. TEASER 
+           .teaser {
+               border-bottom: solid 5px $white;
+               transition: 0.3s;
+               background: none;
+               position: relative;
+               overflow: hidden;
+               h3 {
+                margin-top: 0;
+                   font-weight: 600;
+               }
+               a {
+                color: $k_aqua;
+               }
+               p {
+                margin: 0;
+               }
+               h3, p {
+                
+                z-index: 5;
+                position: relative; 
+               }
+               
+               &:after {
+                   content: "";
+                   width: 100%;
+                   height: 100%;
+                   position: absolute;
+                   top: 0;
+                   left: 0;
+                   background: $k_aqua;
+                   transform: translateY(-100%);
+                   transition: 0.3s;
+               }
+               &:hover {
+                   transition: 0.3s;
+                   border-bottom: solid 5px $k_aquaDark;
+                   h3, p, a {
+                       color: $white;
+                   }
+                   
+                   &:after {
+                       transform: translateY(0%);
+                       transition: 0.3s;
+                   }
+                   
+                }
+           }
+           // 3.2. END
+           
+           // 3.3. FULL 
+           .full {
+           
+               h2 {
+                font-weight: 600;
+                color: $k_aqua;
+               }
+           
+           }
+           // 3.3. END 
+           
+       }
 	// 3. END +++++++++++++++++++++++++++++++++++++++++++
-	
-	// 1. HOMEPAGE +++++++++++++++++++++++++++++++++++++++++++
-	
-	// 1. END +++++++++++++++++++++++++++++++++++++++++++
+
+    // 4. HOMEPAGE +++++++++++++++++++++++++++++++++++++++++++
+	   .page- {
+       
+       }
+	// 4. END +++++++++++++++++++++++++++++++++++++++++++
 
 // END OF FILE ##############################################

@@ -46,55 +46,23 @@
 			<section id="mast">
 			    <div class="container">
 			    
-			        <h1>The Documentation</h1>
+			        <h1>The Changelog</h1>
 			        
 			        <div class="listings">
-			        
-			            <div class="sidebar">
+                        
+                        <div class="sidebar">
 			            
-			                <h3>General</h3>
-			                
-			                <ul>
-			                    {% for post in site.categories['general'] %}
-			                        <li><a href="{{ site.baseurl }}{{ post.url }}" data-hover="{{ post.title }}"><span>{{ post.title }}</span></a></li>
-			                    {% endfor %}
-			                </ul>
-			                
-			                <h3>Config</h3>
-			                
-			                <ul>
-			                    {% for post in site.categories['config'] %}
-			                        <li><a href="{{ site.baseurl }}{{ post.url }}" data-hover="{{ post.title }}"><span>{{ post.title }}</span></a></li>
-			                    {% endfor %}
-			                </ul>
-			                
-			                <h3>Core</h3>
-			                
-			                <ul>
-			                    {% for post in site.categories['core'] %}
-			                        <li><a href="{{ site.baseurl }}{{ post.url }}" data-hover="{{ post.title }}"><span>{{ post.title }}</span></a></li>
-			                    {% endfor %}
-			                </ul>
-			                
-			                <h3>Bricks</h3>
-			                
-			                <ul>
-			                    {% for post in site.categories['bricks'] %}
-			                        <li><a href="{{ site.baseurl }}{{ post.url }}" data-hover="{{ post.title }}"><span>{{ post.title }}</span></a></li>
-			                    {% endfor %}
-			                </ul>
-			                
-			                <h3>Javascript</h3>
-			                
-			                <ul>
-			                    {% for post in site.categories['javascript'] %}
-			                        <li><a href="{{ site.baseurl }}{{ post.url }}" data-hover="{{ post.title }}"><span>{{ post.title }}</span></a></li>
-			                    {% endfor %}
-			                </ul>
+			                <figure class="figure-mascot">
+                                <img src="{{ site.baseurl }}/assets/images/site/mascot.svg"  />
+                            </figure>
+                            
+                            <aside class="aside-banner">
+                                <p>You can keep up to date with releases, changelogs and roadmap news right here in the Changelog.</p>
+                            </aside>
 			                
 			            </div>
-			            
-			            <div class="content">
+                        
+                        <div class="content">
 			            
 			                <div class="wrapper">
 

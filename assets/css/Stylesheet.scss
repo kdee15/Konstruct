@@ -32,9 +32,6 @@
 	
 		// C.1. Normalize.css
 		@import	"konstruct/vendor/normalize";
-		
-		// C.2. Font Awesome
-		@import "konstruct/vendor/fontAwesome";
 
 	// D. CORE ++++++++++++++++++++++++++++++++++++++++++++++
 	
@@ -43,7 +40,7 @@
 	
 	// E. BRICKS ++++++++++++++++++++++++++++++++++++++++++++++
 	
-		// COMING SOON
+		@import "konstruct/bricks/bricks";
 
 	// F. SITE ++++++++++++++++++++++++++++++++++++++++++++++
 		

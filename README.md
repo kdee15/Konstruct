@@ -1,7 +1,7 @@
-[Konstruct 1.2](http://traaidmark.github.io/Konstruct/)
+[Konstruct 2.0](http://traaidmark.github.io/Konstruct/)
 =============
 
-Konstruct is a HTML & CSS framework developed to assist in building awesome stuff on the internet.
+Konstruct is a SASS framework developed to assist in building awesome stuff on the internet. It comes with a nifty boilerplate to get you up and running as quickly as possible.
 
 <hr />
 
@@ -11,12 +11,14 @@ Documentation is a huge priority for this project. We don't have this in place y
 
 ### Getting Started
 
-You can get Konstruct in two ways right now:
+We highly recommend that you get up and running with the boilerplate setup, which includes several awesome elements for you:
 
-* Download the latest release - [v.1.2](https://github.com/traaidmark/Konstruct/archive/master.zip)
-* Clone the *Main Branch* - [https://github.com/traaidmark/Konstruct.git](https://github.com/traaidmark/Konstruct.git)
+* Bower
+* Gulpjs
+* Starter HTML & Structure
+* Git Friendly setup
 
-You will need to install NodeJS and Sass. When you have both, simply run <code>npm install</code> to install grunt to your repo. You can then process sass & js files with <code>grunt watch</code>.
+You can find a nice get started guide over at [https://traaidmark.github.io/Konstruct/get-started](https://traaidmark.github.io/Konstruct/get-started)
 
 ## Versions
 
@@ -35,6 +37,7 @@ Releases are numbered as follows:
 ## Authors
 
 * Adrian Kirsten - [@traaidmark](https://twitter.com/traaidmark) - [www.traaidmark.com](http://www.traaidmark.com)
+* Kirk Daniels - [@kdee15](https://twitter.com/kdee15)
 
 <hr />
 

@@ -6,20 +6,69 @@ title: Getting Started
 
 <article class="article page">
 
-	<h1>Getting Started</h1>
+	<h1>Get started with Konstruct!</h1>
 	
-	<p class="lead">Konstruct is a *modern* web framework, and therefore, there is a lot of ways to get up and running with it.</p>
+	<p class="lead">We recommend getting up and running with the Konstruct boilerplate, a separate project that comes with a few extra goodies to help you manage your project a bit better.</p>
+    
+    <p>Out of the box, Konstruct is just a <em>SASS</em> library, but with the boilerplate you get all of the extra benefits from tools such as:</p>
+    
+    <ul>
+        <li>Bower</li>
+        <li>Gulpjs</li>
+        <li>Git Friendly setup</li>
+        <li>Mostly automated workflow</li>
+        <li>Starter HTML &amp; File Structuring.</li>
+    </ul>
+    
+    <h2>Sounds great? Lekker, let's get you started!</h2>
+    
+    <aside class="message info">
+        <h4>Before you begin:</h4>
+        <p>The boilerplate assumes that you have Nodejs, Sass, Gulpjs &amp; Bower installed. If you don't, or don't know what these are, please go walk through this article, that should point you in the right direction.</p>
+    </aside>
+    
+    <aside class="message warning">
+        <h4>Beware:</h4>
+        <p>The Konstruct boilerplate is still very much in alpha release. While we believe in our new direction, you should always err on the side of caution. It's very important to read the release notes &amp; known bugs section of your boilerplate version before committing it to a production website.</p>
+    </aside>
 	
-	<h2>Get Konstruct</h2>
-	<p></p>
-	
-	<h2>Install Grunt</h2>
-	<p></p>
-	
-	<h2>Familiarize yourself with Konstruct</h2>
-	<p></p>
-	
-	<h2>Build Something!</h2>
-	<p></p>
+	<h3>1. Get the boilerplate.</h3>
+	<p>The simplest way to get hold of the boilerplate is to clone the project from Github:</p>
+    <p><code>git clone https:// [YOUR_FOLDER]</code></p>
+    <p>Once you have cloned the project, simply cd into your working folder, and move on to the next steps!</p>
+    
+    <h3>2. Install Gulpjs.</h3>
+	<p>Next we need to get GulpJS up and running. If you have NodeJS &amp; Gulp installed, this should be as simple as running:</p>
+    <p><code>npm install</code></p>
+    <p>Once this has successfully run (might take a while), you can move on over to the next step in the process. Almost there!</p>
+    
+    <h3>3. Get Bower Dependencies</h3>
+	<p>There are 2 ways to do this, the default method of running <code>bower install</code>, or the recommended method through GulpJS. Running through Gulp will give you a much more reliable setup, and should get you building your awesome site in minutes!</p>
+    <h4>Step 3.1 - Install Bower Dependencies</h4>
+    <p><code>gulp bower</code></p>
+    <h4>Step 3.2 - Install Konstruct to the correct folders</h4>
+    <p><code>gulp install-konstruct</code></p>
+    <h4>Step 3.3 - Clean up errant folders, and get rid of .git folder.</h4>
+    <p><code>gulp clean</code></p>
+    
+    <h3>4. Test!</h3>
+	<p>Let's just make sure everything wen't okay shall we? If you run <code>gulp test</code>, it will run a few test tasks to make sure everything is where it's expected to be. If you get the <em>'All Clear!'</em>, you can move on to the final step - building your site!</p>
+    
+    <h3>5. Go Build Something Awesome!</h3>
+    <aside class="message error">
+        <h4>Very Important:</h4>
+        <p>We are not currently sure what will happen if you run the install a second time. We <em>expect</em> everything to be overridden. <strong>Please make backups while you help us test.</strong></p>
+    </aside>
+    <p>You are ready to start building! Below is a quick menu of gulp commands you can use during each chapter of your workflow. If you forget them, you can also just run <code>gulp</code> and have them repeated for you.</p>
+    
+    <h4>Gulp Commands</h4>
+    <ul>
+        <li>1. <code>gulp</code> - Will show you the available commands at your disposal.</li>
+        <li>2. <code>gulp develop</code> - Will watch as you work, compile your sass as you save, add vendor prefixes and livereload the page.</li>
+        <li>3. <code>gulp build</code> - <em>Coming soon</em>.</li>
+        <li>4. <code>gulp deploy</code> - <em>Coming soon</em>.</li>
+    </ul>
+    
+    
 	
 </article>

@@ -288,6 +288,30 @@
 	        // 1.1. SECTIONS
 	        .section {
 	            padding: $baseline * 4 0;
+                
+                &.new {
+                    background: $white;
+                    
+                    text-align: center;
+                    
+                    padding: $baseline 0!important;
+                    
+                    .date, h3 {
+                        display: inline;
+                        margin: 0;
+                    }
+                    
+                    .date {
+                        color: $grayLight;
+                    }
+                    
+                    a {
+                        color: $k-aqua;
+                        &:hover {
+                            color: $k-aquaDark;
+                        }
+                    }
+                }
 	            
 	            &.build {
 	                background: $k-red;
@@ -454,21 +478,33 @@
 	// 3. THE CHANGELOG +++++++++++++++++++++++++++++++++++++++++++
 	   .page-changelog {
         
+           background: $k_aqua;
+           
+           h1 {
+            color: $white;
+           }
+           
            // 3.1. SIDEBAR 
            
            .figure-mascot {
                margin: 0 0 $baseline 0;
+               
+               img {
+                margin: 0 auto;
+                width: 88%;
+               }
            }
            
            .aside-banner {
                 
                padding: $baseline;
                
-               border: solid 2px $k_aqua;
+               border: solid 2px $k_aquaDark;
                
                p {
-                    color: $k_aqua;
+                    color: $k_aquaDark;
                    text-align: right;
+                   font-size: $medium;
                    margin: 0;
                }
                
@@ -481,30 +517,57 @@
             @extend .grid;
            }
            
+           .full {
+                @extend .grid__item;
+               @extend .one-whole;
+               
+               .inside {
+                background: $white;
+                   padding: $baseline*2;
+               }
+               
+               .date {
+                font-size: $small;
+                color: $k_aquaDark;
+               }
+           }
+           
            .teaser {
                
                @extend .grid__item;
                @extend .one-quarter;
                
                .inside {
-                    border: solid 2px rgba($grayLight,0.5);
+                    border: solid 2px $k_aquaDark;
                    padding: $baseline;
                    
                    &:hover {
-                    background: $white;
                     border-color: $white;
+                       
+                       a, p, .date {
+                        color: $white;
+                       }
+                       
                    }
                }
                
                h3 {
                 margin-top: 0;
-                   font-weight: 600;
+                font-weight: 600;
+                margin-bottom: $baseline/4;
+               }
+               .date {
+                font-size: $small;
+                color: $k_aquaDark;
                }
                a {
-                color: $k_aqua;
+                color: $grayDark;
+                   
                }
                p {
                 margin: 0;
+                font-size: $small;
+                color: $k_aquaDark;
                }
                
                h3, p {

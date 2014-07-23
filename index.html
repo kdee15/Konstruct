@@ -33,6 +33,17 @@ title: Welcome to Konstruct!
     
 </section>
 
+<section class="section new">
+{% for post in site.categories['changelog'] limit:1 %}
+    <article class="line">
+        <div class="inside">
+        <div class="date">{{ post.date | date: "%-d %B %Y"}}</div>
+        <h3><a href="{{ site.baseurl }}{{ post.url }}" data-hover="{{ post.title }}"><span>{{ post.title | truncate:50  }}</span></a></h3>
+        </div>
+    </article>
+{% endfor %}
+</section>
+
 <!-- HP.1. Intro Graphic -->
 <section class="section build">
     <h1>Go build something.</h1>

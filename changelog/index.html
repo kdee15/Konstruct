@@ -7,9 +7,9 @@ title: The Changelog - Konstruct
 {% for post in site.categories['changelog'] %}
     <article class="teaser">
         <div class="inside">
-        <div class="date">15 June 2014</div>
-        <h3><a href="{{ site.baseurl }}{{ post.url }}" data-hover="{{ post.title }}"><span>{{ post.title }}</span></a></h3>
-        <p>{{ post.excerpt | truncate:100 }}</p>
+        <div class="date">{{ post.date | date: "%-d %B %Y"}}</div>
+        <h3><a href="{{ site.baseurl }}{{ post.url }}" data-hover="{{ post.title }}"><span>{{ post.title | truncate:50  }}</span></a></h3>
+        <p>{{ post.excerpt | truncatewords:20 }}</p>
         </div>
     </article>
 {% endfor %}

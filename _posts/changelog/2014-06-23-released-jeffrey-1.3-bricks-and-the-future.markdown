@@ -1,6 +1,6 @@
 ---
 layout: post-log
-title:  "Release: Jeffrey (1.3) - Hard reset, and moving forward."
+title:  "Release 2.0. - The Jeffrey Release! Moving towards a better design."
 date:   2014-06-23 12:01:00
 categories: changelog release
 ---

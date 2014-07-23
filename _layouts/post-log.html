@@ -3,9 +3,14 @@ layout: page-log
 page-class: page-changelog
 ---
 <article class="full">
-<h2>{{ page.title }}</h2>
+    
+    <div class="inside">
+    
+        <div class="date">{{ page.date | date: "%-d %B %Y"}}</div>
+        <h2>{{ page.title }}</h2>
+        
+        {{ content }}
+    
+    </div>
 
-<div class="post">
-{{ content }}
-</div>
 </article>

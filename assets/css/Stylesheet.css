@@ -378,7 +378,7 @@ table {
 	     * 4. Full-width unless told to behave otherwise.
 	     * 5. Required to combine fluid widths and fixed gutters.
 	     */
-.grid__item, #mast .listings .sidebar, #mast .listings .content, .page-changelog .teaser {
+.grid__item, #mast .listings .sidebar, #mast .listings .content, .page-changelog .full, .page-changelog .teaser {
   display: inline-block;
   /* [1] */
   padding-left: 20px;
@@ -403,7 +403,7 @@ table {
 .grid--rev {
   direction: rtl;
   text-align: left; }
-  .grid--rev > .grid__item, .grid--rev > #mast .listings .sidebar, #mast .listings .grid--rev > .sidebar, .grid--rev > #mast .listings .content, #mast .listings .grid--rev > .content, .grid--rev > .page-changelog .teaser, .page-changelog .grid--rev > .teaser {
+  .grid--rev > .grid__item, .grid--rev > #mast .listings .sidebar, #mast .listings .grid--rev > .sidebar, .grid--rev > #mast .listings .content, #mast .listings .grid--rev > .content, .grid--rev > .page-changelog .full, .page-changelog .grid--rev > .full, .grid--rev > .page-changelog .teaser, .page-changelog .grid--rev > .teaser {
     direction: ltr;
     text-align: left; }
 
@@ -413,7 +413,7 @@ table {
 	 */
 .grid--full {
   margin-left: 0; }
-  .grid--full > .grid__item, .grid--full > #mast .listings .sidebar, #mast .listings .grid--full > .sidebar, .grid--full > #mast .listings .content, #mast .listings .grid--full > .content, .grid--full > .page-changelog .teaser, .page-changelog .grid--full > .teaser {
+  .grid--full > .grid__item, .grid--full > #mast .listings .sidebar, #mast .listings .grid--full > .sidebar, .grid--full > #mast .listings .content, #mast .listings .grid--full > .content, .grid--full > .page-changelog .full, .page-changelog .grid--full > .full, .grid--full > .page-changelog .teaser, .page-changelog .grid--full > .teaser {
     padding-left: 0; }
 
 /**
@@ -421,7 +421,7 @@ table {
 	 */
 .grid--right {
   text-align: right; }
-  .grid--right > .grid__item, .grid--right > #mast .listings .sidebar, #mast .listings .grid--right > .sidebar, .grid--right > #mast .listings .content, #mast .listings .grid--right > .content, .grid--right > .page-changelog .teaser, .page-changelog .grid--right > .teaser {
+  .grid--right > .grid__item, .grid--right > #mast .listings .sidebar, #mast .listings .grid--right > .sidebar, .grid--right > #mast .listings .content, #mast .listings .grid--right > .content, .grid--right > .page-changelog .full, .page-changelog .grid--right > .full, .grid--right > .page-changelog .teaser, .page-changelog .grid--right > .teaser {
     text-align: left; }
 
 /**
@@ -430,17 +430,17 @@ table {
 	 */
 .grid--center {
   text-align: center; }
-  .grid--center > .grid__item, .grid--center > #mast .listings .sidebar, #mast .listings .grid--center > .sidebar, .grid--center > #mast .listings .content, #mast .listings .grid--center > .content, .grid--center > .page-changelog .teaser, .page-changelog .grid--center > .teaser {
+  .grid--center > .grid__item, .grid--center > #mast .listings .sidebar, #mast .listings .grid--center > .sidebar, .grid--center > #mast .listings .content, #mast .listings .grid--center > .content, .grid--center > .page-changelog .full, .page-changelog .grid--center > .full, .grid--center > .page-changelog .teaser, .page-changelog .grid--center > .teaser {
     text-align: left; }
 
 /**
 	 * Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends
 	 * `.grid`.
 	 */
-.grid--middle > .grid__item, .grid--middle > #mast .listings .sidebar, #mast .listings .grid--middle > .sidebar, .grid--middle > #mast .listings .content, #mast .listings .grid--middle > .content, .grid--middle > .page-changelog .teaser, .page-changelog .grid--middle > .teaser {
+.grid--middle > .grid__item, .grid--middle > #mast .listings .sidebar, #mast .listings .grid--middle > .sidebar, .grid--middle > #mast .listings .content, #mast .listings .grid--middle > .content, .grid--middle > .page-changelog .full, .page-changelog .grid--middle > .full, .grid--middle > .page-changelog .teaser, .page-changelog .grid--middle > .teaser {
   vertical-align: middle; }
 
-.grid--bottom > .grid__item, .grid--bottom > #mast .listings .sidebar, #mast .listings .grid--bottom > .sidebar, .grid--bottom > #mast .listings .content, #mast .listings .grid--bottom > .content, .grid--bottom > .page-changelog .teaser, .page-changelog .grid--bottom > .teaser {
+.grid--bottom > .grid__item, .grid--bottom > #mast .listings .sidebar, #mast .listings .grid--bottom > .sidebar, .grid--bottom > #mast .listings .content, #mast .listings .grid--bottom > .content, .grid--bottom > .page-changelog .full, .page-changelog .grid--bottom > .full, .grid--bottom > .page-changelog .teaser, .page-changelog .grid--bottom > .teaser {
   vertical-align: bottom; }
 
 /**
@@ -448,7 +448,7 @@ table {
 	 */
 .grid--narrow {
   margin-left: -10px; }
-  .grid--narrow > .grid__item, .grid--narrow > #mast .listings .sidebar, #mast .listings .grid--narrow > .sidebar, .grid--narrow > #mast .listings .content, #mast .listings .grid--narrow > .content, .grid--narrow > .page-changelog .teaser, .page-changelog .grid--narrow > .teaser {
+  .grid--narrow > .grid__item, .grid--narrow > #mast .listings .sidebar, #mast .listings .grid--narrow > .sidebar, .grid--narrow > #mast .listings .content, #mast .listings .grid--narrow > .content, .grid--narrow > .page-changelog .full, .page-changelog .grid--narrow > .full, .grid--narrow > .page-changelog .teaser, .page-changelog .grid--narrow > .teaser {
     padding-left: 10px; }
 
 /**
@@ -456,7 +456,7 @@ table {
 	 */
 .grid--wide {
   margin-left: -40px; }
-  .grid--wide > .grid__item, .grid--wide > #mast .listings .sidebar, #mast .listings .grid--wide > .sidebar, .grid--wide > #mast .listings .content, #mast .listings .grid--wide > .content, .grid--wide > .page-changelog .teaser, .page-changelog .grid--wide > .teaser {
+  .grid--wide > .grid__item, .grid--wide > #mast .listings .sidebar, #mast .listings .grid--wide > .sidebar, .grid--wide > #mast .listings .content, #mast .listings .grid--wide > .content, .grid--wide > .page-changelog .full, .page-changelog .grid--wide > .full, .grid--wide > .page-changelog .teaser, .page-changelog .grid--wide > .teaser {
     padding-left: 40px; }
 
 /*------------------------------------*\
@@ -471,7 +471,7 @@ table {
 /**
 	     * Whole
 	     */
-.one-whole {
+.one-whole, .page-changelog .full {
   width: 100%; }
 
 /**
@@ -2599,6 +2599,19 @@ form {
               animation: cloud-ten 90s infinite; }
 .page-front .section {
   padding: 96px 0; }
+  .page-front .section.new {
+    background: #fff;
+    text-align: center;
+    padding: 24px 0 !important; }
+    .page-front .section.new .date, .page-front .section.new h3 {
+      display: inline;
+      margin: 0; }
+    .page-front .section.new .date {
+      color: #999; }
+    .page-front .section.new a {
+      color: #2DBFC8; }
+      .page-front .section.new a:hover {
+        color: #1d7b82; }
   .page-front .section.build {
     background: #DF544B; }
     .page-front .section.build h1 {
@@ -2661,31 +2674,52 @@ form {
   .page-documentation .figure-mascot img {
     margin: 0 auto; }
 
-.page-changelog .figure-mascot {
-  margin: 0 0 24px 0; }
-.page-changelog .aside-banner {
-  padding: 24px;
-  border: solid 2px #2DBFC8; }
-  .page-changelog .aside-banner p {
-    color: #2DBFC8;
-    text-align: right;
-    margin: 0; }
-.page-changelog .teaser .inside {
-  border: solid 2px rgba(153, 153, 153, 0.5);
-  padding: 24px; }
-  .page-changelog .teaser .inside:hover {
+.page-changelog {
+  background: #2DBFC8; }
+  .page-changelog h1 {
+    color: #fff; }
+  .page-changelog .figure-mascot {
+    margin: 0 0 24px 0; }
+    .page-changelog .figure-mascot img {
+      margin: 0 auto;
+      width: 88%; }
+  .page-changelog .aside-banner {
+    padding: 24px;
+    border: solid 2px #1d7b82; }
+    .page-changelog .aside-banner p {
+      color: #1d7b82;
+      text-align: right;
+      font-size: 1.125em;
+      margin: 0; }
+  .page-changelog .full .inside {
     background: #fff;
-    border-color: #fff; }
-.page-changelog .teaser h3 {
-  margin-top: 0;
-  font-weight: 600; }
-.page-changelog .teaser a {
-  color: #2DBFC8; }
-.page-changelog .teaser p {
-  margin: 0; }
-.page-changelog .full h2 {
-  font-weight: 600;
-  color: #2DBFC8; }
+    padding: 48px; }
+  .page-changelog .full .date {
+    font-size: 0.75em;
+    color: #1d7b82; }
+  .page-changelog .teaser .inside {
+    border: solid 2px #1d7b82;
+    padding: 24px; }
+    .page-changelog .teaser .inside:hover {
+      border-color: #fff; }
+      .page-changelog .teaser .inside:hover a, .page-changelog .teaser .inside:hover p, .page-changelog .teaser .inside:hover .date {
+        color: #fff; }
+  .page-changelog .teaser h3 {
+    margin-top: 0;
+    font-weight: 600;
+    margin-bottom: 6px; }
+  .page-changelog .teaser .date {
+    font-size: 0.75em;
+    color: #1d7b82; }
+  .page-changelog .teaser a {
+    color: #333; }
+  .page-changelog .teaser p {
+    margin: 0;
+    font-size: 0.75em;
+    color: #1d7b82; }
+  .page-changelog .full h2 {
+    font-weight: 600;
+    color: #2DBFC8; }
 
 @media only screen and (max-width: 480px) { }
 

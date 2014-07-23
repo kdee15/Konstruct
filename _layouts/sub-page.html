@@ -7,17 +7,7 @@
     
         {% include snippet-meta.html %}
 
-		<!-- A. CSS ++++++++++++++++++++++++++++++++++++++ --> 
-		
-        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/Stylesheet.css?v{{ site.version }}">
-        
-        <!-- A. END ++++++++++++++++++++++++++++++++++++++ -->
-        
-        <!-- B. HEAD JS ++++++++++++++++++++++++++++++++++++++ --> 
-        <script src="{{ site.baseurl }}/assets/js/jquery/jquery-1.9.1.min.js"></script>
-        <script src="{{ site.baseurl }}/assets/js/production.js"></script>
-        
-        <!-- B. END ++++++++++++++++++++++++++++++++++++++ -->
+		{% include snippet-assets.html %}
 
     </head>
     <body class="not-front {{ page.page-class }}">

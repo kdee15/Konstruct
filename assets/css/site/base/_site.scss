@@ -16,27 +16,39 @@
 		
 		h2 {
 		    color: $k-red;
+            margin: $baseline*2 0;
 		}
 		
-		h3, h4, h5, h6 {
+		h4, h5, h6 {
 		
 		   font-family: $source;
-		   font-weight: 400;
+		   font-weight: 300;
 		   text-transform: uppercase;
-		   color: $k-aqua;
+		   color: $k-aquaDark;
 		
 		}
 		
 		h3 {
-		    margin-bottom: $baseline;
+            font-family: $source;
+		      font-weight: 300;
+		    margin: $baseline*2 0;
+            text-transform: uppercase;
+            color: $k-aqua;
+            font-size: $large;
 		}
 		
 		p, ul, li, ol, td {
 		    font-family: $lato;
-			font-weight: 300;
-			color: $k-black;
+			font-weight: 400;
+			color: $grayDark;
 		}
-
+        
+        .lead {
+            font-size: $medium;
+            line-height: $baseline * 1.5;
+            color: $black;
+        }
+        
         strong {
 		    font-family: $source;
 			font-weight: 600;
@@ -95,6 +107,8 @@
 	    
 	    // B.2. NOT FRONT PAGE
 	    .not-front {
+            
+            background: $k-red;
 	    
 	        #masthead {
 	    
@@ -287,6 +301,11 @@
 		            @extend .four-fifths;
 		        }
 		    }
+            
+            .page {
+                background: $white;
+                padding: $baseline*2;
+            }
 			
 		}
 		

@@ -1856,21 +1856,32 @@ h1, h2 {
   text-transform: uppercase; }
 
 h2 {
-  color: #DF544B; }
+  color: #DF544B;
+  margin: 48px 0; }
 
-h3, h4, h5, h6 {
+h4, h5, h6 {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   text-transform: uppercase;
-  color: #2DBFC8; }
+  color: #1d7b82; }
 
 h3 {
-  margin-bottom: 24px; }
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  margin: 48px 0;
+  text-transform: uppercase;
+  color: #2DBFC8;
+  font-size: 1.5em; }
 
 p, ul, li, ol, td {
   font-family: 'lato', sans-serif;
-  font-weight: 300;
-  color: #25221F; }
+  font-weight: 400;
+  color: #333; }
+
+.lead {
+  font-size: 1.125em;
+  line-height: 36px;
+  color: #000; }
 
 strong {
   font-family: 'Source Sans Pro', sans-serif;
@@ -1908,8 +1919,10 @@ form {
 .page-front #masthead {
   padding: 24px 0; }
 
-.not-front #masthead {
-  background: #fff; }
+.not-front {
+  background: #DF544B; }
+  .not-front #masthead {
+    background: #fff; }
 
 #masthead:before, #masthead:after {
   content: "";
@@ -2037,6 +2050,10 @@ form {
 
 .not-front #mast {
   margin: 48px 0; }
+
+#mast .page {
+  background: #fff;
+  padding: 48px; }
 
 #footend {
   background: #fff; }

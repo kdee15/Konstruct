@@ -18,20 +18,15 @@ The Konstruct boilerplate uses Bower to manage common dependencies, and allows y
 * Jquery
 * Modernizr
 * Html5Shiv
-* Normalize.css
+* Normalize.css *(Under Review)*
 
 
 ### Install Bower components
 
-Once you have bower itself installed, which is not within the scope of this document, getting the Konstruct dependencies can be done within a few seconds. Simply run the install command:
-
-    bower install
-
-### Updating Bower components
-
-You can update your local dependency versions through:
-
-    bower update
+<aside class="message warning">
+    <h4>Use Gulp!</h4>
+    <p>Konstruct provides a lot of functionality inside Gulp, one of which is managing system tasks. Please use Gulp's tasks when dealing with Bower!</p>
+</aside>
 
 ### Add your own components
 

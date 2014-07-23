@@ -9,7 +9,7 @@ title: The Changelog - Konstruct
         <div class="inside">
         <div class="date">15 June 2014</div>
         <h3><a href="{{ site.baseurl }}{{ post.url }}" data-hover="{{ post.title }}"><span>{{ post.title }}</span></a></h3>
-        <p>{{ post.excerpt }}</p>
+        <p>{{ post.excerpt | truncate:100 }}</p>
         </div>
     </article>
 {% endfor %}

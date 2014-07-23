@@ -1,11 +1,11 @@
 ---
 layout: post-doc
-title:  "Grunt Guide"
-date:   2014-01-01 12:01:00
-categories: documentation general
+title:  "Gulp Guide"
+date:   2014-07-21 12:01:00
+categories: documentation boilerplate
 ---
 
-Konstruct relies heavily on Grunt.js to perform it's tasks, and help you get through mundane work quicker. It takes some getting used, especially if you are not accustomed to working in Terminal(command line), but once you do it's great!
+The Konstruct boilerplate relies heavily on GulpJS to perform it's tasks, and help you get through mundane work quicker. It takes some getting used to, especially if you are not accustomed to working in Terminal(command line), but once you do it's great!
 
 ### Grunt Features
 

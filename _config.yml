@@ -1,6 +1,6 @@
 name: Konstruct Website
 markdown: redcarpet
-pygments: false
+highlighter: null
 baseurl: "/Konstruct"
 url: http://localhost:4000
 version: 1

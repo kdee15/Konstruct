@@ -381,17 +381,21 @@
 	// 2. DOCUMENTATION +++++++++++++++++++++++++++++++++++++++++++
 	
 	    .page-documentation {
+            
+            background: $k_aqua;
+            
+            h1 {
+                color: $white;
+            }
 	    
 	        // 2.1. Listings grid
 	        .listings {
 	        
 	            // 2.1.1. Sidebar
 	            .sidebar {
-	            
-	                background: rgba($white, 0.5);
 	                
 	                h3 {
-	                    color: $k-grayDark;
+	                    color: $white;
 	                }
 	                
 	                ul {
@@ -402,11 +406,16 @@
 	                    li {}
 	                    
 	                    a {
-                            @extend .blue;
-                            @extend .medium;
-	                        @extend .pill;
-                            @extend .button;
+                            display: block;
+                            border-bottom: solid 1px rgba($white, 0.3);
+                            padding: $baseline/2;
+                            color: $k_aquaDark;
 	                        
+                            &:hover {
+                                background: $k_aquaDark;
+                                color: $k_aqua;
+                            }
+                            
 	                    }
 	                
 	                }
@@ -442,7 +451,7 @@
 	
 	// 2. END +++++++++++++++++++++++++++++++++++++++++++
 	
-	// 3. HOMEPAGE +++++++++++++++++++++++++++++++++++++++++++
+	// 3. THE CHANGELOG +++++++++++++++++++++++++++++++++++++++++++
 	   .page-changelog {
         
            // 3.1. SIDEBAR 
@@ -467,12 +476,26 @@
            // 3.1. END
            
            // 3.2. TEASER 
+           
+           .wrapper {
+            @extend .grid;
+           }
+           
            .teaser {
-               border-bottom: solid 5px $white;
-               transition: 0.3s;
-               background: none;
-               position: relative;
-               overflow: hidden;
+               
+               @extend .grid__item;
+               @extend .one-quarter;
+               
+               .inside {
+                    border: solid 2px rgba($grayLight,0.5);
+                   padding: $baseline;
+                   
+                   &:hover {
+                    background: $white;
+                    border-color: $white;
+                   }
+               }
+               
                h3 {
                 margin-top: 0;
                    font-weight: 600;
@@ -483,36 +506,11 @@
                p {
                 margin: 0;
                }
+               
                h3, p {
-                
-                z-index: 5;
-                position: relative; 
+                    
                }
                
-               &:after {
-                   content: "";
-                   width: 100%;
-                   height: 100%;
-                   position: absolute;
-                   top: 0;
-                   left: 0;
-                   background: $k_aqua;
-                   transform: translateY(-100%);
-                   transition: 0.3s;
-               }
-               &:hover {
-                   transition: 0.3s;
-                   border-bottom: solid 5px $k_aquaDark;
-                   h3, p, a {
-                       color: $white;
-                   }
-                   
-                   &:after {
-                       transform: translateY(0%);
-                       transition: 0.3s;
-                   }
-                   
-                }
            }
            // 3.2. END
            

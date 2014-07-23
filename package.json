@@ -1,34 +1,45 @@
 {
-  "name": "konstruct",
-  "description": "A sometimes clever HTML & CSS framework.",
-  "version": "0.1.1",
-  "homepage": "https://traaidmark.github.io/Konstruct",
-  "author": {
-    "name": "Adrian Kirsten",
-    "url": "http://traaidmark.com/"
+  "name": "konstruct_boilerplate",
+  "version": "0.1.0",
+  "description": "Konstruct Boilerplate is the perfect starting point for your next Konstruct project.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/traaidmark/Konstruct.git"
+    "url": "https://traaidmark@github.com/traaidmark/konstruct-boilerplate.git"
   },
-  "bugs": {
-    "url": "https://github.com/traaidmark/Konstruct/issues"
-  },
-  "licenses": [
-    {
-      "type": "Apache",
-      "url": "https://github.com/traaidmark/Konstruct/blob/master/README.md"
-    }
+  "keywords": [
+    "html",
+    "css",
+    "jquery",
+    "gulp",
+    "bower",
+    "konstruct"
   ],
+  "author": [
+    "Adrian Kirsten",
+    "Kirk Daniels"
+  ],
+  "license": "Apache License, Version 2.0",
+  "bugs": {
+    "url": "https://github.com/traaidmark/konstruct-boilerplate/issues"
+  },
+  "homepage": "http://traaidmark.github.io/Konstruct/",
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-uglify": "~0.2.7",
-    "grunt-contrib-imagemin": "~0.4.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-sass": "~0.6.0",
-    "grunt-autoprefixer": "~0.5.0",
-    "grunt-contrib-cssmin": "~0.7.0",
-    "grunt-notify": "~0.2.16"
+    "gulp": "~3.8.6",
+    "gulp-bower": "0.0.6",
+    "gulp-util": "~2.2.20",
+    "gulp-clean": "~0.3.1",
+    "run-sequence": "~0.3.6",
+    "gulp-rename": "~1.2.0",
+    "gulp-minify-css": "~0.3.7",
+    "gulp-notify": "~1.4.0",
+    "tiny-lr": "0.0.9",
+    "gulp-concat": "~2.3.3",
+    "gulp-autoprefixer": "0.0.8",
+    "gulp-livereload": "~2.1.0",
+    "gulp-sass": "~0.7.2"
   }
 }

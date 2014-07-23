@@ -56,14 +56,14 @@
 		}
 		
 		code {
-		    background: $k-aqua;
-		    color: $white;
+		    background: $grayLighter;
+		    color: $grayDark;
 		    font-size: $small;
 		    padding: $baseline / 4;
 		}
 		
 		pre {
-		    background: $k-aqua;
+		    background: $grayLighter;
 		    padding: $baseline / 2;
 		    code {
 		        padding: 0;

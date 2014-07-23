@@ -1868,7 +1868,7 @@ h4, h5, h6 {
 h3 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
-  margin: 48px 0;
+  margin: 48px 0 0 0;
   text-transform: uppercase;
   color: #2DBFC8;
   font-size: 1.5em; }

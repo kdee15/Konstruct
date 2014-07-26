@@ -1,12 +1,13 @@
 // MIXINS LAYER [UTILITIES] ##############################################
 	
-	
 	// A. CLEARFIX ++++++++++++++++++++++++++++++++++++++++++++++++
-	
-		// The micro clearfix from Nicolas Gallaghar (http://nicolasgallagher.com/micro-clearfix-hack/)
-	
+
+        // DESCRIPTION:  The micro clearfix from Nicolas Gallaghar
+		// SOURCE: http://nicolasgallagher.com/micro-clearfix-hack/
+        // USAGE: @include clearfix(); -- add this to your containing element which you need to clear.
+
 		@mixin clearfix(){
-		
+
 			&:before,
 		    &:after {
 		        content: "";
@@ -15,9 +16,9 @@
 		    &:after {
 		        clear: both;
 		    }
-		    
+
 		}
-	
+
 	// A. END ++++++++++++++++++++++++++++++++++++++++++++++++
-	
+
 // END OF FILE ##############################################

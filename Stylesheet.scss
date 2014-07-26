@@ -10,17 +10,7 @@
 
 	// A. CONFIGURATION ++++++++++++++++++++++++++++++++++++++++++++++
 
-	//	Configuration is done in the "config" folder, where you should see the files mentioned below. 
-	//	Simply edit and save the files as you need them.
-
-		// A.1 Fonts Config
-		@import	"config/fonts";
-
-		// A.2 Brand Config
-		@import	"config/brand";
-
-		// A.3 Global Config  
-		@import	"config/global";
+        @import "config/config";
 
 	// B. MIXINS ++++++++++++++++++++++++++++++++++++++++++++++
 

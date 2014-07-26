@@ -2,8 +2,6 @@
 
 # 1. BOWER IGNORE FODDER
 
-assets/external
-
 # 2. GULP IGNORE FODDER
 
 node_modules

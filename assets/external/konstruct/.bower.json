@@ -1,0 +1,14 @@
+{
+  "name": "konstruct",
+  "homepage": "https://github.com/traaidmark/Konstruct",
+  "version": "2.1.0",
+  "_release": "2.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.1.0",
+    "commit": "f8262cf463e87be90f83c83ea5b3c86393061374"
+  },
+  "_source": "git://github.com/traaidmark/Konstruct.git",
+  "_target": "*",
+  "_originalSource": "konstruct"
+}

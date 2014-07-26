@@ -1,13 +1,9 @@
-[Konstruct 2.0](http://traaidmark.github.io/Konstruct/)
+[Konstruct 2.1.](http://traaidmark.github.io/Konstruct/)
 =============
 
-Konstruct is a SASS framework developed to assist in building awesome stuff on the internet. It comes with a nifty boilerplate to get you up and running as quickly as possible.
+Konstruct is a SASS library developed to assist in building awesome stuff on the internet. It comes with a nifty [boilerplate](https://traaidmark.github.io/Konstruct/get-started) to get you up and running as quickly as possible.
 
 <hr />
-
-## Documentation
-
-Documentation is a huge priority for this project. We don't have this in place yet, but will soon!
 
 ### Getting Started
 
@@ -20,18 +16,6 @@ We highly recommend that you get up and running with the boilerplate setup, whic
 
 You can find a nice get started guide over at [https://traaidmark.github.io/Konstruct/get-started](https://traaidmark.github.io/Konstruct/get-started)
 
-## Versions
-
-Konstruct is versioned under the [Semantic Versioning](http://semver.org/) guidelines.
-
-Releases are numbered as follows:
-
-<code>major.minor.patch</code>
-
-* Bug fixes and the like goes to <code>patch</code>
-* Features and additions goes to <code>minor</code>
-* Complete new versions with no backwards compatibility path goes to <code>major</code>. This is usually also a milestone release and is considered stable and complete.
-
 <hr />
 
 ## Authors
@@ -43,7 +27,7 @@ Releases are numbered as follows:
 
 ## Licensing
 
-**Copyright 2013 Adrian Kirsten**
+**Copyright 2014 Adrian Kirsten**
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 

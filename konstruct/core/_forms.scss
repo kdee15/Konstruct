@@ -1,10 +1,9 @@
 // CORE LAYER [FORMS] ##############################################
 
 	// A. BASIC FORM ELEMENTS ++++++++++++++++++++++++++++++++++++
-	
+
 		form {
-			
-		
+
 			// A.1. Labels 
 				label { 
 					width: 95%;
@@ -12,7 +11,7 @@
 					display: block; 
 				}
 			// A.1. End
-			
+
 			// A.2. Inputs
 				input[type="text"],
 				input[type="password"],
@@ -24,7 +23,7 @@
 					padding: $baseline / 2;
 				}
 			// A.2. End
-			
+
 			// A.3. Textarea
 				textarea {
 					padding: $baseline / 2;
@@ -37,7 +36,7 @@
 					overflow: auto; 
 				}
 			// A.3. End
-			
+
 			// A.4. Radio & Check boxes
 				input[type="radio"],
 				input[type="checkbox"] { 

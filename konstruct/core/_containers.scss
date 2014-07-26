@@ -3,12 +3,13 @@
 	// A. RESPONSIVE CONTAINERS +++++++++++++++++++++++++++++++++++++++
 	
 		.container {
-			width: 100%;
+			max-width: 100%;
 		}
 		
 		@include media-query(mobile){ 
 		
 			.container {
+                padding: $baseline/2;
 			}
 		
 		 }
@@ -16,6 +17,7 @@
 		 @include media-query(tablet){ 
 		 
 		 	.container {
+                padding: baseline;
 		 	}	
 		 
 		  }

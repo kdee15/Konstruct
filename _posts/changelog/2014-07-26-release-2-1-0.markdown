@@ -1,0 +1,49 @@
+---
+layout: post-log
+title:  "Release 2.1.0. - Bricks, Mixins"
+date:   2014-07-26 12:01:00
+categories: changelog release
+---
+
+This release focusses on a few core priorities - Cleaning up the codebase, making it simpler for upgrading & bringing it up to date. There will be more of these *admin* releases in future, and technically these should be minor updates. In this case we also introduced **bricks**, **new config** and cleaner **mixins**.
+
+The other major decision taken was to move Nicolas Gallagher's normalize.css into the library itself, and not to run it through the boilerplate. The reason for this was integration. I found a weird ass bug in boilerplated sites, and this seems to resolve it.
+
+On the boilerplate side we added the ability to update your Konstruct library to your <code>assets/css/</code> directory without destroying anything in your <code>assets/css/site/</code> folder. It's worth noting that your <code>assets/css/config/</code> folder will not be updated, and you should update this manually from the <code>assets/external/Konstruct/config</code> directory (this is an once off thing).
+
+## Bricks
+
+Bricks are **modules** within Konstruct that add common functionality that you don't necesarily want or need. These include things like messages or buttons. They can be nice, can be useful, but you are not forced to have them. 
+
+For now they are opt-out, (simply comment out line-43 in the Stylesheet.scss file) but this will be resolved soon.
+
+## Full Changelog
+
+* Bricks
+    * Added bricks system
+    * Added Message brick
+    * Added Button brick
+* Mixins
+    * Added font mixin.
+    * Cleaned up mixin codebase.
+* Config
+    * Moved the media query configuration to it's own config file.
+    * Made a global mixin include file in Stylesheet.scss
+* Added normalize.css back into Konstruct library.
+* Updated container.scss for a more reliable container class through mobile & tablet views.
+
+## Roadmap
+
+For now the goal is to get everything to work in a reliable and stable manner. Konstruct has a **lot** of catch up to do if it ever wants to be competitive (which is not really a goal), so our work focusses on how to make it absolutely brilliant in production environments. So, with that said, our roadmap:
+
+* Better documentation!
+* Turn the boilerplate into a node module eventually. This will give you a nicer usage over all.
+* Figure out how deployment would work within the boilerplate gulp setup, if at all.
+* Bricks should have a nicer config setup.
+* Livereload on the boilerplate. We just don't have that need right now.
+* Include chrome dev tools mapping.
+
+- Adrian
+
+
+

@@ -27,17 +27,6 @@
 		$link-hover:			darken($link-color, 15);
 		
 	// A. END ++++++++++++++++++++++++++++++++++++++++++++++++
-	
-	// B. MEDIA QUERIES ++++++++++++++++++++++++++++++++++++++++++++++++	
-		
-		$breakpoints: (
-		    'mobile' '(max-width: 480px)',
-		    'tablet' '(min-width: 481px) and (max-width: 1023px)',
-		    'desk' '(min-width: 1024px)',
-		    'desk-wide' '(min-width: 1200px)'
-		)!default;
-		
-	// B. END ++++++++++++++++++++++++++++++++++++++++++++++++	
 		
 	// C. CSSWIZARDRY GRIDS ++++++++++++++++++++++++++++++++++++++++++++++++
 		

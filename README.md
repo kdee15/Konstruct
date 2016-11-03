@@ -21,7 +21,7 @@ You can find a nice get started guide over at [https://traaidmark.github.io/Kons
 ## Authors
 
 * Adrian Kirsten - [@traaidmark](https://twitter.com/traaidmark) - [www.traaidmark.com](http://www.traaidmark.com)
-* Kirk Daniels - [@kdee15](https://twitter.com/kdee15)
+* Kirk Daniels - [@kdee15](https://twitter.com/kdee15) - [www.kdee.co.za](http://www.kdee.co.za)
 
 <hr />
 
